@@ -88,7 +88,14 @@ export const PRERENDER_CONTENT = {
     dir: 'ltr',
     h1: 'Ord och verb från kapitel 1–3',
     intro:
-      'Studera 123 poster från Rivstart B2/C1 Quizlet-uppsättningar av AnnaRansheim — flashcards, quiz och sökbar ordlista.',
+      'Studera 162 poster från Rivstart B2/C1 Quizlet-uppsättningar av AnnaRansheim — flashcards, quiz och sökbar ordlista.',
+  },
+  lessonA2B1Grammar: {
+    lang: 'en',
+    dir: 'ltr',
+    h1: 'Swedish Grammar: Word Classes, Sentence Parts, and Nouns',
+    intro:
+      'Learn Swedish word classes, sentence parts, noun gender, and plural patterns. A2–B1 lesson in English with Swedish examples.',
   },
   ...lundPrerenderEntries,
 };

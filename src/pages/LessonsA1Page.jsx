@@ -32,6 +32,11 @@ export default function LessonsA1Page() {
         <div className="tag">GRAMMATIK · A1</div>
         <h1>{lessonsA1Meta.title.replace(' | SvenskaSpråket', '').split(':')[0] ?? 'Personliga pronomen'}</h1>
         <p>Lär dig subjekt- och objektpronomen på svenska – grunden för att bygga enkla meningar.</p>
+        <p style={{ marginTop: 12 }}>
+          <Link className="btn secondary" to="/lessons-a2-b1">
+            A2–B1: ordklasser &amp; substantiv →
+          </Link>
+        </p>
         <div style={{ margin: '22px 0' }}>
           <strong>Språkstöd: </strong>
           <LanguageToggle supportLang={supportLang} onChange={setSupportLang} />

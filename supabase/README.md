@@ -62,7 +62,7 @@ site_settings (admin only)
 5. Confirm in **Storage** that the `media` bucket exists (public, 5 MB limit).
 6. Follow [Initial admin setup](#initial-admin-setup) below.
 
-### Option B — Supabase CLI
+### Option B — Supabase CLI / GitHub integration
 
 ```bash
 # Install CLI: https://supabase.com/docs/guides/cli
@@ -70,14 +70,22 @@ npm install -g supabase
 
 # Login and link project (once)
 supabase login
-supabase link --project-ref YOUR_PROJECT_REF
+supabase link --project-ref mketbivszbnipzyafabs
 
 # Push all migrations from supabase/migrations/
 supabase db push
-
-# Or reset local dev database (destructive — local only)
-supabase db reset
 ```
+
+**GitHub integration** (Dashboard → Project Settings → Integrations):
+
+| Setting | Value |
+|---------|--------|
+| Repository | `mohamedmakarati/svenskaspraket-new` |
+| Working directory | `.` |
+| Production branch | `main` |
+| Deploy to production | **On** |
+
+When you merge to `main`, Supabase applies new files in `supabase/migrations/` automatically. Migration files use timestamp names (e.g. `20250803000001_*.sql`).
 
 ### Option C — Single combined script
 

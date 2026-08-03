@@ -9,7 +9,7 @@ import { readFileSync, writeFileSync, readdirSync, existsSync, mkdirSync, copyFi
 import { resolve, dirname, basename, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { createHash } from 'node:crypto';
-import pdf from 'pdf-parse';
+import { PDFParse } from 'pdf-parse';
 import { parseQuizletPdfText, slugifySetId } from './parse-quizlet-pdf.mjs';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -86,8 +86,13 @@ function fileHash(path) {
 
 async function extractPdfText(path) {
   const buffer = readFileSync(path);
-  const data = await pdf(buffer);
-  return data.text;
+  const parser = new PDFParse({ data: buffer });
+  try {
+    const result = await parser.getText();
+    return result.text;
+  } finally {
+    await parser.destroy();
+  }
 }
 
 function collectPdfPaths() {

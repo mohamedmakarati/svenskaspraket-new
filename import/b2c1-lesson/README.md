@@ -2,13 +2,14 @@
 
 Interactive trilingual lesson (SV / EN / AR) with flashcards, quiz and searchable table.
 
-## Current sets (151 entries)
+## Current sets (162 entries)
 
 | Set | Quizlet | Entries |
 |-----|---------|---------|
 | Så funkar ett språkgeni – Kapitel 1 | `_8nlhmv` | 61 |
 | Verb – Kapitel 1–3 | `_8n36aw` | 62 |
 | Ord, ord, ord – Kapitel 1 | `_8n3678` | 28 |
+| Priset på vatten | `_8mq3xa` | 11 |
 
 Duplicates (e.g. *uppskattar*, *förknippar*, *uppger*) are kept when they appear in multiple source sets.
 

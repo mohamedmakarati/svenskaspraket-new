@@ -1,0 +1,34 @@
+# SvenskaSpråket — Supabase project config (GitHub integration + CLI)
+# Docs: https://supabase.com/docs/guides/deployment/branching/github-integration
+
+project_id = "mketbivszbnipzyafabs"
+
+[api]
+enabled = true
+port = 54321
+schemas = ["public", "graphql_public"]
+extra_search_path = ["public", "extensions"]
+max_rows = 1000
+
+[db]
+port = 54322
+shadow_port = 54320
+major_version = 15
+
+[db.migrations]
+enabled = true
+
+[storage]
+enabled = true
+file_size_limit = "5MiB"
+
+[auth]
+enabled = true
+site_url = "https://svenskaspraket.com"
+additional_redirect_urls = [
+  "https://svenskaspraket.com/admin/auth/callback",
+  "http://localhost:5173/admin/auth/callback",
+]
+
+[auth.email]
+enable_signup = false

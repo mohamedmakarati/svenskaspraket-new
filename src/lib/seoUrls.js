@@ -57,6 +57,7 @@ export const PRERENDER_ROUTES = [
   { path: '/vocabulary', pageKey: 'vocabulary' },
   { path: '/lessons-a1', pageKey: 'lessonsA1' },
   { path: '/lessons', pageKey: 'lessonsB1' },
+  { path: '/lessons-a2-b1', pageKey: 'lessonA2B1Grammar' },
   { path: '/c1', pageKey: 'c1' },
   { path: '/lessons-b2c1', pageKey: 'lessonB2C1' },
   ...LUND_LEVELS.map((level) => ({

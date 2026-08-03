@@ -11,7 +11,7 @@ const COPY = {
       { to: '/verbs-a2', label: 'A2-verb', count: '199', desc: 'Utökade verb för vardag och studier.' },
       { to: '/verbs-b1b2', label: 'B1–B2-verb', count: '135', desc: 'Oregelbundna och avancerade verb.' },
       { to: '/vocabulary', label: 'Quizlet-ordförråd', count: '805', desc: 'Sökbar ordlista med flashcards och quiz.' },
-      { to: '/lessons-b2c1', label: 'Rivstart B2/C1', count: '151', desc: 'Ord och verb från kapitel 1–3 (AnnaRansheim).' },
+      { to: '/lessons-b2c1', label: 'Rivstart B2/C1', count: '162', desc: 'Ord och verb från kapitel 1–3 m.m. (AnnaRansheim).' },
     ],
   },
   en: {
@@ -24,7 +24,7 @@ const COPY = {
       { to: '/verbs-a2?lang=en', label: 'A2 verbs', count: '199', desc: 'Expanded verbs for daily life and study.' },
       { to: '/verbs-b1b2?lang=en', label: 'B1–B2 verbs', count: '135', desc: 'Irregular and advanced verb forms.' },
       { to: '/vocabulary?lang=en', label: 'Quizlet vocabulary', count: '805', desc: 'Searchable word list with flashcards and quiz.' },
-      { to: '/lessons-b2c1', label: 'Rivstart B2/C1', count: '151', desc: 'Words and verbs from chapters 1–3 (AnnaRansheim).' },
+      { to: '/lessons-b2c1', label: 'Rivstart B2/C1', count: '162', desc: 'Words and verbs from chapters 1–3 and more (AnnaRansheim).' },
     ],
   },
   ar: {
@@ -37,7 +37,7 @@ const COPY = {
       { to: '/verbs-a2?lang=ar', label: 'أفعال A2', count: '199', desc: 'أفعال موسّعة للحياة اليومية والدراسة.' },
       { to: '/verbs-b1b2?lang=ar', label: 'أفعال B1–B2', count: '135', desc: 'أفعال شاذة ومتقدمة.' },
       { to: '/vocabulary?lang=ar', label: 'مفردات Quizlet', count: '805', desc: 'قائمة قابلة للبحث مع بطاقات واختبارات.' },
-      { to: '/lessons-b2c1', label: 'Rivstart B2/C1', count: '151', desc: 'كلمات وأفعال من الفصول 1–3 (AnnaRansheim).' },
+      { to: '/lessons-b2c1', label: 'Rivstart B2/C1', count: '162', desc: 'كلمات وأفعال من الفصول 1–3 وغيرها (AnnaRansheim).' },
     ],
   },
 };

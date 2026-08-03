@@ -23,6 +23,7 @@ const REQUIRED_SPA_ROUTES = [
   '/lessons',
   '/c1',
   '/lessons-b2c1',
+  '/lessons-a2-b1',
   '/niva/:levelId',
   '/admin',
   '/admin/login',

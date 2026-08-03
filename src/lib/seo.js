@@ -425,6 +425,34 @@ export const PAGE_SEO = {
       ],
     }),
   },
+  lessonA2B1Grammar: {
+    path: '/lessons-a2-b1',
+    lang: 'en',
+    title: 'Swedish Grammar A2–B1: Word Classes and Nouns | SvenskaSpråket',
+    description:
+      'Learn Swedish word classes, sentence parts, noun gender, definite/indefinite forms, and plural patterns. English-medium grammar lesson for A2–B1.',
+    keywords: 'Swedish grammar A2, Swedish nouns, word classes Swedish, en ett Swedish',
+    ogType: 'article',
+    hreflang: false,
+    priority: 0.85,
+    changefreq: 'monthly',
+    structuredData: () => ({
+      '@context': 'https://schema.org',
+      '@graph': [
+        learningResource({
+          url: '/lessons-a2-b1',
+          name: 'Swedish Grammar: Word Classes, Sentence Parts, and Nouns',
+          description: 'A2–B1 lesson on Swedish word classes, sentence parts, and noun forms.',
+          level: 'A2-B1',
+          types: ['lesson'],
+        }),
+        breadcrumb([
+          { name: 'Hem', url: '/' },
+          { name: 'Grammatik A2–B1', url: '/lessons-a2-b1' },
+        ]),
+      ],
+    }),
+  },
   c1: {
     path: '/c1',
     lang: 'sv',

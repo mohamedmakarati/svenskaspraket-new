@@ -67,6 +67,7 @@ export function slugifySetId(title, sourceUrl) {
     'https://quizlet.com/_8nlhmv': 'chapter1',
     'https://quizlet.com/_8n36aw': 'verbs1to3',
     'https://quizlet.com/_8n3678': 'ordOrdOrd',
+    'https://quizlet.com/_8mq3xa': 'prisetPaVatten',
   };
   if (known[sourceUrl]) return known[sourceUrl];
 

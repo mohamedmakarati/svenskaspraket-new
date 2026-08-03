@@ -19,6 +19,9 @@
     "import:dry-run": "node scripts/import-content.mjs dry-run",
     "import:content": "node scripts/import-content.mjs import",
     "create:admin": "node scripts/create-admin-user.mjs",
+    "check:supabase": "node scripts/check-supabase.mjs",
+    "db:apply": "node scripts/apply-supabase-schema.mjs",
+    "setup:supabase": "node scripts/setup-supabase.mjs",
     "sync:b2c1": "node scripts/sync-b2c1-data.mjs",
     "import:b2c1-pdfs": "node scripts/import-b2c1-from-pdf.mjs && node scripts/sync-b2c1-data.mjs",
     "test": "vitest run",
@@ -42,6 +45,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
     "pdf-parse": "^2.4.5",
+    "pg": "^8.22.0",
     "sharp": "^0.35.3",
     "vite": "^7.1.2",
     "vitest": "^4.1.10"

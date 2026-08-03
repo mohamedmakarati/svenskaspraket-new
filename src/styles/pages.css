@@ -568,6 +568,101 @@
   }
 }
 
+/* Long-form A2–B1 grammar lesson */
+.grammar-long-page {
+  max-width: 820px;
+}
+
+.grammar-long__header {
+  margin-bottom: 40px;
+}
+
+.grammar-long__header h1 {
+  font: 700 clamp(28px, 5vw, 42px) / 1.15 Georgia, serif;
+  margin: 12px 0;
+}
+
+.grammar-long__subtitle {
+  color: var(--muted);
+  font-size: 15px;
+}
+
+.grammar-long__goals-title {
+  font-size: 1.1rem;
+  margin: 28px 0 12px;
+}
+
+.grammar-long__goals {
+  padding-left: 1.25rem;
+  line-height: 1.7;
+}
+
+.grammar-long__section {
+  margin: 48px 0;
+  padding-top: 8px;
+  border-top: 1px solid var(--border);
+}
+
+.grammar-long__section h2 {
+  font: 700 26px Georgia, serif;
+  margin: 0 0 16px;
+}
+
+.grammar-long__subsection {
+  margin: 24px 0;
+}
+
+.grammar-long__subsection h3 {
+  font-size: 18px;
+  margin: 0 0 10px;
+}
+
+.grammar-long__example {
+  margin: 8px 0;
+  padding: 10px 14px;
+  background: #f7fafc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+.grammar-long__example span {
+  color: var(--muted);
+}
+
+.grammar-long__table-wrap {
+  overflow-x: auto;
+  margin: 16px 0;
+}
+
+.grammar-long__callout {
+  margin: 20px 0;
+  padding: 16px 18px;
+  border-radius: 10px;
+  border-inline-start: 4px solid var(--blue);
+  background: #edf6ff;
+}
+
+.grammar-long__callout--tip {
+  border-color: var(--yellow);
+  background: #fff9e6;
+}
+
+.grammar-long__quiz {
+  margin-top: 48px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.grammar-long ul {
+  padding-left: 1.25rem;
+  line-height: 1.65;
+}
+
+.grammar-long p {
+  line-height: 1.65;
+  margin: 0 0 12px;
+}
+
 /* Rivstart B2/C1 interactive lesson */
 .b2c1-hero {
   background: linear-gradient(135deg, var(--navy, #10233e), #0b66bd);

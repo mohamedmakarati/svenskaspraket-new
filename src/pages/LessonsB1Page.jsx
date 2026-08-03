@@ -33,6 +33,11 @@ export default function LessonsB1Page() {
         <div className="tag">GRAMMATIK · B1–B2</div>
         <h1>Substantiv steg för steg</h1>
         <p>Tre korta originallektioner med svenska som huvudspråk. Välj engelskt eller arabiskt språkstöd.</p>
+        <p style={{ marginTop: 12 }}>
+          <Link className="btn secondary" to="/lessons-a2-b1">
+            A2–B1: ordklasser &amp; substantiv (engelska) →
+          </Link>
+        </p>
         <div style={{ margin: '22px 0' }}>
           <strong>Språkstöd: </strong>
           <LanguageToggle supportLang={supportLang} onChange={setSupportLang} />

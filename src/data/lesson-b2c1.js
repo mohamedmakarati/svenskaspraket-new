@@ -6,7 +6,7 @@ export const B2C1_LESSON = {
   "sets": [
     {
       "id": "chapter1",
-      "title": "Så funkar ett språkgeni - Kapitel 1",
+      "title": "Så funkar ett språkgeni",
       "sourceUrl": "https://quizlet.com/_8nlhmv",
       "entries": [
         [
@@ -30,7 +30,7 @@ export const B2C1_LESSON = {
         [
           4,
           "uppdrag-et",
-          "mission; assignment",
+          "mission",
           "مهمة؛ تكليف"
         ],
         [
@@ -41,9 +41,9 @@ export const B2C1_LESSON = {
         ],
         [
           6,
-          "gör sitt yttersta",
-          "does his/her utmost",
-          "يبذل قصارى جهده"
+          "gör sitt yttersta do his/her",
+          "utmost",
+          ""
         ],
         [
           7,
@@ -72,13 +72,13 @@ export const B2C1_LESSON = {
         [
           11,
           "enastående",
-          "outstanding; unique",
+          "unique",
           "استثنائي؛ متميز"
         ],
         [
           12,
           "ytterligare",
-          "further; additional",
+          "further",
           "إضافي؛ مزيد من"
         ],
         [
@@ -102,7 +102,7 @@ export const B2C1_LESSON = {
         [
           16,
           "förknippar",
-          "associates",
+          "associate",
           "يربط؛ يقترن في ذهنه"
         ],
         [
@@ -120,19 +120,19 @@ export const B2C1_LESSON = {
         [
           19,
           "myndighet-en",
-          "public authority",
+          "administrative authority",
           "جهة حكومية؛ سلطة"
         ],
         [
           20,
           "egenskap-en",
-          "quality; characteristic",
+          "quality",
           "صفة؛ خاصية"
         ],
         [
           21,
           "uteslutande",
-          "exclusively",
+          "excludingly",
           "حصرياً؛ فقط"
         ],
         [
@@ -144,13 +144,13 @@ export const B2C1_LESSON = {
         [
           23,
           "tillvaro-n",
-          "existence; life",
+          "existence",
           "وجود؛ حياة"
         ],
         [
           24,
           "verksam",
-          "active; working",
+          "busy",
           "نشِط؛ عامل"
         ],
         [
@@ -162,25 +162,25 @@ export const B2C1_LESSON = {
         [
           26,
           "utarbetar",
-          "develops; elaborates",
+          "elaborates",
           "يُعِدّ؛ يطوّر بالتفصيل"
         ],
         [
           27,
-          "skiner upp",
-          "brightens up; looks happy",
-          "يشرق وجهه؛ يبدو سعيداً"
+          "skiner",
+          "upp smile, look happy",
+          ""
         ],
         [
           28,
-          "(syskon-)skara-n",
-          "group (of siblings)",
-          "مجموعة (من الإخوة)"
+          "(syskon-)skara-n host (of siblings)",
+          "",
+          ""
         ],
         [
           29,
           "anfall-et",
-          "attack; seizure",
+          "seizure",
           "نوبة؛ هجوم"
         ],
         [
@@ -197,9 +197,9 @@ export const B2C1_LESSON = {
         ],
         [
           32,
-          "anstränger sig",
-          "makes an effort",
-          "يبذل جهداً"
+          "anstränger",
+          "sig makes an effort",
+          ""
         ],
         [
           33,
@@ -210,13 +210,13 @@ export const B2C1_LESSON = {
         [
           34,
           "känslomässig",
-          "emotional",
+          "emotive",
           "عاطفي"
         ],
         [
           35,
           "gemenskap-en",
-          "community; fellowship",
+          "community",
           "مجتمع؛ شعور بالانتماء"
         ],
         [
@@ -228,7 +228,7 @@ export const B2C1_LESSON = {
         [
           37,
           "kommer på",
-          "thinks of; realizes",
+          "thinks of",
           "يخطر بباله؛ يدرك"
         ],
         [
@@ -245,32 +245,32 @@ export const B2C1_LESSON = {
         ],
         [
           40,
-          "irrar runt",
-          "wanders around",
-          "يتجوّل تائهاً"
+          "irrar",
+          "runt",
+          ""
         ],
         [
           41,
-          "livnär sig",
-          "makes a living",
-          "يكسب رزقه"
+          "livnär",
+          "sig makes a living",
+          ""
         ],
         [
           42,
           "inriktar sig (på)",
-          "focuses on",
+          "concentrate upon",
           "يركّز على"
         ],
         [
           43,
           "omgivning-en",
-          "surroundings; people around you",
+          "(here) people around you, surroundings",
           "المحيط؛ الأشخاص من حولك"
         ],
         [
           44,
           "utlöser",
-          "triggers; sparks",
+          "produces, sparks",
           "يُطلِق؛ يسبّب"
         ],
         [
@@ -281,9 +281,9 @@ export const B2C1_LESSON = {
         ],
         [
           46,
-          "ställer upp",
-          "helps; supports",
-          "يساعد؛ يساند"
+          "ställer",
+          "upp helps",
+          ""
         ],
         [
           47,
@@ -294,49 +294,49 @@ export const B2C1_LESSON = {
         [
           48,
           "håller isär",
-          "keeps apart; distinguishes",
+          "disassociates",
           "يفصل بين؛ يميّز"
         ],
         [
           49,
           "glosa-n",
-          "vocabulary word",
+          "word",
           "مفردة؛ كلمة للحفظ"
         ],
         [
           50,
           "kännetecken (kännetecknet)",
-          "characteristic; distinguishing feature",
+          "characteristic",
           "سمة مميّزة"
         ],
         [
           51,
-          "i hög grad",
-          "to a large extent",
-          "إلى حد كبير"
+          "i hög",
+          "grad largely",
+          ""
         ],
         [
           52,
           "besitter",
-          "possesses",
+          "has, possesses",
           "يمتلك"
         ],
         [
           53,
           "behärskar",
-          "masters; has command of",
+          "masters",
           "يتقن"
         ],
         [
           54,
           "avrundar",
-          "rounds off; concludes",
+          "round off",
           "يختتم؛ يقرّب الرقم"
         ],
         [
           55,
           "kommer överens",
-          "agrees; gets along",
+          "agrees",
           "يتفق؛ ينسجم"
         ],
         [
@@ -354,411 +354,411 @@ export const B2C1_LESSON = {
         [
           58,
           "främst",
-          "mainly; foremost",
+          "mainly",
           "بشكل رئيسي؛ أولاً"
         ],
         [
           59,
           "får utlopp för",
-          "finds an outlet for",
+          "",
           "يجد متنفساً لـ"
         ],
         [
           60,
           "förtjusning-en",
-          "delight; excitement",
+          "delight, excitement",
           "بهجة؛ سرور"
         ],
         [
           61,
-          "i regel",
-          "as a rule; generally",
-          "عادةً؛ كقاعدة عامة"
+          "i",
+          "regel as a rule",
+          ""
         ]
       ]
     },
     {
       "id": "verbs1to3",
-      "title": "Verb - Kapitel 1-3",
+      "title": "Verb, kapitel 1-3",
       "sourceUrl": "https://quizlet.com/_8n36aw",
       "entries": [
         [
           1,
           "anar",
-          "has a feeling; suspects; anticipates",
+          "have a feeling, suspect, anticipate",
           "يشعر؛ يشتبه؛ يتوقع"
         ],
         [
           2,
           "beror (PÅ ngt/ngn)",
-          "depends on",
+          "depend",
           "يعتمد على"
         ],
         [
           3,
           "bryr sig (OM ngn/ngt)",
-          "cares about",
+          "care for",
           "يهتم بـ"
         ],
         [
           4,
-          "knäcker koden",
-          "cracks the code",
-          "يفك الشفرة"
+          "knäcker",
+          "koden crack, break, snap",
+          ""
         ],
         [
           5,
           "kräver",
-          "demands; requires",
+          "demand, require",
           "يطلب؛ يتطلب"
         ],
         [
           6,
           "lossnar",
-          "comes loose; comes off",
+          "come loose, come off, come undone",
           "ينفك؛ ينفصل"
         ],
         [
           7,
           "når",
-          "reaches; attains",
+          "reach, attain",
           "يصل؛ يحقق"
         ],
         [
           8,
           "sker",
-          "happens; occurs",
+          "happen, occur",
           "يحدث"
         ],
         [
           9,
           "släpper",
-          "releases; lets go",
+          "release, let go",
           "يُطلِق؛ يترك"
         ],
         [
           10,
           "smäller",
-          "slams; bangs",
+          "slam, bang",
           "يصفق بقوة؛ يُحدث دوياً"
         ],
         [
           11,
           "stöter",
-          "strikes; pokes; pushes",
+          "strike, poke, push",
           "يصطدم؛ يدفع؛ ينكز"
         ],
         [
           12,
           "upplever",
-          "experiences; feels",
+          "experience, feel, think",
           "يختبر؛ يشعر"
         ],
         [
           13,
           "uppskattar",
-          "appreciates; estimates",
+          "appreciate, estimate",
           "يقدّر؛ يُثمّن"
         ],
         [
           14,
           "upptäcker",
-          "discovers; detects",
+          "discover, detect",
           "يكتشف"
         ],
         [
           15,
-          "ägnar (sig/ngt ÅT ngn/ngt)",
-          "devotes; dedicates",
-          "يكرّس؛ يخصص"
+          "ägnar (sig/ngt ÅT ngn/ngt) devote, dedicate (time, life, effort)",
+          "",
+          ""
         ],
         [
           16,
-          "anförtro (sig ÅT ngn)",
-          "confides; entrusts",
-          "يفضي بسرّه؛ يأتمن"
+          "anförtro (sig ÅT ngn) confide, entrust (smth to smb)",
+          "",
+          ""
         ],
         [
           17,
           "avskyr",
-          "hates; detests",
+          "hate, detest",
           "يكره بشدة"
         ],
         [
           18,
-          "beter sig",
-          "behaves",
-          "يتصرّف"
+          "beter",
+          "sig behave",
+          ""
         ],
         [
           19,
           "flyr",
-          "escapes; flees",
+          "escape",
           "يهرب"
         ],
         [
           20,
           "glor",
-          "stares; glares",
+          "stare, glare, gape",
           "يحدّق"
         ],
         [
           21,
           "snor",
-          "twists; steals (informal)",
+          "twist; pinch (informal)",
           "يلوي؛ يسرق (عامية)"
         ],
         [
           22,
           "spyr",
-          "vomits; throws up",
+          "throw up, puke",
           "يتقيأ"
         ],
         [
           23,
-          "strör",
-          "scatters; sprinkles",
-          "ينثر؛ يرش"
+          "strör scatter, sprinkle (sugar, flower, salt)",
+          "",
+          ""
         ],
         [
           24,
-          "avviker, avvek, avvikit",
-          "differs; deviates",
-          "يختلف؛ ينحرف"
+          "avviker,",
+          "avvek, avvikit differ, deviate*",
+          ""
         ],
         [
           25,
-          "ber, bad, bett",
-          "asks; begs; prays",
-          "يطلب؛ يتوسل؛ يصلّي"
+          "ber,",
+          "bad, bett beg, request; pray*",
+          ""
         ],
         [
           26,
           "består, bestod, bestått (AV ngt)",
-          "consists of",
+          "consist of*",
           "يتكوّن من"
         ],
         [
           27,
-          "driver, drev, drivit",
-          "drives; runs; impels",
-          "يقود؛ يدير؛ يدفع"
+          "driver,",
+          "drev, drivit force, impel; carry on*",
+          ""
         ],
         [
           28,
-          "knyter, knöt, knutit",
-          "ties; fastens",
-          "يربط؛ يعقد"
+          "knyter, knöt,",
+          "knutit tie, fasten, knot*",
+          ""
         ],
         [
           29,
           "pågår, pågick, pågått",
-          "continues; lasts; is in progress",
+          "continue, last, proceed",
           "يستمر؛ يجري"
         ],
         [
           30,
-          "rinner, rann, runnit",
-          "flows; runs",
-          "يجري؛ يسيل"
+          "rinner,",
+          "rann, runnit flow, streem, pour*",
+          ""
         ],
         [
           31,
-          "sliter, slet, slitit",
-          "tears; pulls; works hard",
-          "يمزق؛ يكدح"
+          "sliter,",
+          "slet, slitit tear, pull; work hard*",
+          ""
         ],
         [
           32,
-          "slår, slog, slagit",
-          "hits; strikes",
-          "يضرب"
+          "slår,",
+          "slog, slagit hit*",
+          ""
         ],
         [
           33,
-          "sprider, spred, spridit",
-          "spreads",
-          "ينشر"
+          "sprider,",
+          "spred, spridit spread*",
+          ""
         ],
         [
           34,
           "umgås, umgicks, umgåtts",
-          "socializes; spends time together",
+          "socialize, spend time together*",
           "يتواصل اجتماعياً؛ يقضي وقتاً مع"
         ],
         [
           35,
-          "uppger, uppgav, uppgett (uppgivit)",
-          "states; provides information",
-          "يذكر؛ يفيد بمعلومة"
+          "uppger, uppgav, uppgett (uppgivit) declare, give (information)*",
+          "",
+          ""
         ],
         [
           36,
           "behåller, behöll, behållit",
-          "keeps; retains",
+          "keep*",
           "يحتفظ بـ"
         ],
         [
           37,
-          "förhåller sig, förhöll sig, förhållit sig",
-          "relates to; takes an attitude",
-          "يتعامل مع؛ يتخذ موقفاً"
+          "förhåller sig, förhöll sig, förhållit sig remain (passive, negative),",
+          "have an attitude*",
+          ""
         ],
         [
           38,
-          "ger sig ut, gav sig ut, gett (givit) sig ut",
-          "sets out; goes out",
-          "ينطلق؛ يخرج"
+          "ger",
+          "sig ut, gav, gett (givit) go out",
+          ""
         ],
         [
           39,
-          "undviker, undvek, undvikit",
-          "avoids",
-          "يتجنب"
+          "undviker,",
+          "undvek, undvikit avoid*",
+          ""
         ],
         [
           40,
           "utgår, utgick, utgått (FRÅN ngt)",
-          "starts from; assumes",
+          "emanate; assume",
           "ينطلق من؛ يفترض"
         ],
         [
           41,
           "återupptar, återupptog, återupptagit",
-          "resumes; takes up again",
+          "take upp (smth) again, resume",
           "يستأنف"
         ],
         [
           42,
           "beställer",
-          "orders",
+          "order",
           "يطلب"
         ],
         [
           43,
           "brer",
-          "spreads; makes a sandwich",
+          "spread; make a sandwich",
           "يدهن؛ يحضّر شطيرة"
         ],
         [
           44,
           "flår",
-          "skins; flays",
+          "skin, flay",
           "يسلخ"
         ],
         [
           45,
           "fyller",
-          "fills",
+          "fill",
           "يملأ"
         ],
         [
           46,
-          "för, förde, fört",
-          "transports; conveys",
-          "ينقل"
+          "för (förde, fört)",
+          "transport, convey",
+          ""
         ],
         [
           47,
-          "stjäl, stal, stulit",
-          "steals",
-          "يسرق"
+          "stjäl,",
+          "stal, stulit steal*",
+          ""
         ],
         [
           48,
-          "spricker, sprack, spruckit",
-          "cracks; splits; bursts",
-          "يتشقق؛ ينفجر"
+          "spricker,",
+          "sprack, spruckit crack, split, burst",
+          ""
         ],
         [
           49,
-          "styr, styrde, styrt",
-          "steers; directs",
-          "يوجّه؛ يقود"
+          "styr (styrde, styrt)",
+          "steer, direct",
+          ""
         ],
         [
           50,
-          "stör, störde, stört",
-          "disturbs; interrupts",
-          "يزعج؛ يقاطع"
+          "stör (störde, stört)",
+          "disturb, interrupt",
+          ""
         ],
         [
           51,
-          "bär, bar, burit",
-          "carries; wears",
-          "يحمل؛ يرتدي"
+          "bär,",
+          "bar, burit carry*",
+          ""
         ],
         [
           52,
           "dör, dog, dött",
-          "dies",
+          "die",
           "يموت"
         ],
         [
           53,
-          "förblir, förblev, förblivit",
-          "remains; stays",
-          "يبقى"
+          "förblir, förblev, förblivit remain, stay (the same way)",
+          "",
+          ""
         ],
         [
           54,
-          "hinner, hann, hunnit",
-          "has time to do something",
-          "يلحق؛ يتسع له الوقت"
+          "hinner, hann, hunnit have time to do (smth)*",
+          "",
+          ""
         ],
         [
           55,
-          "lider, led, lidit",
-          "suffers; is in pain",
-          "يعاني؛ يتألم"
+          "lider,",
+          "led, lidit suffer, be in pain*",
+          ""
         ],
         [
           56,
-          "lägger, lade, lagt",
-          "puts; places",
-          "يضع"
+          "lägger,",
+          "la, lagt put, place*",
+          ""
         ],
         [
           57,
-          "ser, såg, sett",
-          "sees",
-          "يرى"
+          "ser, såg,",
+          "sett see*",
+          ""
         ],
         [
           58,
-          "sjunker, sjönk, sjunkit",
-          "sinks; goes down",
-          "يغرق؛ ينخفض"
+          "sjunker, sjönk,",
+          "sjunkit go down, sink*",
+          ""
         ],
         [
           59,
-          "skär, skar, skurit",
-          "cuts",
-          "يقطع"
+          "skär,",
+          "skar, skurit cut",
+          ""
         ],
         [
           60,
-          "slipper, slapp, sluppit",
-          "does not have to; escapes",
-          "لا يضطر؛ ينجو"
+          "slipper,",
+          "slapp, sluppit not have to",
+          ""
         ],
         [
           61,
           "säljer, sålde, sålt",
-          "sells",
+          "sell",
           "يبيع"
         ],
         [
           62,
-          "sätter, satte, satt",
-          "puts; places; seats",
-          "يضع؛ يُجلِس"
+          "sätter,",
+          "satte, satt put, place, seat",
+          ""
         ]
       ]
     },
     {
       "id": "ordOrdOrd",
-      "title": "Ord, ord, ord – Kapitel 1",
+      "title": "Ord, ord, ord",
       "sourceUrl": "https://quizlet.com/_8n3678",
       "entries": [
         [
@@ -800,7 +800,7 @@ export const B2C1_LESSON = {
         [
           7,
           "föreställning-en",
-          "idea; conception",
+          "idea, conception",
           "فكرة؛ تصور"
         ],
         [
@@ -866,7 +866,7 @@ export const B2C1_LESSON = {
         [
           18,
           "påhittad",
-          "made up; fictitious",
+          "made up, fictitious",
           "مختلَق؛ وهمي"
         ],
         [
@@ -928,6 +928,79 @@ export const B2C1_LESSON = {
           "oändlig",
           "infinite",
           "لا نهائي"
+        ]
+      ]
+    },
+    {
+      "id": "quizlet8mq3xa",
+      "title": "Priset på vatten",
+      "sourceUrl": "https://quizlet.com/_8mq3xa",
+      "entries": [
+        [
+          1,
+          "ANSTRÄNGNING-EN",
+          "effort",
+          "مجهود"
+        ],
+        [
+          2,
+          "GE UPP",
+          "give up",
+          ""
+        ],
+        [
+          3,
+          "tar (här)",
+          "has effect",
+          ""
+        ],
+        [
+          4,
+          "avsikt-en",
+          "intention",
+          ""
+        ],
+        [
+          5,
+          "genväg-en",
+          "shortcut",
+          ""
+        ],
+        [
+          6,
+          "FÖREDRAR",
+          "prefers",
+          ""
+        ],
+        [
+          7,
+          "LÄGGER TILL",
+          "adds",
+          ""
+        ],
+        [
+          8,
+          "LÄGGER NER",
+          "shuts down",
+          ""
+        ],
+        [
+          9,
+          "de sköna konsterna",
+          "the fine arts",
+          ""
+        ],
+        [
+          10,
+          "OMEDELBAR",
+          "immediate",
+          ""
+        ],
+        [
+          11,
+          "skadar",
+          "hurts",
+          ""
         ]
       ]
     }
