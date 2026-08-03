@@ -18,6 +18,7 @@
     "import:validate": "node scripts/import-content.mjs validate",
     "import:dry-run": "node scripts/import-content.mjs dry-run",
     "import:content": "node scripts/import-content.mjs import",
+    "create:admin": "node scripts/create-admin-user.mjs",
     "test": "vitest run",
     "lint": "node scripts/ci/check-links.mjs && node scripts/ci/check-i18n.mjs && node scripts/ci/check-seo.mjs",
     "lint:secrets": "node scripts/ci/check-secrets.mjs",

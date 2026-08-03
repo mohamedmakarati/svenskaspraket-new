@@ -81,14 +81,14 @@ supabase db reset
 
 ### Option C — Single combined script
 
-For dashboard one-shot apply, concatenate migrations in order:
+For dashboard one-shot apply, use **`supabase/APPLY_ALL.sql`** (concatenation of `001`–`007`) or regenerate:
 
 ```bash
-# PowerShell (inspect output before running in dashboard)
-Get-Content supabase/migrations/001_*.sql, supabase/migrations/002_*.sql, supabase/migrations/003_*.sql, supabase/migrations/004_*.sql, supabase/migrations/005_*.sql | Set-Content supabase/combined_apply.sql
+# PowerShell (from repo root)
+Get-Content supabase/migrations/001_*.sql, supabase/migrations/002_*.sql, supabase/migrations/003_*.sql, supabase/migrations/004_*.sql, supabase/migrations/005_*.sql, supabase/migrations/006_*.sql, supabase/migrations/007_*.sql | Set-Content supabase/APPLY_ALL.sql -Encoding utf8
 ```
 
-Review `combined_apply.sql`, then run it in the SQL Editor. Do not commit generated combined files if they contain environment-specific data.
+Review `APPLY_ALL.sql`, then run it in the SQL Editor. Do not commit environment-specific data in this file beyond schema migrations.
 
 ---
 
@@ -124,6 +124,16 @@ WHERE role = 'admin';
 ```
 
 5. Copy **Project URL** and **anon key** into `.env` (from `.env.example`). Never put the service role key in the frontend.
+
+**Create an admin user locally** (after migrations):
+
+```powershell
+$env:ADMIN_EMAIL="you@example.com"
+$env:ADMIN_PASSWORD="your-secure-password"
+npm run create:admin
+```
+
+Or add the user in **Authentication → Users** in the dashboard, then promote with SQL below.
 
 To grant editor access to another user:
 
