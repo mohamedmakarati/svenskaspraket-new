@@ -1,5 +1,6 @@
 import { SITE_URL } from './siteUrl.js';
 import { canonicalUrl, siteBase } from './seoUrls.js';
+import { LUND_LEVELS, LUND_COURSE_URL } from '../data/lundLevels.js';
 
 export const SEO = {
   siteName: 'SvenskaSpråket',
@@ -75,6 +76,54 @@ export function learningResource({ url, name, description, level, types = ['less
     provider: { '@id': `${SEO.siteUrl}/#organization` },
   };
 }
+
+const lundUniversityOrg = {
+  '@type': 'Organization',
+  name: 'Lund University',
+  url: 'https://www.lu.se/',
+};
+
+function buildLundLevelSeo(level) {
+  const copy = level.sv;
+  const path = `/niva/${level.id}`;
+  return {
+    path,
+    lang: 'sv',
+    title: `${copy.title} | SvenskaSpråket`,
+    description: `${copy.summary} Studienivå ${level.id} enligt kursstrukturen SFSH60 (Lunds universitet). Oberoende resurs — inte officiell LU-webbplats.`,
+    keywords: `SFSH60, nivå ${level.id}, svenska som främmande språk, Lunds universitet`,
+    ogType: 'article',
+    hreflang: false,
+    priority: 0.7,
+    changefreq: 'monthly',
+    structuredData: () => ({
+      '@context': 'https://schema.org',
+      '@graph': [
+        learningResource({
+          url: path,
+          name: copy.title,
+          description: copy.summary,
+          level: `Lund Level ${level.id}`,
+          types: ['course'],
+        }),
+        {
+          '@type': 'Course',
+          name: 'Swedish as a Foreign Language (SFSH60)',
+          url: LUND_COURSE_URL,
+          provider: lundUniversityOrg,
+        },
+        breadcrumb([
+          { name: 'Hem', url: '/' },
+          { name: copy.title, url: path },
+        ]),
+      ],
+    }),
+  };
+}
+
+const LUND_LEVEL_PAGE_SEO = Object.fromEntries(
+  LUND_LEVELS.map((level) => [`lundLevel${level.id}`, buildLundLevelSeo(level)]),
+);
 
 /** All public pages — single source of truth for SEO */
 export const PAGE_SEO = {
@@ -405,6 +454,7 @@ export const PAGE_SEO = {
       ],
     }),
   },
+  ...LUND_LEVEL_PAGE_SEO,
   notFound: {
     path: '/404',
     lang: 'sv',

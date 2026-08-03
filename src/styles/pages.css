@@ -301,6 +301,167 @@
   }
 }
 
+/* Lund University SFSH60 levels 1–8 */
+.lund-levels-section .lund-cefr-notice {
+  margin: 24px 0 32px;
+}
+
+.lund-levels-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px;
+}
+
+.lund-level-card {
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+}
+
+.lund-level-card header {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.lund-level-card__num {
+  flex-shrink: 0;
+  width: 40px;
+  height: 40px;
+  border-radius: 10px;
+  background: #e8f2fe;
+  color: var(--blue);
+  display: grid;
+  place-items: center;
+  font: 900 18px/1 system-ui, sans-serif;
+}
+
+.lund-level-card h3 {
+  font: 700 20px/1.25 Georgia, serif;
+  margin: 0;
+}
+
+.lund-level-card h3 a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.lund-level-card h3 a:hover,
+.lund-level-card h3 a:focus-visible {
+  color: var(--blue);
+  text-decoration: underline;
+}
+
+.lund-level-card > p {
+  font-size: 14px;
+  color: var(--muted);
+  flex: 1;
+  margin: 0 0 16px;
+}
+
+.lund-proficiency {
+  display: grid;
+  gap: 12px;
+  margin: 0 0 20px;
+}
+
+.lund-proficiency div {
+  margin: 0;
+}
+
+.lund-proficiency dt {
+  font-size: 12px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--blue);
+  margin-bottom: 4px;
+}
+
+.lund-proficiency dd {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+.lund-proficiency--page {
+  margin: 28px 0;
+  padding: 20px 24px;
+  background: #f7f4ec;
+  border-radius: var(--radius);
+}
+
+.external-source-block {
+  margin-top: 8px;
+  padding: 24px 28px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: #f7f4ec;
+}
+
+.external-source-block h2,
+.external-source-block h3 {
+  font: 700 18px Georgia, serif;
+  margin: 0 0 12px;
+}
+
+.external-source-block__note {
+  margin: 12px 0 0;
+  font-size: 13px;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+.lund-study-links {
+  margin: 32px 0;
+}
+
+.lund-study-links__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.lund-level-page .breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+  color: var(--muted);
+}
+
+.lund-level-page .breadcrumb a {
+  color: var(--blue);
+}
+
+[dir='rtl'] .lund-level-card header {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+
+[dir='rtl'] .lund-study-links__list {
+  justify-content: flex-start;
+}
+
+@media (max-width: 600px) {
+  .lund-level-card {
+    padding: 20px;
+  }
+
+  .external-source-block {
+    padding: 20px;
+  }
+}
+
 /* Verb page */
 .verbs-page .controls {
   display: flex;

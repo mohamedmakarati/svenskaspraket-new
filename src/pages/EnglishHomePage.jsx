@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { PageSeo } from '@/components/SeoHead';
 import RtlLayout from '@/hooks/useRtl';
+import LundLevelsSection from '@/components/LundLevelsSection';
 
 export default function EnglishHomePage() {
   return (
@@ -93,6 +94,7 @@ export default function EnglishHomePage() {
             </div>
           </div>
         </section>
+        <LundLevelsSection lang="en" />
         <section className="section alt">
           <div className="wrap">
             <div className="notice">

@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { PageSeo } from '@/components/SeoHead';
 import RtlLayout from '@/hooks/useRtl';
+import LundLevelsSection from '@/components/LundLevelsSection';
 
 export default function ArabicHomePage() {
   return (
@@ -95,6 +96,7 @@ export default function ArabicHomePage() {
             </div>
           </div>
         </section>
+        <LundLevelsSection lang="ar" />
         <section className="section alt">
           <div className="wrap">
             <div className="notice">

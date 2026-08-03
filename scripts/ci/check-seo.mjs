@@ -36,7 +36,23 @@ for (const [key, page] of Object.entries(PAGE_SEO)) {
       JSON.stringify(ld);
       if (!ld['@context']) fail(`${key}: JSON-LD missing @context`);
       const graph = ld['@graph'] ?? [];
-      const educational = ['verbsA1', 'verbsA2', 'verbsB1B2', 'vocabulary', 'lessonsA1', 'lessonsB1', 'c1'];
+      const educational = [
+        'verbsA1',
+        'verbsA2',
+        'verbsB1B2',
+        'vocabulary',
+        'lessonsA1',
+        'lessonsB1',
+        'c1',
+        'lundLevel1',
+        'lundLevel2',
+        'lundLevel3',
+        'lundLevel4',
+        'lundLevel5',
+        'lundLevel6',
+        'lundLevel7',
+        'lundLevel8',
+      ];
       if (educational.includes(key) && !graph.some((n) => n['@type'] === 'BreadcrumbList')) {
         fail(`${key}: missing BreadcrumbList`);
       }

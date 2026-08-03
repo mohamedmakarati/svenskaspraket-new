@@ -45,6 +45,8 @@ export function validateReciprocalHreflang(alternatesByPage) {
   return errors;
 }
 
+import { LUND_LEVELS } from '../data/lundLevels.js';
+
 export const PRERENDER_ROUTES = [
   { path: '/', pageKey: 'home' },
   { path: '/en', pageKey: 'en' },
@@ -56,4 +58,8 @@ export const PRERENDER_ROUTES = [
   { path: '/lessons-a1', pageKey: 'lessonsA1' },
   { path: '/lessons', pageKey: 'lessonsB1' },
   { path: '/c1', pageKey: 'c1' },
+  ...LUND_LEVELS.map((level) => ({
+    path: `/niva/${level.id}`,
+    pageKey: `lundLevel${level.id}`,
+  })),
 ];

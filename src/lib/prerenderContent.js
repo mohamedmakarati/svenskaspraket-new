@@ -1,4 +1,18 @@
 /** Visible H1 + intro for build-time prerender (matches public page copy) */
+import { LUND_LEVELS } from '../data/lundLevels.js';
+
+const lundPrerenderEntries = Object.fromEntries(
+  LUND_LEVELS.map((level) => [
+    `lundLevel${level.id}`,
+    {
+      lang: 'sv',
+      dir: 'ltr',
+      h1: level.sv.title,
+      intro: level.sv.summary,
+    },
+  ]),
+);
+
 export const PRERENDER_CONTENT = {
   home: {
     lang: 'sv',
@@ -69,4 +83,5 @@ export const PRERENDER_CONTENT = {
     intro:
       'Originellt C1-material publiceras snart. Till dess kan du träna verb, ordförråd och grammatik på A1–B2.',
   },
+  ...lundPrerenderEntries,
 };

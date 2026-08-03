@@ -12,6 +12,7 @@ const VocabularyPage = lazy(() => import('@/pages/VocabularyPage'));
 const LessonsA1Page = lazy(() => import('@/pages/LessonsA1Page'));
 const LessonsB1Page = lazy(() => import('@/pages/LessonsB1Page'));
 const C1Page = lazy(() => import('@/pages/C1Page'));
+const LundLevelPage = lazy(() => import('@/pages/LundLevelPage'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
 const AdminLoginPage = lazy(() => import('@/pages/admin/AdminLoginPage'));
@@ -58,6 +59,7 @@ export default function App() {
             <Route path="/lessons-a1" element={<LessonsA1Page />} />
             <Route path="/lessons" element={<LessonsB1Page />} />
             <Route path="/c1" element={<C1Page />} />
+            <Route path="/niva/:levelId" element={<LundLevelPage />} />
 
             <Route path="/verbs.html" element={<LegacyRedirect to="/verbs" />} />
             <Route path="/verbs-a2.html" element={<LegacyRedirect to="/verbs-a2" />} />

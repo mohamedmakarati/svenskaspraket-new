@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { PageSeo } from '@/components/SeoHead';
 import PublicNav, { SiteFooter, FabLinks } from '@/components/Layout';
+import LundLevelsSection from '@/components/LundLevelsSection';
 
 const WORDS = [
   ['lagom', 'بالقدر المناسب', 'Kaffet är lagom varmt.'],
@@ -99,14 +100,19 @@ export default function HomePage() {
           </div>
         </section>
 
+        <LundLevelsSection lang="sv" />
+
         <section id="niva" className="section wrap">
           <div className="levels-box">
             <div>
-              <div className="tag">DIN SVENSKA RESA BÖRJAR HÄR</div>
-              <h2>Vilken nivå passar dig?</h2>
-              <p>Välj nivå för att förbereda din studieplan.</p>
+              <div className="tag">CEFR A1–C1 · SEPARAT LÄRANDEVÄG</div>
+              <h2>Vilken CEFR-nivå passar dig?</h2>
+              <p>
+                Välj CEFR-nivå (A1–C1) för verb, ordförråd och grammatik — oberoende av Lunds studienivåer 1–8
+                ovan.
+              </p>
             </div>
-            <div className="level-choices" role="group" aria-label="Välj nivå">
+            <div className="level-choices" role="group" aria-label="Välj CEFR-nivå">
               {[
                 ['A1 Nybörjare', '/verbs'],
                 ['A2 Grundläggande', '/verbs-a2'],

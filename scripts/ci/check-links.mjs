@@ -22,6 +22,7 @@ const REQUIRED_SPA_ROUTES = [
   '/lessons-a1',
   '/lessons',
   '/c1',
+  '/niva/:levelId',
   '/admin',
   '/admin/login',
   '/admin/auth/callback',
@@ -49,16 +50,33 @@ function fail(msg) {
 const appSrc = readFileSync(resolve(root, 'src/App.jsx'), 'utf8');
 
 for (const route of REQUIRED_SPA_ROUTES) {
-  const segment = route.replace(/^\//, '').split('/').pop();
   if (route === '/') {
     if (!appSrc.includes('path="/"')) fail('Missing route: /');
-  } else if (!appSrc.includes(`path="${route}"`) && !appSrc.includes(`"${segment}"`)) {
+  } else if (route === '/niva/:levelId') {
+    if (!appSrc.includes('path="/niva/:levelId"')) fail('Missing route: /niva/:levelId');
+  } else if (!appSrc.includes(`path="${route}"`) && !appSrc.includes(`"${route.split('/').pop()}"`)) {
     fail(`Route may be missing from App.jsx: ${route}`);
   }
 }
 
 const seoPaths = new Set(Object.values(PAGE_SEO).map((p) => p.path));
-for (const route of ['/', '/en', '/ar', '/verbs', '/vocabulary', '/lessons-a1', '/lessons']) {
+for (const route of [
+  '/',
+  '/en',
+  '/ar',
+  '/verbs',
+  '/vocabulary',
+  '/lessons-a1',
+  '/lessons',
+  '/niva/1',
+  '/niva/2',
+  '/niva/3',
+  '/niva/4',
+  '/niva/5',
+  '/niva/6',
+  '/niva/7',
+  '/niva/8',
+]) {
   if (!seoPaths.has(route)) fail(`SEO registry missing: ${route}`);
 }
 
