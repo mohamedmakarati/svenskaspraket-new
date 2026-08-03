@@ -28,7 +28,10 @@ export default function C1Page() {
           uttrycksfulla övningar. Till dess kan du träna verb, ordförråd och grammatik på A1–B2.
         </p>
         <div style={{ display: 'flex', gap: 12, flexWrap: 'wrap', marginTop: 24 }}>
-          <Link className="btn" to="/verbs-b1b2">
+          <Link className="btn" to="/lessons-b2c1">
+            Rivstart B2/C1 – ord och verb
+          </Link>
+          <Link className="btn secondary" to="/verbs-b1b2">
             B1–B2 verb
           </Link>
           <Link className="btn secondary" to="/vocabulary">

@@ -462,6 +462,55 @@
   }
 }
 
+/* Rivstart B2/C1 interactive lesson */
+.b2c1-hero {
+  background: linear-gradient(135deg, var(--navy, #10233e), #0b66bd);
+  color: #fff;
+  padding: 48px 0 52px;
+}
+
+.b2c1-hero h1 {
+  font: 700 clamp(28px, 5vw, 48px) / 1.1 Georgia, serif;
+  margin: 12px 0;
+}
+
+.b2c1-hero .lead {
+  max-width: 720px;
+  color: #dbe8f5;
+}
+
+.b2c1-credit {
+  margin-top: 24px;
+  padding: 16px 18px;
+  background: #fff7cf;
+  color: #263a52;
+  border-inline-start: 5px solid var(--yellow, #facb2f);
+  border-radius: 10px;
+}
+
+.b2c1-stats {
+  font-weight: 800;
+  color: var(--blue);
+  margin: 0 0 16px;
+}
+
+.b2c1-sources {
+  margin-top: 40px;
+  padding-top: 32px;
+  border-top: 1px solid var(--border);
+}
+
+.b2c1-sources__list {
+  padding-left: 1.2rem;
+  line-height: 1.6;
+}
+
+.b2c1-sources__note {
+  font-size: 13px;
+  color: var(--muted);
+  margin-top: 12px;
+}
+
 /* Verb page */
 .verbs-page .controls {
   display: flex;

@@ -22,6 +22,7 @@ const REQUIRED_SPA_ROUTES = [
   '/lessons-a1',
   '/lessons',
   '/c1',
+  '/lessons-b2c1',
   '/niva/:levelId',
   '/admin',
   '/admin/login',
@@ -102,6 +103,10 @@ if (!/Disallow:\s*\/admin/i.test(robots)) fail('robots.txt must disallow /admin'
 
 if (sitemap.includes('https://svenskaspraket.com/c1')) {
   fail('sitemap.xml must not include /c1 (noindex coming-soon page)');
+}
+
+if (sitemap.includes('https://svenskaspraket.com/lessons-b2c1')) {
+  fail('sitemap.xml must not include /lessons-b2c1 (noindex until licensing confirmed)');
 }
 
 if (failed) process.exit(1);

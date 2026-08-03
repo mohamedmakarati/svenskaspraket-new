@@ -58,6 +58,7 @@ export const PRERENDER_ROUTES = [
   { path: '/lessons-a1', pageKey: 'lessonsA1' },
   { path: '/lessons', pageKey: 'lessonsB1' },
   { path: '/c1', pageKey: 'c1' },
+  { path: '/lessons-b2c1', pageKey: 'lessonB2C1' },
   ...LUND_LEVELS.map((level) => ({
     path: `/niva/${level.id}`,
     pageKey: `lundLevel${level.id}`,

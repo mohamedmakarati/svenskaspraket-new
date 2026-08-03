@@ -454,6 +454,36 @@ export const PAGE_SEO = {
       ],
     }),
   },
+  lessonB2C1: {
+    path: '/lessons-b2c1',
+    lang: 'sv',
+    title: 'Rivstart B2/C1 – Kapitel 1–3: ord och verb | SvenskaSpråket',
+    description:
+      'Träna 123 svenska B2–C1-ord och verb med engelsk och arabisk översättning, sökning, flashcards och quiz. Källkredit: AnnaRansheim (Quizlet).',
+    keywords: 'Rivstart B2 C1, svenska ord, svenska verb, AnnaRansheim, Quizlet',
+    ogType: 'article',
+    hreflang: false,
+    noindex: true,
+    priority: 0,
+    changefreq: 'monthly',
+    structuredData: () => ({
+      '@context': 'https://schema.org',
+      '@graph': [
+        learningResource({
+          url: '/lessons-b2c1',
+          name: 'Rivstart B2/C1 – Kapitel 1–3: ord och verb',
+          description:
+            '123 ord och verb från Quizlet-uppsättningar av AnnaRansheim. Oberoende studieanpassning — inte officiellt förlagsmaterial.',
+          level: 'B2-C1',
+          types: ['course'],
+        }),
+        breadcrumb([
+          { name: 'Hem', url: '/' },
+          { name: 'Rivstart B2/C1', url: '/lessons-b2c1' },
+        ]),
+      ],
+    }),
+  },
   ...LUND_LEVEL_PAGE_SEO,
   notFound: {
     path: '/404',

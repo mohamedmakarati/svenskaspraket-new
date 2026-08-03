@@ -187,14 +187,23 @@ export async function loadAllSources() {
   ];
   const quizzes = lessons.flatMap((l) => l.quizzes ?? []);
 
+  const { mapB2C1ImportRows } = await import('./b2c1.mjs');
+  const b2c1 = mapB2C1ImportRows();
+
   return {
     meta: {
       loadedAt: new Date().toISOString(),
-      counts: { verbs: verbs.length, vocabulary: vocabulary.length, lessons: lessons.length, quizzes: quizzes.length },
+      counts: {
+        verbs: verbs.length + b2c1.verbs.length,
+        vocabulary: vocabulary.length + b2c1.vocabulary.length,
+        lessons: lessons.length + 1,
+        quizzes: quizzes.length,
+        b2c1Draft: b2c1.meta.entries,
+      },
     },
-    verbs,
-    vocabulary,
-    lessons,
+    verbs: [...verbs, ...b2c1.verbs],
+    vocabulary: [...vocabulary, ...b2c1.vocabulary],
+    lessons: [...lessons, b2c1.lesson],
     quizzes,
   };
 }

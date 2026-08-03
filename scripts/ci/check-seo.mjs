@@ -6,7 +6,7 @@ import { PAGE_SEO, getPageSeo } from '../../src/lib/seo.js';
 import { hreflangAlternates, validateReciprocalHreflang } from '../../src/lib/seoUrls.js';
 
 const PUBLIC_ROUTES = ['/', '/en', '/ar', '/verbs', '/verbs-a2', '/verbs-b1b2', '/vocabulary', '/lessons-a1', '/lessons'];
-const ADMIN_NOINDEX = ['admin', 'adminLogin', 'adminAuthCallback', 'notFound', 'c1'];
+const ADMIN_NOINDEX = ['admin', 'adminLogin', 'adminAuthCallback', 'notFound', 'c1', 'lessonB2C1'];
 
 let failed = false;
 
@@ -44,6 +44,7 @@ for (const [key, page] of Object.entries(PAGE_SEO)) {
         'lessonsA1',
         'lessonsB1',
         'c1',
+        'lessonB2C1',
         'lundLevel1',
         'lundLevel2',
         'lundLevel3',

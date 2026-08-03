@@ -134,41 +134,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        <section id="verb" className="section alt wrap">
-          <div className="tag">A1–B2 · SVENSKA VERB</div>
-          <h2>Lär dig svenska verb på tre nivåer</h2>
-          <p>
-            Träna 131 A1-verb, 199 A2-verb och 135 avancerade B1–B2-verb. Alla listor visar full böjning, visuella
-            minnesbilder samt betydelser på engelska och arabiska.
-          </p>
-          <div className="grid-4" style={{ margin: '24px 0' }}>
-            {[
-              ['AR', 'arbeta', 'arbetar · arbetade · arbetat', 'work · يعمل'],
-              ['SK', 'skriva', 'skriver · skrev · skrivit', 'write · يكتب'],
-              ['GÅ', 'gå', 'går · gick · gått', 'go/walk · يذهب/يمشي'],
-              ['VA', 'vara', 'är · var · varit', 'be · يكون'],
-            ].map(([ico, inf, forms, trans]) => (
-              <article key={inf} className="feature-card">
-                <div className="ico">{ico}</div>
-                <h3>{inf}</h3>
-                <p>{forms}</p>
-                <small>{trans}</small>
-              </article>
-            ))}
-          </div>
-          <p style={{ display: 'flex', flexWrap: 'wrap', gap: 10 }}>
-            <Link className="btn" to="/verbs">
-              A1 · 131 verb
-            </Link>
-            <Link className="btn" to="/verbs-a2">
-              A2 · 199 verb
-            </Link>
-            <Link className="btn" to="/verbs-b1b2">
-              B1–B2 · 135 verb
-            </Link>
-          </p>
-        </section>
-
         <section id="ordforrad" className="section wrap">
           <div className="tag">NYTT · INTERAKTIVT ORDFÖRRÅD</div>
           <h2>Träna 805 svenska ord och uttryck</h2>

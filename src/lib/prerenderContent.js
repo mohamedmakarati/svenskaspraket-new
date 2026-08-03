@@ -83,5 +83,12 @@ export const PRERENDER_CONTENT = {
     intro:
       'Originellt C1-material publiceras snart. Till dess kan du träna verb, ordförråd och grammatik på A1–B2.',
   },
+  lessonB2C1: {
+    lang: 'sv',
+    dir: 'ltr',
+    h1: 'Ord och verb från kapitel 1–3',
+    intro:
+      'Studera 123 poster från Rivstart B2/C1 Quizlet-uppsättningar av AnnaRansheim — flashcards, quiz och sökbar ordlista.',
+  },
   ...lundPrerenderEntries,
 };
