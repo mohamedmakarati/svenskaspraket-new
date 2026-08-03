@@ -1,0 +1,4832 @@
+[
+  {
+    "id": 1,
+    "sv": "håller sig i form",
+    "en": "keep fit",
+    "ar": "حافظ على لياقتك"
+  },
+  {
+    "id": 2,
+    "sv": "bygger upp",
+    "en": "build up",
+    "ar": "إنشاء"
+  },
+  {
+    "id": 3,
+    "sv": "kondition (-en)",
+    "en": "physical fitness, shape, stamina",
+    "ar": "اللياقة البدنية والشكل والقدرة على التحمل"
+  },
+  {
+    "id": 4,
+    "sv": "gradvis",
+    "en": "gradually, step by step",
+    "ar": "تدريجيا، خطوة بخطوة"
+  },
+  {
+    "id": 5,
+    "sv": "skär ner",
+    "en": "reduce, cut down, shorten",
+    "ar": "تقليل، خفض، تقصير"
+  },
+  {
+    "id": 6,
+    "sv": "kommer igång (MED ngt)",
+    "en": "start doing something successful- ly",
+    "ar": "ابدأ بفعل شيء ما بنجاح"
+  },
+  {
+    "id": 7,
+    "sv": "uppehåll (-et)",
+    "en": "break, intermission, pause",
+    "ar": "استراحة، استراحة، توقف"
+  },
+  {
+    "id": 8,
+    "sv": "rör på sig",
+    "en": "move, move around, exercise",
+    "ar": "التحرك، التحرك، ممارسة الرياضة"
+  },
+  {
+    "id": 9,
+    "sv": "lopp (-et)",
+    "en": "race",
+    "ar": "سباق"
+  },
+  {
+    "id": 10,
+    "sv": "regelbunden (regelbundet, regelbundna)",
+    "en": "regular",
+    "ar": "منتظم؛ دوري"
+  },
+  {
+    "id": 11,
+    "sv": "anstränger sig (för att nå sitt mål)",
+    "en": "exert oneself, make an effort",
+    "ar": "ابذل جهدًا، ابذل جهدًا"
+  },
+  {
+    "id": 12,
+    "sv": "svettas",
+    "en": "perspire",
+    "ar": "عرق"
+  },
+  {
+    "id": 13,
+    "sv": "stretchar",
+    "en": "stretch",
+    "ar": "تمتد"
+  },
+  {
+    "id": 14,
+    "sv": "försöker",
+    "en": "try, attempt",
+    "ar": "حاول، حاول"
+  },
+  {
+    "id": 15,
+    "sv": "bantar",
+    "en": "follow a diet",
+    "ar": "اتبع نظامًا غذائيًا"
+  },
+  {
+    "id": 16,
+    "sv": "ordentlig",
+    "en": "proper, decent",
+    "ar": "لائق، لائق"
+  },
+  {
+    "id": 17,
+    "sv": "slarvar (MED något)",
+    "en": "neglect, be careless about smth",
+    "ar": "الإهمال، الإهمال بشأن شيء ما"
+  },
+  {
+    "id": 18,
+    "sv": "slutar (MED ngt)",
+    "en": "give up, quit doing something",
+    "ar": "استسلم، توقف عن فعل شيء ما"
+  },
+  {
+    "id": 19,
+    "sv": "gör av (MED ngt)",
+    "en": "spend, get (run) through",
+    "ar": "إنفاق، الحصول على (تشغيل) من خلال"
+  },
+  {
+    "id": 20,
+    "sv": "armhävning",
+    "en": "a push up",
+    "ar": "دفع ما يصل"
+  },
+  {
+    "id": 21,
+    "sv": "går med i (en organisation)",
+    "en": "join, become a member of",
+    "ar": "الانضمام، تصبح عضوا في"
+  },
+  {
+    "id": 22,
+    "sv": "tävling",
+    "en": "competition",
+    "ar": "مسابقة"
+  },
+  {
+    "id": 23,
+    "sv": "deltar, deltog, deltagit",
+    "en": "participate*",
+    "ar": "يشارك*"
+  },
+  {
+    "id": 24,
+    "sv": "vinner, vann, vunnit",
+    "en": "win*",
+    "ar": "يفوز*"
+  },
+  {
+    "id": 25,
+    "sv": "förlorar",
+    "en": "lose",
+    "ar": "يخسر"
+  },
+  {
+    "id": 26,
+    "sv": "sysslar (MED ngt), håller på (MED ngt)",
+    "en": "busy oneself with something; be occupied with",
+    "ar": "مشغول بشيء؛ كن مشغولا"
+  },
+  {
+    "id": 27,
+    "sv": "utrustning (-en)",
+    "en": "equipment",
+    "ar": "معدات"
+  },
+  {
+    "id": 28,
+    "sv": "skydd (-et)",
+    "en": "protection",
+    "ar": "حماية"
+  },
+  {
+    "id": 29,
+    "sv": "redskap (-et)",
+    "en": "tool, appliance",
+    "ar": "أداة، جهاز"
+  },
+  {
+    "id": 30,
+    "sv": "uthållighet (-en)",
+    "en": "stamina, tolerability, patience",
+    "ar": "القدرة على التحمل والتحمل والصبر"
+  },
+  {
+    "id": 31,
+    "sv": "envishet (-en)",
+    "en": "stubbornness, persistency",
+    "ar": "العناد والمثابرة"
+  },
+  {
+    "id": 32,
+    "sv": "tålamod (-et)",
+    "en": "patience",
+    "ar": "الصبر"
+  },
+  {
+    "id": 33,
+    "sv": "styrka (-n)",
+    "en": "strength",
+    "ar": "قوة"
+  },
+  {
+    "id": 34,
+    "sv": "taktkänsla",
+    "en": "sense of rhythm",
+    "ar": "الشعور بالإيقاع"
+  },
+  {
+    "id": 35,
+    "sv": "går ner i vikt",
+    "en": "lose weight",
+    "ar": "فقدان الوزن"
+  },
+  {
+    "id": 36,
+    "sv": "smal",
+    "en": "slender, slim, thin",
+    "ar": "نحيلة، ضئيلة، رقيقة"
+  },
+  {
+    "id": 37,
+    "sv": "skönhet (-en)",
+    "en": "beauty",
+    "ar": "جمال"
+  },
+  {
+    "id": 38,
+    "sv": "för (någons / någots) skull",
+    "en": "for the sake",
+    "ar": "من أجل"
+  },
+  {
+    "id": 39,
+    "sv": "stressar ner",
+    "en": "lower one's stress level",
+    "ar": "خفض مستوى التوتر لدى الشخص"
+  },
+  {
+    "id": 40,
+    "sv": "utvecklar",
+    "en": "develop",
+    "ar": "يطور"
+  },
+  {
+    "id": 41,
+    "sv": "mental styrka",
+    "en": "mental strength",
+    "ar": "القوة العقلية"
+  },
+  {
+    "id": 42,
+    "sv": "gräns (-en, -er)",
+    "en": "border, boundary, limit",
+    "ar": "حد، حد، حد"
+  },
+  {
+    "id": 43,
+    "sv": "tävlar",
+    "en": "compete",
+    "ar": "تنافس"
+  },
+  {
+    "id": 44,
+    "sv": "utmanar",
+    "en": "challenge",
+    "ar": "تحدي"
+  },
+  {
+    "id": 45,
+    "sv": "stillasittande arbete",
+    "en": "a sedentary occupation",
+    "ar": "مهنة مستقرة"
+  },
+  {
+    "id": 46,
+    "sv": "har något att göra",
+    "en": "has something to do",
+    "ar": "لديه شيء للقيام به"
+  },
+  {
+    "id": 47,
+    "sv": "orkar (MED ngt)",
+    "en": "manage to do something, have enough energy and strength",
+    "ar": "تمكنت من القيام بشيء ما، لديك ما يكفي من الطاقة والقوة"
+  },
+  {
+    "id": 48,
+    "sv": "presterar",
+    "en": "perform, accomplish",
+    "ar": "أداء، إنجاز"
+  },
+  {
+    "id": 49,
+    "sv": "nödvändig",
+    "en": "necessary, essential",
+    "ar": "ضروري، ضروري"
+  },
+  {
+    "id": 50,
+    "sv": "meningslös",
+    "en": "pointless",
+    "ar": "لا معنى له"
+  },
+  {
+    "id": 51,
+    "sv": "ansträngande",
+    "en": "exhausting, trying, hard",
+    "ar": "مرهقة، تحاول، صعبة"
+  },
+  {
+    "id": 52,
+    "sv": "förening (-en, -ar)",
+    "en": "association, club",
+    "ar": "جمعية، نادي"
+  },
+  {
+    "id": 53,
+    "sv": "skäms (FÖR ngt/ngn)",
+    "en": "is ashamed",
+    "ar": "يخجل"
+  },
+  {
+    "id": 54,
+    "sv": "andfådd",
+    "en": "breathless, out of breath",
+    "ar": "لاهث، من التنفس"
+  },
+  {
+    "id": 55,
+    "sv": "har ont om tid",
+    "en": "do not have enough time to...",
+    "ar": "ليس لديك الوقت الكافي ل..."
+  },
+  {
+    "id": 56,
+    "sv": "har träningsvärk (-en)",
+    "en": "is stiff (full of aches) [after training (exercise)]",
+    "ar": "متصلب (مليء بالأوجاع) [بعد التدريب (التمرين)]"
+  },
+  {
+    "id": 57,
+    "sv": "träningspass (-et)",
+    "en": "training session, workout",
+    "ar": "جلسة تدريبية، تجريب"
+  },
+  {
+    "id": 58,
+    "sv": "dödstrött",
+    "en": "tired to death",
+    "ar": "متعب حتى الموت"
+  },
+  {
+    "id": 59,
+    "sv": "vältränad",
+    "en": "physically fit",
+    "ar": "لائق بدنيا"
+  },
+  {
+    "id": 60,
+    "sv": "nöjd (MED ngt)",
+    "en": "satisfied, content",
+    "ar": "راضٍ، راضٍ"
+  },
+  {
+    "id": 61,
+    "sv": "hurtbulle (-n, bullar, bullarna)",
+    "en": "sporty person (ironically)",
+    "ar": "شخص رياضي (من المفارقات)"
+  },
+  {
+    "id": 62,
+    "sv": "slappar (infml)",
+    "en": "relax (infml)",
+    "ar": "الاسترخاء (infml)"
+  },
+  {
+    "id": 63,
+    "sv": "kolhydrater",
+    "en": "carbohydrates",
+    "ar": "الكربوهيدرات"
+  },
+  {
+    "id": 64,
+    "sv": "träningspass (-et, -, -en)",
+    "en": "(a) workout",
+    "ar": "(أ) التمرين"
+  },
+  {
+    "id": 65,
+    "sv": "armhävningar",
+    "en": "press-ups, push-ups",
+    "ar": "عمليات الضغط والضغط"
+  },
+  {
+    "id": 66,
+    "sv": "lopp (-et, -, -en)",
+    "en": "race, run (noun)",
+    "ar": "سباق، ركض (اسم)"
+  },
+  {
+    "id": 67,
+    "sv": "då och då",
+    "en": "occasionally, now and then",
+    "ar": "في بعض الأحيان، بين الحين والآخر"
+  },
+  {
+    "id": 68,
+    "sv": "snackar",
+    "en": "talk (inf.), chat, gossip",
+    "ar": "الحديث (inf.) والدردشة والقيل والقال"
+  },
+  {
+    "id": 69,
+    "sv": "område (-t)",
+    "en": "area, field, sphere",
+    "ar": "المنطقة، المجال، المجال"
+  },
+  {
+    "id": 70,
+    "sv": "förstås",
+    "en": "of course, naturally, understand- ably",
+    "ar": "بالطبع، بشكل طبيعي ومفهوم"
+  },
+  {
+    "id": 71,
+    "sv": "har att göra med",
+    "en": "deal with, have a connection to, be about",
+    "ar": "التعامل مع، لديك اتصال، تكون على وشك"
+  },
+  {
+    "id": 72,
+    "sv": "kör (körde, kört)",
+    "en": "start, do (informal verb)",
+    "ar": "ابدأ، افعل (فعل غير رسمي)"
+  },
+  {
+    "id": 73,
+    "sv": "gå emellan",
+    "en": "intervene, step (go) between",
+    "ar": "التدخل، خطوة (اذهب) بين"
+  },
+  {
+    "id": 74,
+    "sv": "skyndar på",
+    "en": "hurry (up)",
+    "ar": "أسرع (أعلى)"
+  },
+  {
+    "id": 75,
+    "sv": "släpper",
+    "en": "release, let go",
+    "ar": "إطلاق سراح، ترك"
+  },
+  {
+    "id": 76,
+    "sv": "längd (-en)",
+    "en": "length",
+    "ar": "طول"
+  },
+  {
+    "id": 77,
+    "sv": "kilometer",
+    "en": "kilometre",
+    "ar": "كيلومتر"
+  },
+  {
+    "id": 78,
+    "sv": "badar bastu",
+    "en": "take a sauna",
+    "ar": "خذ ساونا"
+  },
+  {
+    "id": 79,
+    "sv": "smal",
+    "en": "narrow, thin, slender, slim",
+    "ar": "ضيقة، رقيقة، نحيلة، ضئيلة"
+  },
+  {
+    "id": 80,
+    "sv": "djup",
+    "en": "deep",
+    "ar": "عميق"
+  },
+  {
+    "id": 81,
+    "sv": "falsk",
+    "en": "false, wrong, deceitful",
+    "ar": "كاذبة، خاطئة، مخادعة"
+  },
+  {
+    "id": 82,
+    "sv": "slarvig",
+    "en": "careless, sloppy",
+    "ar": "مهمل، قذرة"
+  },
+  {
+    "id": 83,
+    "sv": "ordentlig",
+    "en": "proper, orderly, methodical, accu- rate",
+    "ar": "سليمة، منظمة، منهجية، دقيقة"
+  },
+  {
+    "id": 84,
+    "sv": "sportig",
+    "en": "sporty, athletic",
+    "ar": "رياضي، رياضي"
+  },
+  {
+    "id": 85,
+    "sv": "uthållig",
+    "en": "persevering, diligent",
+    "ar": "المثابرة، الدؤوب"
+  },
+  {
+    "id": 86,
+    "sv": "fantasifull",
+    "en": "imaginative",
+    "ar": "خيالي"
+  },
+  {
+    "id": 87,
+    "sv": "envis",
+    "en": "stubborn, persistent, obstinate",
+    "ar": "عنيد، مثابر، عنيد"
+  },
+  {
+    "id": 88,
+    "sv": "otrolig",
+    "en": "unbelievable",
+    "ar": "لا يصدق"
+  },
+  {
+    "id": 89,
+    "sv": "enorm",
+    "en": "enormous, immense",
+    "ar": "هائلة، هائلة"
+  },
+  {
+    "id": 90,
+    "sv": "söt",
+    "en": "cute, sweet",
+    "ar": "لطيف، حلو"
+  },
+  {
+    "id": 91,
+    "sv": "lämplig",
+    "en": "appropriate, suitable, proper",
+    "ar": "مناسب، مناسب، مناسب"
+  },
+  {
+    "id": 92,
+    "sv": "nöjd (MED ngt/ngn)",
+    "en": "satisfied, contented, pleased",
+    "ar": "راضية، راضية، مسرورة"
+  },
+  {
+    "id": 93,
+    "sv": "ofint (Det är ofint att prata om pengar)",
+    "en": "impolite",
+    "ar": "غير مهذب"
+  },
+  {
+    "id": 94,
+    "sv": "ärlig",
+    "en": "honest",
+    "ar": "أمين"
+  },
+  {
+    "id": 95,
+    "sv": "modig",
+    "en": "brave, courageous",
+    "ar": "شجاع، شجاع"
+  },
+  {
+    "id": 96,
+    "sv": "arbetsam",
+    "en": "hardworking",
+    "ar": "المجتهد"
+  },
+  {
+    "id": 97,
+    "sv": "snygg",
+    "en": "good-looking, pretty, handsome, neat",
+    "ar": "حسن المظهر، جميل، وسيم، أنيق"
+  },
+  {
+    "id": 98,
+    "sv": "fräck",
+    "en": "shameless, cheeky, bold",
+    "ar": "وقح، صفيق، جريئة"
+  },
+  {
+    "id": 99,
+    "sv": "missnöjd (MED ngt)",
+    "en": "dissatisfied",
+    "ar": "غير راض"
+  },
+  {
+    "id": 100,
+    "sv": "högavlönad",
+    "en": "highly paid",
+    "ar": "مدفوعة الأجر للغاية"
+  },
+  {
+    "id": 101,
+    "sv": "lågavlönad",
+    "en": "low-paid",
+    "ar": "منخفضة الأجر"
+  },
+  {
+    "id": 102,
+    "sv": "förstående",
+    "en": "understanding",
+    "ar": "فهم"
+  },
+  {
+    "id": 103,
+    "sv": "noggrann",
+    "en": "meticulous, careful, accurate",
+    "ar": "دقيق، دقيق، دقيق"
+  },
+  {
+    "id": 104,
+    "sv": "serviceinriktad",
+    "en": "service minded",
+    "ar": "خدمة التفكير"
+  },
+  {
+    "id": 105,
+    "sv": "galen",
+    "en": "crazy",
+    "ar": "مجنون"
+  },
+  {
+    "id": 106,
+    "sv": "tacksam (FÖR ngt)",
+    "en": "grateful, thankful",
+    "ar": "ممتن، شاكرين"
+  },
+  {
+    "id": 107,
+    "sv": "klok",
+    "en": "wise, sensible, clever",
+    "ar": "حكيم ومعقول وذكي"
+  },
+  {
+    "id": 108,
+    "sv": "snäll",
+    "en": "kind, friendly",
+    "ar": "طيب وودود"
+  },
+  {
+    "id": 109,
+    "sv": "lyxig",
+    "en": "luxurious",
+    "ar": "فاخر"
+  },
+  {
+    "id": 110,
+    "sv": "tillräckligt (MED ngt)",
+    "en": "enough (of smth)",
+    "ar": "ما يكفي (من شيء)"
+  },
+  {
+    "id": 111,
+    "sv": "bekväm",
+    "en": "comfortable, convenient",
+    "ar": "مريحة ومريحة"
+  },
+  {
+    "id": 112,
+    "sv": "oärlig",
+    "en": "dishonest",
+    "ar": "غير شريفة"
+  },
+  {
+    "id": 113,
+    "sv": "omöjlig",
+    "en": "impossible",
+    "ar": "مستحيل"
+  },
+  {
+    "id": 114,
+    "sv": "krävande",
+    "en": "demanding",
+    "ar": "متطلبة"
+  },
+  {
+    "id": 115,
+    "sv": "badminton",
+    "en": "badminton",
+    "ar": "كرة الريشة"
+  },
+  {
+    "id": 116,
+    "sv": "bandy",
+    "en": "bandy",
+    "ar": "باندي"
+  },
+  {
+    "id": 117,
+    "sv": "basket",
+    "en": "basketball",
+    "ar": "كرة السلة"
+  },
+  {
+    "id": 118,
+    "sv": "bordtennis",
+    "en": "table tennis",
+    "ar": "كرة الطاولة"
+  },
+  {
+    "id": 119,
+    "sv": "cykling",
+    "en": "cycling",
+    "ar": "ركوب الدراجات"
+  },
+  {
+    "id": 120,
+    "sv": "e-sport",
+    "en": "e-sports",
+    "ar": "الرياضات الإلكترونية"
+  },
+  {
+    "id": 121,
+    "sv": "gympa",
+    "en": "gymnastics; exercise",
+    "ar": "الجمباز. يمارس"
+  },
+  {
+    "id": 122,
+    "sv": "handboll",
+    "en": "handball",
+    "ar": "كرة اليد"
+  },
+  {
+    "id": 123,
+    "sv": "hästpolo",
+    "en": "polo",
+    "ar": "بولو"
+  },
+  {
+    "id": 124,
+    "sv": "innebandy",
+    "en": "floorball",
+    "ar": "كرة أرضية"
+  },
+  {
+    "id": 125,
+    "sv": "kampsport",
+    "en": "martial arts",
+    "ar": "فنون الدفاع عن النفس"
+  },
+  {
+    "id": 126,
+    "sv": "längdskidåkning",
+    "en": "cross-country skiing",
+    "ar": "التزلج عبر البلاد"
+  },
+  {
+    "id": 127,
+    "sv": "löpning",
+    "en": "running",
+    "ar": "جري"
+  },
+  {
+    "id": 128,
+    "sv": "orientering",
+    "en": "orienteering",
+    "ar": "التوجيه"
+  },
+  {
+    "id": 129,
+    "sv": "ridning",
+    "en": "horse riding",
+    "ar": "ركوب الخيل"
+  },
+  {
+    "id": 130,
+    "sv": "simning",
+    "en": "swimming",
+    "ar": "سباحة"
+  },
+  {
+    "id": 131,
+    "sv": "skridskoåkning",
+    "en": "ice skating",
+    "ar": "التزلج على الجليد"
+  },
+  {
+    "id": 132,
+    "sv": "stavgång",
+    "en": "Nordic walking",
+    "ar": "المشي الشمالي"
+  },
+  {
+    "id": 133,
+    "sv": "styrketräning",
+    "en": "strength training",
+    "ar": "تدريب القوة"
+  },
+  {
+    "id": 134,
+    "sv": "utförsåkning (slalom)",
+    "en": "downhill skiing; slalom",
+    "ar": "التزلج على المنحدرات؛ سباق التعرج"
+  },
+  {
+    "id": 135,
+    "sv": "volleyboll",
+    "en": "volleyball",
+    "ar": "الكرة الطائرة"
+  },
+  {
+    "id": 136,
+    "sv": "utrustning",
+    "en": "equipment",
+    "ar": "معدات"
+  },
+  {
+    "id": 137,
+    "sv": "träningsskor",
+    "en": "training shoes",
+    "ar": "أحذية التدريب"
+  },
+  {
+    "id": 138,
+    "sv": "skivstång",
+    "en": "barbell",
+    "ar": "الحديد"
+  },
+  {
+    "id": 139,
+    "sv": "baddräkt",
+    "en": "swimsuit",
+    "ar": "ملابس السباحة"
+  },
+  {
+    "id": 140,
+    "sv": "simglasögon",
+    "en": "swimming goggles",
+    "ar": "نظارات السباحة"
+  },
+  {
+    "id": 141,
+    "sv": "hjälm (-en, -ar)",
+    "en": "helmet",
+    "ar": "خوذة"
+  },
+  {
+    "id": 142,
+    "sv": "mål (-et)",
+    "en": "goal",
+    "ar": "هدف"
+  },
+  {
+    "id": 143,
+    "sv": "stavar",
+    "en": "poles",
+    "ar": "أقطاب"
+  },
+  {
+    "id": 144,
+    "sv": "klubba (-n)",
+    "en": "club; stick",
+    "ar": "النادي؛ يلزق"
+  },
+  {
+    "id": 145,
+    "sv": "kompass (-en)",
+    "en": "compass",
+    "ar": "بوصلة"
+  },
+  {
+    "id": 146,
+    "sv": "racket (-en, -ar)",
+    "en": "racket",
+    "ar": "مضرب"
+  },
+  {
+    "id": 147,
+    "sv": "nät (-et)",
+    "en": "net",
+    "ar": "شبكة"
+  },
+  {
+    "id": 148,
+    "sv": "puck (-en)",
+    "en": "puck",
+    "ar": "عفريت"
+  },
+  {
+    "id": 149,
+    "sv": "skydd (-et)",
+    "en": "protective gear",
+    "ar": "معدات الحماية"
+  },
+  {
+    "id": 150,
+    "sv": "pjäxor",
+    "en": "ski boots",
+    "ar": "أحذية التزلج"
+  },
+  {
+    "id": 151,
+    "sv": "skridskor",
+    "en": "skates",
+    "ar": "الزلاجات"
+  },
+  {
+    "id": 152,
+    "sv": "skidor",
+    "en": "skis",
+    "ar": "الزلاجات"
+  },
+  {
+    "id": 153,
+    "sv": "löparskor",
+    "en": "running shoes",
+    "ar": "أحذية الجري"
+  },
+  {
+    "id": 154,
+    "sv": "staten",
+    "en": "the State",
+    "ar": "الدولة"
+  },
+  {
+    "id": 155,
+    "sv": "påverkar",
+    "en": "influence, affect",
+    "ar": "تأثير، يؤثر"
+  },
+  {
+    "id": 156,
+    "sv": "ordnar",
+    "en": "arrange, organize",
+    "ar": "ترتيب وتنظيم"
+  },
+  {
+    "id": 157,
+    "sv": "slipper (slapp, sluppit)",
+    "en": "not have to (do smth)",
+    "ar": "ليس من الضروري (القيام بشيء ما)"
+  },
+  {
+    "id": 158,
+    "sv": "hushållsarbete",
+    "en": "household chores",
+    "ar": "الأعمال المنزلية"
+  },
+  {
+    "id": 159,
+    "sv": "sysslar (MED något)",
+    "en": "be busy, occupy oneself (with smth)",
+    "ar": "كن مشغولاً، اشغل نفسك (بشيء ما)"
+  },
+  {
+    "id": 160,
+    "sv": "genomsnitt",
+    "en": "average",
+    "ar": "متوسط"
+  },
+  {
+    "id": 161,
+    "sv": "historiskt sett",
+    "en": "from a historical point of view",
+    "ar": "من وجهة نظر تاريخية"
+  },
+  {
+    "id": 162,
+    "sv": "överklass",
+    "en": "higher class, upper class",
+    "ar": "الطبقة العليا، الطبقة العليا"
+  },
+  {
+    "id": 163,
+    "sv": "samhällsklass",
+    "en": "social class",
+    "ar": "الطبقة الاجتماعية"
+  },
+  {
+    "id": 164,
+    "sv": "arbetarklass",
+    "en": "working class",
+    "ar": "الطبقة العاملة"
+  },
+  {
+    "id": 165,
+    "sv": "jordbruk",
+    "en": "farming, agriculture",
+    "ar": "الزراعة والزراعة"
+  },
+  {
+    "id": 166,
+    "sv": "dygn (-et)",
+    "en": "day and night (24 hours)",
+    "ar": "ليلا ونهارا (24 ساعة)"
+  },
+  {
+    "id": 167,
+    "sv": "är på väg",
+    "en": "are on their way",
+    "ar": "هم في طريقهم"
+  },
+  {
+    "id": 168,
+    "sv": "rätt (TILL ngt)",
+    "en": "the right to",
+    "ar": "الحق في"
+  },
+  {
+    "id": 169,
+    "sv": "begrepp (-et)",
+    "en": "concept, idea",
+    "ar": "مفهوم، فكرة"
+  },
+  {
+    "id": 170,
+    "sv": "presterar",
+    "en": "accomplish, achieve, perform",
+    "ar": "أنجز، أنجز، أنجز"
+  },
+  {
+    "id": 171,
+    "sv": "friluftsliv",
+    "en": "outdoor activities",
+    "ar": "الأنشطة في الهواء الطلق"
+  },
+  {
+    "id": 172,
+    "sv": "latar sig",
+    "en": "is lazy",
+    "ar": "كسول"
+  },
+  {
+    "id": 173,
+    "sv": "naturligtvis",
+    "en": "of course, naturally",
+    "ar": "بالطبع، بطبيعة الحال"
+  },
+  {
+    "id": 174,
+    "sv": "toppar (en lista)",
+    "en": "top, head (a list)",
+    "ar": "أعلى، رأس (قائمة)"
+  },
+  {
+    "id": 175,
+    "sv": "inredning",
+    "en": "furnishing",
+    "ar": "تأثيث"
+  },
+  {
+    "id": 176,
+    "sv": "anställning (-en)",
+    "en": "post, position",
+    "ar": "منصب، موقف"
+  },
+  {
+    "id": 177,
+    "sv": "sysselsättning (-en)",
+    "en": "employment",
+    "ar": "توظيف"
+  },
+  {
+    "id": 178,
+    "sv": "arbetslöshet (-en)",
+    "en": "unemployment",
+    "ar": "البطالة"
+  },
+  {
+    "id": 179,
+    "sv": "lön (-en, -er)",
+    "en": "salary",
+    "ar": "مرتب"
+  },
+  {
+    "id": 180,
+    "sv": "lån (-et)",
+    "en": "loan, borrowing",
+    "ar": "قرض، اقتراض"
+  },
+  {
+    "id": 181,
+    "sv": "pension (-en, -er)",
+    "en": "pension",
+    "ar": "مَعاش"
+  },
+  {
+    "id": 182,
+    "sv": "sjuklön",
+    "en": "sick pay",
+    "ar": "الأجر المرضي"
+  },
+  {
+    "id": 183,
+    "sv": "socialbidrag (-et)",
+    "en": "social allowance, supplementary benefit",
+    "ar": "علاوة اجتماعية، فائدة تكميلية"
+  },
+  {
+    "id": 184,
+    "sv": "bidrag (-et)",
+    "en": "contribution, grant, support",
+    "ar": "مساهمة، منحة، دعم"
+  },
+  {
+    "id": 185,
+    "sv": "veckopeng (-en, -ar)",
+    "en": "weekly pocket money",
+    "ar": "مصروف الجيب الأسبوعي"
+  },
+  {
+    "id": 186,
+    "sv": "inkomst (-en, -er)",
+    "en": "income",
+    "ar": "دخل"
+  },
+  {
+    "id": 187,
+    "sv": "utgift (-en, -er)",
+    "en": "expense",
+    "ar": "حساب"
+  },
+  {
+    "id": 188,
+    "sv": "ersättning (-en, -ar)",
+    "en": "compensation, benefit",
+    "ar": "التعويض، المنفعة"
+  },
+  {
+    "id": 189,
+    "sv": "arbetsuppgift (-er)",
+    "en": "task, assignment",
+    "ar": "مهمة، مهمة"
+  },
+  {
+    "id": 190,
+    "sv": "ansvar (-et) (FÖR ngt)",
+    "en": "responsibility",
+    "ar": "مسؤولية"
+  },
+  {
+    "id": 191,
+    "sv": "obekväm",
+    "en": "inconvenient, uncomfortable",
+    "ar": "غير مريح وغير مريح"
+  },
+  {
+    "id": 192,
+    "sv": "trygghet",
+    "en": "security, safety",
+    "ar": "الأمن والسلامة"
+  },
+  {
+    "id": 193,
+    "sv": "oro (-n)",
+    "en": "concern, worry, nervousness",
+    "ar": "القلق والقلق والعصبية"
+  },
+  {
+    "id": 194,
+    "sv": "ångest (-en)",
+    "en": "anxiety",
+    "ar": "قلق"
+  },
+  {
+    "id": 195,
+    "sv": "klarar sig (ekonomiskt)",
+    "en": "manage, do all right, get along",
+    "ar": "إدارة، القيام بكل الحق، الحصول على طول"
+  },
+  {
+    "id": 196,
+    "sv": "har råd (MED ngt)",
+    "en": "can afford",
+    "ar": "يمكن أن تحمله"
+  },
+  {
+    "id": 197,
+    "sv": "räcker",
+    "en": "is enough",
+    "ar": "يكفي"
+  },
+  {
+    "id": 198,
+    "sv": "har tillräckligt (MED ngt)",
+    "en": "have enough",
+    "ar": "لديك ما يكفي"
+  },
+  {
+    "id": 199,
+    "sv": "har ont om (något)",
+    "en": "be short of, not have enough",
+    "ar": "تكون قصيرة من، لا تملك ما يكفي"
+  },
+  {
+    "id": 200,
+    "sv": "saknar (något)",
+    "en": "lack, be without, have no",
+    "ar": "تفتقر، تكون بدون، لا تملك"
+  },
+  {
+    "id": 201,
+    "sv": "har inte så det räcker",
+    "en": "not have enough",
+    "ar": "لا تملك ما يكفي"
+  },
+  {
+    "id": 202,
+    "sv": "ärver",
+    "en": "inherit",
+    "ar": "يرث"
+  },
+  {
+    "id": 203,
+    "sv": "löneförhöjning (-en)",
+    "en": "rise [in wages (resp. salary, pay)]",
+    "ar": "الارتفاع [في الأجور (الراتب المقابل، الأجر)]"
+  },
+  {
+    "id": 204,
+    "sv": "stjäl, stal, stulit",
+    "en": "steal*",
+    "ar": "يسرق*"
+  },
+  {
+    "id": 205,
+    "sv": "gör av (MED ngt)",
+    "en": "spend, get run through",
+    "ar": "أنفق، وانطلق"
+  },
+  {
+    "id": 206,
+    "sv": "slösar",
+    "en": "waste, spend",
+    "ar": "هدر، انفق"
+  },
+  {
+    "id": 207,
+    "sv": "satsar (PÅ ngt)",
+    "en": "invest; stake, venture",
+    "ar": "يستثمر؛ حصة، مشروع"
+  },
+  {
+    "id": 208,
+    "sv": "på fel sätt",
+    "en": "in a wrong way, unproperly",
+    "ar": "بطريقة خاطئة، بشكل غير صحيح"
+  },
+  {
+    "id": 209,
+    "sv": "på rätt sätt",
+    "en": "properly",
+    "ar": "على وجه صحيح"
+  },
+  {
+    "id": 210,
+    "sv": "kortvarig",
+    "en": "transient, short-term, brief",
+    "ar": "عابرة، قصيرة المدى، مختصرة"
+  },
+  {
+    "id": 211,
+    "sv": "ett nödvändigt ont",
+    "en": "unavoidable, necessary evil",
+    "ar": "شر لا مفر منه، لا بد منه"
+  },
+  {
+    "id": 212,
+    "sv": "nöjer sig (MED ngt)",
+    "en": "content oneself with, not require more",
+    "ar": "الاكتفاء به، وعدم طلب المزيد"
+  },
+  {
+    "id": 213,
+    "sv": "rikedom (-ar)",
+    "en": "wealth, fortune",
+    "ar": "الثروة والثروة"
+  },
+  {
+    "id": 214,
+    "sv": "vänjer sig (VID ngt/ngn)",
+    "en": "get used to, accutom oneself",
+    "ar": "يعتاد على، يعتاد على نفسه"
+  },
+  {
+    "id": 215,
+    "sv": "aktar sig (FÖR ngn/ngt)",
+    "en": "be careful not to do, look out for",
+    "ar": "يجب الحرص على عدم القيام به، ابحث عن"
+  },
+  {
+    "id": 216,
+    "sv": "snål",
+    "en": "greedy",
+    "ar": "طماع"
+  },
+  {
+    "id": 217,
+    "sv": "sparsam",
+    "en": "economical (careful with money)",
+    "ar": "اقتصادية (حذرا مع المال)"
+  },
+  {
+    "id": 218,
+    "sv": "stenrik",
+    "en": "made of money",
+    "ar": "مصنوعة من المال"
+  },
+  {
+    "id": 219,
+    "sv": "urfattig",
+    "en": "very poor",
+    "ar": "سيئة للغاية"
+  },
+  {
+    "id": 220,
+    "sv": "generös",
+    "en": "generous",
+    "ar": "كريم"
+  },
+  {
+    "id": 221,
+    "sv": "slösaktig",
+    "en": "wasteful",
+    "ar": "مسرف"
+  },
+  {
+    "id": 222,
+    "sv": "pålitlig",
+    "en": "reliable, trustworthy",
+    "ar": "موثوقة وجديرة بالثقة"
+  },
+  {
+    "id": 223,
+    "sv": "ansvarsfull",
+    "en": "responsible",
+    "ar": "مسؤول"
+  },
+  {
+    "id": 224,
+    "sv": "hjälpsam",
+    "en": "helpful",
+    "ar": "متعاون"
+  },
+  {
+    "id": 225,
+    "sv": "noggrann",
+    "en": "accurate, careful, scrupulous",
+    "ar": "دقيقة ودقيقة ودقيقة"
+  },
+  {
+    "id": 226,
+    "sv": "stenhård",
+    "en": "tough as nails",
+    "ar": "صعبة مثل الأظافر"
+  },
+  {
+    "id": 227,
+    "sv": "kräver",
+    "en": "demand, require",
+    "ar": "الطلب، تتطلب"
+  },
+  {
+    "id": 228,
+    "sv": "tungt arbete",
+    "en": "hard work",
+    "ar": "العمل الشاق"
+  },
+  {
+    "id": 229,
+    "sv": "meningsfull",
+    "en": "meaningful",
+    "ar": "ذات معنى"
+  },
+  {
+    "id": 230,
+    "sv": "gillar läget",
+    "en": "accept things as they are",
+    "ar": "تقبل الأشياء كما هي"
+  },
+  {
+    "id": 231,
+    "sv": "när det gäller",
+    "en": "when it comes to, regarding",
+    "ar": "عندما يتعلق الأمر، فيما يتعلق"
+  },
+  {
+    "id": 232,
+    "sv": "syn (PÅ ngt/ngn)",
+    "en": "sight, vision; view, approach, idea, attitude",
+    "ar": "البصر والرؤية. وجهة نظر، نهج، فكرة، موقف"
+  },
+  {
+    "id": 233,
+    "sv": "himmel (himlen)",
+    "en": "heaven",
+    "ar": "سماء"
+  },
+  {
+    "id": 234,
+    "sv": "helvete (-t)",
+    "en": "hell",
+    "ar": "جحيم"
+  },
+  {
+    "id": 235,
+    "sv": "präst (-en, -er)",
+    "en": "priest",
+    "ar": "كاهن"
+  },
+  {
+    "id": 236,
+    "sv": "servitör (-en, -er)",
+    "en": "waiter",
+    "ar": "النادل"
+  },
+  {
+    "id": 237,
+    "sv": "förskollärare",
+    "en": "preschool teacher",
+    "ar": "مدرس ما قبل المدرسة"
+  },
+  {
+    "id": 238,
+    "sv": "civilingenjör (-en, -er)",
+    "en": "civil engineer",
+    "ar": "مهندس مدني"
+  },
+  {
+    "id": 239,
+    "sv": "gymnasielärare",
+    "en": "upper-secondary teacher",
+    "ar": "معلم المرحلة الثانوية"
+  },
+  {
+    "id": 240,
+    "sv": "receptionist (-er)",
+    "en": "receptionist",
+    "ar": "موظف استقبال"
+  },
+  {
+    "id": 241,
+    "sv": "politiker (politikern, flera politiker)",
+    "en": "politician",
+    "ar": "سياسي"
+  },
+  {
+    "id": 242,
+    "sv": "vd (vd:n, vd:ar; verkställande direktör)",
+    "en": "managing director; CEO",
+    "ar": "المدير العام؛ المدير التنفيذي"
+  },
+  {
+    "id": 243,
+    "sv": "arbetsmiljö (-n)",
+    "en": "work (working) environment",
+    "ar": "بيئة العمل (العمل)."
+  },
+  {
+    "id": 244,
+    "sv": "verkar",
+    "en": "seems",
+    "ar": "يبدو"
+  },
+  {
+    "id": 245,
+    "sv": "nöjd (MED ngt)",
+    "en": "satisfied with (smth)",
+    "ar": "راضي عن (شيء)"
+  },
+  {
+    "id": 246,
+    "sv": "missnöjd (MED ngt)",
+    "en": "unsatisfied (with something)",
+    "ar": "غير راضٍ (عن شيء ما)"
+  },
+  {
+    "id": 247,
+    "sv": "följande",
+    "en": "following, next",
+    "ar": "التالي، التالي"
+  },
+  {
+    "id": 248,
+    "sv": "högavlönad (högavlönat, högavlö- nade)",
+    "en": "well paid",
+    "ar": "مدفوعة الأجر بشكل جيد"
+  },
+  {
+    "id": 249,
+    "sv": "lågavlönad (lågavlönat, lågavlönade)",
+    "en": "badly paid",
+    "ar": "مدفوعة الأجر بشكل سيء"
+  },
+  {
+    "id": 250,
+    "sv": "bekant (en bekant, bekanta)",
+    "en": "acquaintance, friend",
+    "ar": "التعارف يا صديق"
+  },
+  {
+    "id": 251,
+    "sv": "väl (känna någon VÄL)",
+    "en": "well (limited contexts)",
+    "ar": "حسنًا (سياقات محدودة)"
+  },
+  {
+    "id": 252,
+    "sv": "ofin (-t, -a)",
+    "en": "impolite",
+    "ar": "غير مهذب"
+  },
+  {
+    "id": 253,
+    "sv": "arbetslöshet",
+    "en": "unemployment",
+    "ar": "البطالة"
+  },
+  {
+    "id": 254,
+    "sv": "veckopeng (-en, -ar)",
+    "en": "weekly pocket money, weekly al- lowance",
+    "ar": "مصروف الجيب الأسبوعي، والعلاوة الأسبوعية"
+  },
+  {
+    "id": 255,
+    "sv": "skatt (-en, -er)",
+    "en": "tax",
+    "ar": "ضريبة"
+  },
+  {
+    "id": 256,
+    "sv": "Vad fick ni ge för det?",
+    "en": "How much did you pay for it?",
+    "ar": "كم دفعت ثمنها؟"
+  },
+  {
+    "id": 257,
+    "sv": "knappt",
+    "en": "hardly, barely",
+    "ar": "بالكاد، بالكاد"
+  },
+  {
+    "id": 258,
+    "sv": "drygt",
+    "en": "slightly more than",
+    "ar": "أكثر قليلا من"
+  },
+  {
+    "id": 259,
+    "sv": "lånar",
+    "en": "borrow",
+    "ar": "يستعير"
+  },
+  {
+    "id": 260,
+    "sv": "Hur klarar du dig (PÅ ngt)?",
+    "en": "How do you get by?",
+    "ar": "كيف يمكنك المرور؟"
+  },
+  {
+    "id": 261,
+    "sv": "arbetslöshetsersättning (a-kassa)",
+    "en": "unemployment benefit",
+    "ar": "إعانة البطالة"
+  },
+  {
+    "id": 262,
+    "sv": "har råd (MED ngt / ATT GÖRA ngt)",
+    "en": "can afford (smth / to...)",
+    "ar": "يستطيع تحمل (شيء / إلى...)"
+  },
+  {
+    "id": 263,
+    "sv": "nuförtiden",
+    "en": "nowadays",
+    "ar": "في الوقت الحاضر"
+  },
+  {
+    "id": 264,
+    "sv": "karensdag",
+    "en": "day of qualifying (waiting) period [before benefit may be claimed]",
+    "ar": "يوم فترة التأهيل (الانتظار) [قبل المطالبة بالمنفعة]"
+  },
+  {
+    "id": 265,
+    "sv": "förhandla (OM ngt)",
+    "en": "negotiate",
+    "ar": "تفاوض"
+  },
+  {
+    "id": 266,
+    "sv": "höjer",
+    "en": "raise, put up, increase",
+    "ar": "رفع، طرح، زيادة"
+  },
+  {
+    "id": 267,
+    "sv": "lagom",
+    "en": "just enough",
+    "ar": "يكفي"
+  },
+  {
+    "id": 268,
+    "sv": "räcker (TILL ngt)",
+    "en": "is enough",
+    "ar": "يكفي"
+  },
+  {
+    "id": 269,
+    "sv": "hälften (AV ngt)",
+    "en": "half (of)",
+    "ar": "نصف (من)"
+  },
+  {
+    "id": 270,
+    "sv": "en hel del",
+    "en": "a great deal, a lot",
+    "ar": "قدرا كبيرا، كثيرا"
+  },
+  {
+    "id": 271,
+    "sv": "skiljer (X och Y åt)",
+    "en": "separate, is different (between X and Y)",
+    "ar": "منفصل ومختلف (بين X وY)"
+  },
+  {
+    "id": 272,
+    "sv": "tjänar (PÅ ngt)",
+    "en": "make a profit on, benefit from",
+    "ar": "تحقيق الربح على الاستفادة من"
+  },
+  {
+    "id": 273,
+    "sv": "lider, led, lidit",
+    "en": "suffer, be in pain*",
+    "ar": "تتألم وتتألم*"
+  },
+  {
+    "id": 274,
+    "sv": "deltid",
+    "en": "part time",
+    "ar": "دوام جزئى"
+  },
+  {
+    "id": 275,
+    "sv": "skafferi (-et, -er)",
+    "en": "pantry",
+    "ar": "مخزن"
+  },
+  {
+    "id": 276,
+    "sv": "solnedgång (-en)",
+    "en": "sunset",
+    "ar": "غروب"
+  },
+  {
+    "id": 277,
+    "sv": "vänjer sig (VID ngt)",
+    "en": "get used to",
+    "ar": "تعتاد على"
+  },
+  {
+    "id": 278,
+    "sv": "skaffar",
+    "en": "get, obtain",
+    "ar": "الحصول على، الحصول على"
+  },
+  {
+    "id": 279,
+    "sv": "för en stund",
+    "en": "for a short while",
+    "ar": "لفترة قصيرة"
+  },
+  {
+    "id": 280,
+    "sv": "först och främst",
+    "en": "first and foremost, first of all",
+    "ar": "أولا وقبل كل شيء، أولا وقبل كل شيء"
+  },
+  {
+    "id": 281,
+    "sv": "behov (-et; AV ngt)",
+    "en": "necessity, need",
+    "ar": "ضرورة، حاجة"
+  },
+  {
+    "id": 282,
+    "sv": "förtryck (-et)",
+    "en": "oppression",
+    "ar": "القمع"
+  },
+  {
+    "id": 283,
+    "sv": "otrygghet",
+    "en": "insecurity",
+    "ar": "انعدام الأمن"
+  },
+  {
+    "id": 284,
+    "sv": "personlighet",
+    "en": "personality",
+    "ar": "شخصية"
+  },
+  {
+    "id": 285,
+    "sv": "misslyckande (-t)",
+    "en": "failure",
+    "ar": "فشل"
+  },
+  {
+    "id": 286,
+    "sv": "förändring",
+    "en": "change, alteration",
+    "ar": "تغيير، تغيير"
+  },
+  {
+    "id": 287,
+    "sv": "gilla läget",
+    "en": "accept the situation",
+    "ar": "قبول الوضع"
+  },
+  {
+    "id": 288,
+    "sv": "släpper (ngt)",
+    "en": "let go, release",
+    "ar": "ترك، الافراج"
+  },
+  {
+    "id": 289,
+    "sv": "ler, log, lett",
+    "en": "smile*",
+    "ar": "يبتسم*"
+  },
+  {
+    "id": 290,
+    "sv": "leende (-t)",
+    "en": "smile (noun)",
+    "ar": "ابتسم (اسم)"
+  },
+  {
+    "id": 291,
+    "sv": "särskilt",
+    "en": "especially, particularly",
+    "ar": "خصوصا، على وجه الخصوص"
+  },
+  {
+    "id": 292,
+    "sv": "gäller",
+    "en": "applies, is valid",
+    "ar": "ينطبق، صالح"
+  },
+  {
+    "id": 293,
+    "sv": "aktar sig (FÖR ngn/ngt)",
+    "en": "be on one's guard, look out for",
+    "ar": "كن على أهبة الاستعداد، وابحث عن"
+  },
+  {
+    "id": 294,
+    "sv": "bryr sig (OM ngn(ngt)",
+    "en": "care for, pay attention to",
+    "ar": "رعاية، والانتباه إلى"
+  },
+  {
+    "id": 295,
+    "sv": "hör av sig",
+    "en": "get in touch",
+    "ar": "تواصل معنا"
+  },
+  {
+    "id": 296,
+    "sv": "ångrar sig",
+    "en": "regret, to change one's mind",
+    "ar": "الندم، لتغيير رأي المرء"
+  },
+  {
+    "id": 297,
+    "sv": "önskar sig (ngt)",
+    "en": "wish for something",
+    "ar": "أتمنى شيئا"
+  },
+  {
+    "id": 298,
+    "sv": "sköter om sig",
+    "en": "look after oneself",
+    "ar": "اعتني بنفسك"
+  },
+  {
+    "id": 299,
+    "sv": "skiljer sig (FRÅN ngn/ngt)",
+    "en": "be different, stand out; get a di- vorce",
+    "ar": "كن مختلفًا، وتميز؛ الحصول على الطلاق"
+  },
+  {
+    "id": 300,
+    "sv": "koncentrerar sig (PÅ ngn/ngt)",
+    "en": "concentrate",
+    "ar": "يركز"
+  },
+  {
+    "id": 301,
+    "sv": "anmäler sig (TILL ngt)",
+    "en": "register, sign up (for smth)",
+    "ar": "سجل، سجل (لشيء ما)"
+  },
+  {
+    "id": 302,
+    "sv": "bestämmer sig (FÖR ngt)",
+    "en": "decide",
+    "ar": "يقرر"
+  },
+  {
+    "id": 303,
+    "sv": "förbereder sig",
+    "en": "prepare oneself",
+    "ar": "يعد نفسه"
+  },
+  {
+    "id": 304,
+    "sv": "klarar sig",
+    "en": "manage, get along; pass a test",
+    "ar": "إدارة، الحصول على جنبا إلى جنب؛ اجتياز الاختبار"
+  },
+  {
+    "id": 305,
+    "sv": "rakar sig",
+    "en": "shave",
+    "ar": "حلاقة"
+  },
+  {
+    "id": 306,
+    "sv": "torkar sig",
+    "en": "wipe oneself [dry]",
+    "ar": "يمسح [جافًا]"
+  },
+  {
+    "id": 307,
+    "sv": "kammar sig",
+    "en": "comb one's own hair",
+    "ar": "تمشيط شعره"
+  },
+  {
+    "id": 308,
+    "sv": "försover sig, försov sig, försovit sig",
+    "en": "oversleep*",
+    "ar": "أطال في النوم*"
+  },
+  {
+    "id": 309,
+    "sv": "sätter sig",
+    "en": "sit down, take a seat",
+    "ar": "اجلس، اجلس"
+  },
+  {
+    "id": 310,
+    "sv": "ställer sig",
+    "en": "stand up, (place oneself up)",
+    "ar": "الوقوف، (وضع نفسه)"
+  },
+  {
+    "id": 311,
+    "sv": "(något, någon) utvecklas",
+    "en": "(smth, smn) evolve, develop",
+    "ar": "(شيء، smn) يتطور، يتطور"
+  },
+  {
+    "id": 312,
+    "sv": "(något, någon) förändras med tiden",
+    "en": "(smth, smn) changes with time",
+    "ar": "(شيء، smn) يتغير مع مرور الوقت"
+  },
+  {
+    "id": 313,
+    "sv": "(några) samlas",
+    "en": "get together",
+    "ar": "نلتقي"
+  },
+  {
+    "id": 314,
+    "sv": "en god vän",
+    "en": "an old friend",
+    "ar": "صديق قديم"
+  },
+  {
+    "id": 315,
+    "sv": "en riktig vän",
+    "en": "a real friend",
+    "ar": "صديق حقيقي"
+  },
+  {
+    "id": 316,
+    "sv": "bekant (bekanta)",
+    "en": "acquaintance",
+    "ar": "معرفة"
+  },
+  {
+    "id": 317,
+    "sv": "ovän (-ner), fiende (-r)",
+    "en": "enemy (2 words)",
+    "ar": "العدو (2 كلمه)"
+  },
+  {
+    "id": 318,
+    "sv": "icke-rökare",
+    "en": "non-smoker",
+    "ar": "غير مدخن"
+  },
+  {
+    "id": 319,
+    "sv": "djurvän",
+    "en": "animal lover",
+    "ar": "محب للحيوانات"
+  },
+  {
+    "id": 320,
+    "sv": "nykterist",
+    "en": "non-drinker",
+    "ar": "غير شارب"
+  },
+  {
+    "id": 321,
+    "sv": "soffpotatis",
+    "en": "couch potato",
+    "ar": "بطاطس الأريكة"
+  },
+  {
+    "id": 322,
+    "sv": "godisgris",
+    "en": "candy lover",
+    "ar": "عاشق الحلوى"
+  },
+  {
+    "id": 323,
+    "sv": "begåvning (-en, -ar)",
+    "en": "talent; a gifted person",
+    "ar": "الموهبة؛ شخص موهوب"
+  },
+  {
+    "id": 324,
+    "sv": "utåtriktad",
+    "en": "outgoing",
+    "ar": "المنتهية ولايته"
+  },
+  {
+    "id": 325,
+    "sv": "artig",
+    "en": "polite",
+    "ar": "مؤدب"
+  },
+  {
+    "id": 326,
+    "sv": "oartig",
+    "en": "impolite, rude",
+    "ar": "غير مهذب، وقحا"
+  },
+  {
+    "id": 327,
+    "sv": "blivande",
+    "en": "future, prospective",
+    "ar": "المستقبل، المحتملين"
+  },
+  {
+    "id": 328,
+    "sv": "kursare",
+    "en": "fellow student, in the same course",
+    "ar": "زميل طالب في نفس المقرر"
+  },
+  {
+    "id": 329,
+    "sv": "kollega",
+    "en": "fellow worker",
+    "ar": "زميل عامل"
+  },
+  {
+    "id": 330,
+    "sv": "Vi känner varandra väl",
+    "en": "We know each other very well",
+    "ar": "نحن نعرف بعضنا البعض جيدًا"
+  },
+  {
+    "id": 331,
+    "sv": "Vi känner knappt varandra",
+    "en": "We hardly know each other",
+    "ar": "نحن بالكاد نعرف بعضنا البعض"
+  },
+  {
+    "id": 332,
+    "sv": "förmögen, rik",
+    "en": "wealthy (2 words)",
+    "ar": "غني (2 كلمه)"
+  },
+  {
+    "id": 333,
+    "sv": "fattig",
+    "en": "poor",
+    "ar": "فقير"
+  },
+  {
+    "id": 334,
+    "sv": "pank",
+    "en": "broke",
+    "ar": "كسر"
+  },
+  {
+    "id": 335,
+    "sv": "berömd",
+    "en": "famed, famous, celebrated",
+    "ar": "مشهور، مشهور، مشهور"
+  },
+  {
+    "id": 336,
+    "sv": "religiös",
+    "en": "religious, believing",
+    "ar": "دينية، مؤمنة"
+  },
+  {
+    "id": 337,
+    "sv": "hopplös",
+    "en": "hopeless",
+    "ar": "ميؤوس منها"
+  },
+  {
+    "id": 338,
+    "sv": "utbildad",
+    "en": "educated, qualified",
+    "ar": "متعلمين ومؤهلين"
+  },
+  {
+    "id": 339,
+    "sv": "Slå mig en signal",
+    "en": "Call me",
+    "ar": "اتصل بي"
+  },
+  {
+    "id": 340,
+    "sv": "liknar varandra",
+    "en": "look alike, are alike",
+    "ar": "تبدو متشابهة، متشابهة"
+  },
+  {
+    "id": 341,
+    "sv": "Hör av dig",
+    "en": "Stay in touch",
+    "ar": "ابق على اتصال"
+  },
+  {
+    "id": 342,
+    "sv": "Titta förbi",
+    "en": "Drop by (casual unannounced vis- it)",
+    "ar": "قم بزيارة (زيارة غير معلنة غير معلنة)"
+  },
+  {
+    "id": 343,
+    "sv": "lämnar",
+    "en": "leave",
+    "ar": "يترك"
+  },
+  {
+    "id": 344,
+    "sv": "brevväxlar",
+    "en": "write letters to each other",
+    "ar": "كتابة رسائل لبعضهم البعض"
+  },
+  {
+    "id": 345,
+    "sv": "berömmer",
+    "en": "praise",
+    "ar": "مدح"
+  },
+  {
+    "id": 346,
+    "sv": "uppmuntrar",
+    "en": "encourage",
+    "ar": "يشجع"
+  },
+  {
+    "id": 347,
+    "sv": "stöttar",
+    "en": "support",
+    "ar": "يدعم"
+  },
+  {
+    "id": 348,
+    "sv": "tröttnar (PÅ ngt/ngn)",
+    "en": "get tired (of smn, smth)",
+    "ar": "تتعب (من smn، شيء ما)"
+  },
+  {
+    "id": 349,
+    "sv": "njuter, njöt, njutit (AV ngt)",
+    "en": "enjoy (smth)",
+    "ar": "استمتع (شيء)"
+  },
+  {
+    "id": 350,
+    "sv": "upptäcker",
+    "en": "discover, detect",
+    "ar": "اكتشف، اكتشف"
+  },
+  {
+    "id": 351,
+    "sv": "har mycket gemensamt",
+    "en": "have lots in common",
+    "ar": "لديهم الكثير من القواسم المشتركة"
+  },
+  {
+    "id": 352,
+    "sv": "längtar (EFTER ngt/ngn)",
+    "en": "miss, be longing for (smth, smn)",
+    "ar": "يغيب، يكون الشوق إلى (شيء، smn)"
+  },
+  {
+    "id": 353,
+    "sv": "förändring (-ar)",
+    "en": "change, alternation",
+    "ar": "التغيير والتناوب"
+  },
+  {
+    "id": 354,
+    "sv": "framgång (-ar)",
+    "en": "success",
+    "ar": "نجاح"
+  },
+  {
+    "id": 355,
+    "sv": "självförtroende (-t)",
+    "en": "self-confidence, self-reliance",
+    "ar": "الثقة بالنفس، والاعتماد على الذات"
+  },
+  {
+    "id": 356,
+    "sv": "svårighet (-er)",
+    "en": "difficulty",
+    "ar": "صعوبة"
+  },
+  {
+    "id": 357,
+    "sv": "hemlighet (-er)",
+    "en": "secret",
+    "ar": "سر"
+  },
+  {
+    "id": 358,
+    "sv": "sanning (-ar)",
+    "en": "truth",
+    "ar": "حقيقة"
+  },
+  {
+    "id": 359,
+    "sv": "lögn (-er)",
+    "en": "(a) lie",
+    "ar": "(أ) كذب"
+  },
+  {
+    "id": 360,
+    "sv": "skilsmässa",
+    "en": "divorce",
+    "ar": "الطلاق"
+  },
+  {
+    "id": 361,
+    "sv": "giftermål (-et)",
+    "en": "marriage",
+    "ar": "زواج"
+  },
+  {
+    "id": 362,
+    "sv": "kris (-er)",
+    "en": "crisis",
+    "ar": "مصيبة"
+  },
+  {
+    "id": 363,
+    "sv": "framgångsrik",
+    "en": "successful",
+    "ar": "ناجح"
+  },
+  {
+    "id": 364,
+    "sv": "ovän (-ner)",
+    "en": "somebody you're on bad terms with",
+    "ar": "شخص ما كنت على علاقة سيئة معه"
+  },
+  {
+    "id": 365,
+    "sv": "fiende (-n, -er)",
+    "en": "enemy",
+    "ar": "العدو"
+  },
+  {
+    "id": 366,
+    "sv": "(Det är ... ) som räknas",
+    "en": "( ... ) that counts",
+    "ar": "(...) هذا مهم"
+  },
+  {
+    "id": 367,
+    "sv": "i dåligt sällskap",
+    "en": "in bad company",
+    "ar": "في شركة سيئة"
+  },
+  {
+    "id": 368,
+    "sv": "förlåter, förlät, förlåtit",
+    "en": "forgive*",
+    "ar": "سامح*"
+  },
+  {
+    "id": 369,
+    "sv": "Vilka egenskaper är viktiga hos en vän?                                            a friend?",
+    "en": "What qualities are important with",
+    "ar": "ما هي الصفات المهمة مع"
+  },
+  {
+    "id": 370,
+    "sv": "Något i den stilen",
+    "en": "something like that",
+    "ar": "شيء من هذا القبيل"
+  },
+  {
+    "id": 371,
+    "sv": "Vad säger du?",
+    "en": "What do you think?",
+    "ar": "ماذا تعتقد؟"
+  },
+  {
+    "id": 372,
+    "sv": "Lägg av! Du skojar!",
+    "en": "Really? You're kidding me",
+    "ar": "حقًا؟ أنت تمزح معي"
+  },
+  {
+    "id": 373,
+    "sv": "slå en signal",
+    "en": "give me a call, drop a line",
+    "ar": "اتصل بي، اترك الخط"
+  },
+  {
+    "id": 374,
+    "sv": "Titta förbi",
+    "en": "drop by, stop by (casual unan- nounced visit)",
+    "ar": "قم بزيارة، توقف (زيارة غير رسمية غير معلنة)"
+  },
+  {
+    "id": 375,
+    "sv": "Hör av dig!",
+    "en": "stay in touch",
+    "ar": "البقاء على اتصال"
+  },
+  {
+    "id": 376,
+    "sv": "Du med",
+    "en": "you too",
+    "ar": "أنت أيضاً"
+  },
+  {
+    "id": 377,
+    "sv": "inlägg (-et)",
+    "en": "post, contribution",
+    "ar": "مشاركة، مساهمة"
+  },
+  {
+    "id": 378,
+    "sv": "nedanför",
+    "en": "underneath",
+    "ar": "تحت"
+  },
+  {
+    "id": 379,
+    "sv": "som en annan person",
+    "en": "as a different (not the same) per- son",
+    "ar": "كشخص مختلف (ليس هو نفسه)."
+  },
+  {
+    "id": 380,
+    "sv": "nuförtiden",
+    "en": "these days, nowadays",
+    "ar": "في هذه الأيام، في الوقت الحاضر"
+  },
+  {
+    "id": 381,
+    "sv": "rakar sig",
+    "en": "shaves",
+    "ar": "يحلق"
+  },
+  {
+    "id": 382,
+    "sv": "luktar",
+    "en": "smells",
+    "ar": "الروائح"
+  },
+  {
+    "id": 383,
+    "sv": "smutsig",
+    "en": "filthy, dirty",
+    "ar": "قذر، قذر"
+  },
+  {
+    "id": 384,
+    "sv": "klipper sig",
+    "en": "have one's hair cut",
+    "ar": "قص شعره"
+  },
+  {
+    "id": 385,
+    "sv": "tvättar sig",
+    "en": "wash oneself",
+    "ar": "يغسل نفسه"
+  },
+  {
+    "id": 386,
+    "sv": "ångrar sig",
+    "en": "regret, change one's mind",
+    "ar": "الأسف، تغيير رأي المرء"
+  },
+  {
+    "id": 387,
+    "sv": "ändå",
+    "en": "anyway, still",
+    "ar": "على أي حال، لا يزال"
+  },
+  {
+    "id": 388,
+    "sv": "viskar",
+    "en": "whisper",
+    "ar": "الهمس"
+  },
+  {
+    "id": 389,
+    "sv": "i hemlighet",
+    "en": "secretly",
+    "ar": "سرا"
+  },
+  {
+    "id": 390,
+    "sv": "koncentrerar sig (PÅ ngt/ngn)",
+    "en": "concentrate, focus",
+    "ar": "التركيز، التركيز"
+  },
+  {
+    "id": 391,
+    "sv": "går igenom (en kris, en text)",
+    "en": "go through, review, check",
+    "ar": "تمر، مراجعة، التحقق"
+  },
+  {
+    "id": 392,
+    "sv": "skilsmässa (-n)",
+    "en": "divorce (n.)",
+    "ar": "طلاق (ن.)"
+  },
+  {
+    "id": 393,
+    "sv": "bryr sig (OM ngt/ngn)",
+    "en": "care (about smth/smb)",
+    "ar": "رعاية (حول شيء ما/شخص ما)"
+  },
+  {
+    "id": 394,
+    "sv": "aktar sig (FÖR ngn/ngt)",
+    "en": "be careful, be on one's guard, look out for",
+    "ar": "كن حذرا، كن على أهبة الاستعداد، ابحث عن"
+  },
+  {
+    "id": 395,
+    "sv": "sanning (-en)",
+    "en": "truth",
+    "ar": "حقيقة"
+  },
+  {
+    "id": 396,
+    "sv": "aktiverar sig",
+    "en": "get active",
+    "ar": "كن نشطا"
+  },
+  {
+    "id": 397,
+    "sv": "ge (ngt) i födelsedagspresent",
+    "en": "give (smth) as a birthday present",
+    "ar": "إعطاء (شيء) كهدية عيد ميلاد"
+  },
+  {
+    "id": 398,
+    "sv": "anmäler sig (TILL ngt)",
+    "en": "apply, register for",
+    "ar": "تقدم بطلبك، سجل في"
+  },
+  {
+    "id": 399,
+    "sv": "sätter sig, satte sig, satt sig",
+    "en": "seat down, take a seat*",
+    "ar": "اجلس، اجلس*"
+  },
+  {
+    "id": 400,
+    "sv": "skyldig",
+    "en": "in debt, owing, responsible, guilty",
+    "ar": "مديون، مستحق، مسؤول، مذنب"
+  },
+  {
+    "id": 401,
+    "sv": "skriver upp, skrev upp, skrivit upp",
+    "en": "note down, make a note of*",
+    "ar": "تدوين، تدوين ملاحظة*"
+  },
+  {
+    "id": 402,
+    "sv": "bestämmer sig (FÖR ngt)",
+    "en": "make up one's mind, come to a decision",
+    "ar": "اتخذ قرارك، وتوصل إلى قرار"
+  },
+  {
+    "id": 403,
+    "sv": "lägger sig, la sig, lagt sig",
+    "en": "lie down*",
+    "ar": "اضطجع*"
+  },
+  {
+    "id": 404,
+    "sv": "torkar sig",
+    "en": "wipe oneself dry",
+    "ar": "يمسح نفسه جافًا"
+  },
+  {
+    "id": 405,
+    "sv": "hur (+adj) som helst",
+    "en": "very (ever so)",
+    "ar": "جدا (دائما)"
+  },
+  {
+    "id": 406,
+    "sv": "har inte ett öre",
+    "en": "not have a penny",
+    "ar": "ليس لديك فلسا واحدا"
+  },
+  {
+    "id": 407,
+    "sv": "jämt",
+    "en": "all the time",
+    "ar": "طوال الوقت"
+  },
+  {
+    "id": 408,
+    "sv": "har (det) tråkigt",
+    "en": "is bored",
+    "ar": "يشعر بالملل"
+  },
+  {
+    "id": 409,
+    "sv": "har (det) kul",
+    "en": "have fun, have a good time",
+    "ar": "إستمتع، إستمتع بوقتك"
+  },
+  {
+    "id": 410,
+    "sv": "en liten stund",
+    "en": "a moment",
+    "ar": "لحظة"
+  },
+  {
+    "id": 411,
+    "sv": "långhelg (-en)",
+    "en": "long weekend",
+    "ar": "عطلة نهاية أسبوع طويلة"
+  },
+  {
+    "id": 412,
+    "sv": "klämdag",
+    "en": "working day between a holiday and a weekend (between two hol- idays)",
+    "ar": "يوم عمل بين الإجازة وعطلة نهاية الأسبوع (بين العطلتين)"
+  },
+  {
+    "id": 413,
+    "sv": "kommer på, kom på, kommit på",
+    "en": "think of, recall, remember*",
+    "ar": "فكر، تذكر، تذكر*"
+  },
+  {
+    "id": 414,
+    "sv": "sur (infml)",
+    "en": "sulky, angry (infml)",
+    "ar": "عابس، غاضب (infml)"
+  },
+  {
+    "id": 415,
+    "sv": "i alla tider",
+    "en": "through time, always",
+    "ar": "عبر الزمن، دائمًا"
+  },
+  {
+    "id": 416,
+    "sv": "för länge sedan",
+    "en": "a long time ago",
+    "ar": "منذ وقت طويل"
+  },
+  {
+    "id": 417,
+    "sv": "förr i tiden",
+    "en": "in the old days",
+    "ar": "في الأيام الخوالي"
+  },
+  {
+    "id": 418,
+    "sv": "på senare tid",
+    "en": "in recent times",
+    "ar": "في الآونة الأخيرة"
+  },
+  {
+    "id": 419,
+    "sv": "i början av",
+    "en": "at the beginning of",
+    "ar": "في بداية"
+  },
+  {
+    "id": 420,
+    "sv": "i slutet av",
+    "en": "at the end of",
+    "ar": "في نهاية"
+  },
+  {
+    "id": 421,
+    "sv": "på den tiden",
+    "en": "at that time",
+    "ar": "في ذلك الوقت"
+  },
+  {
+    "id": 422,
+    "sv": "förr",
+    "en": "before, formerly, in former days",
+    "ar": "من قبل، سابقا، في الأيام السابقة"
+  },
+  {
+    "id": 423,
+    "sv": "vid den här tiden",
+    "en": "at this time",
+    "ar": "في هذا الوقت"
+  },
+  {
+    "id": 424,
+    "sv": "till en början",
+    "en": "initially",
+    "ar": "بدءًا"
+  },
+  {
+    "id": 425,
+    "sv": "strax innan",
+    "en": "shortly before",
+    "ar": "قبل وقت قصير"
+  },
+  {
+    "id": 426,
+    "sv": "fortfarande",
+    "en": "still",
+    "ar": "ما زال"
+  },
+  {
+    "id": 427,
+    "sv": "än idag",
+    "en": "still, also today",
+    "ar": "واليوم أيضًا"
+  },
+  {
+    "id": 428,
+    "sv": "samtidigt (som)",
+    "en": "at the same time",
+    "ar": "في نفس الوقت"
+  },
+  {
+    "id": 429,
+    "sv": "med tiden",
+    "en": "over time, with time",
+    "ar": "مع مرور الوقت، مع مرور الوقت"
+  },
+  {
+    "id": 430,
+    "sv": "efter en tid",
+    "en": "after a while",
+    "ar": "بعد فترة من الوقت"
+  },
+  {
+    "id": 431,
+    "sv": "så småningom",
+    "en": "gradually",
+    "ar": "تدريجياً"
+  },
+  {
+    "id": 432,
+    "sv": "snart",
+    "en": "soon, fastly",
+    "ar": "قريبا وبسرعة"
+  },
+  {
+    "id": 433,
+    "sv": "länge",
+    "en": "for a long time",
+    "ar": "لفترة طويلة"
+  },
+  {
+    "id": 434,
+    "sv": "inom kort",
+    "en": "in (within) a short time, shortly",
+    "ar": "في (خلال) وقت قصير، قريبا"
+  },
+  {
+    "id": 435,
+    "sv": "äntligen",
+    "en": "at last",
+    "ar": "أخيرا"
+  },
+  {
+    "id": 436,
+    "sv": "till slut, slutligen",
+    "en": "finally (2 expressions)",
+    "ar": "أخيرا (2 تعبيرات)"
+  },
+  {
+    "id": 437,
+    "sv": "Har du lust att",
+    "en": "Do you feel like...?",
+    "ar": "هل تشعر وكأنك...؟"
+  },
+  {
+    "id": 438,
+    "sv": "Vad sägs om",
+    "en": "How about...?",
+    "ar": "ماذا عن...؟"
+  },
+  {
+    "id": 439,
+    "sv": "Hänger du med på ...?",
+    "en": "Will you join (us, me) ...?",
+    "ar": "هل ستنضم (لنا، أنا)...؟"
+  },
+  {
+    "id": 440,
+    "sv": "Ska vi",
+    "en": "Shall we...?",
+    "ar": "هلا فعلنا...؟"
+  },
+  {
+    "id": 441,
+    "sv": "Kom igen",
+    "en": "Come on",
+    "ar": "تعال"
+  },
+  {
+    "id": 442,
+    "sv": "hur kul som helst",
+    "en": "fun as hell",
+    "ar": "متعة كالجحيم"
+  },
+  {
+    "id": 443,
+    "sv": "Visst låter det kul?",
+    "en": "Doesn't that sound fun?",
+    "ar": "ألا يبدو ذلك ممتعاً؟"
+  },
+  {
+    "id": 444,
+    "sv": "Snälla!",
+    "en": "Please! (begging of smth)",
+    "ar": "لو سمحت! (يتوسل شيئا)"
+  },
+  {
+    "id": 445,
+    "sv": "av olika slag",
+    "en": "of different kinds",
+    "ar": "من أنواع مختلفة"
+  },
+  {
+    "id": 446,
+    "sv": "en sorts",
+    "en": "kind of",
+    "ar": "نوع من"
+  },
+  {
+    "id": 447,
+    "sv": "innebär, innebar, inneburit",
+    "en": "imply, mean, signify; involve*",
+    "ar": "يعني، يعني، يدل؛ يتضمن*"
+  },
+  {
+    "id": 448,
+    "sv": "bidrar (TILL ngt), bidrog, bidragit",
+    "en": "contribute; make a contribution; promote*",
+    "ar": "يساهم؛ تقديم مساهمة؛ يرقي*"
+  },
+  {
+    "id": 449,
+    "sv": "behov (-et)",
+    "en": "need, necessity, requirements",
+    "ar": "الحاجة، الضرورة، المتطلبات"
+  },
+  {
+    "id": 450,
+    "sv": "gemenskap (-en)",
+    "en": "community, fellowship",
+    "ar": "المجتمع، الزمالة"
+  },
+  {
+    "id": 451,
+    "sv": "tillgång och efterfrågan (PÅ ngt)",
+    "en": "supply and demand",
+    "ar": "العرض والطلب"
+  },
+  {
+    "id": 452,
+    "sv": "slutar med (ngt; att göra ngt)",
+    "en": "quit",
+    "ar": "يترك"
+  },
+  {
+    "id": 453,
+    "sv": "förhåller sig (TILL ngt), förhöll sig, förhållit sig",
+    "en": "have an attitude to (smth)*",
+    "ar": "لديك موقف تجاه (شيء ما)*"
+  },
+  {
+    "id": 454,
+    "sv": "myser",
+    "en": "cuddle, be enjoying oneself",
+    "ar": "احتضن، استمتع بوقتك"
+  },
+  {
+    "id": 455,
+    "sv": "myskväll (-en, -ar, -arna)",
+    "en": "cozy night at home",
+    "ar": "ليلة مريحة في المنزل"
+  },
+  {
+    "id": 456,
+    "sv": "låda",
+    "en": "box",
+    "ar": "صندوق"
+  },
+  {
+    "id": 457,
+    "sv": "övervikt (-en)",
+    "en": "overweight",
+    "ar": "زيادة الوزن"
+  },
+  {
+    "id": 458,
+    "sv": "fetma (-n)",
+    "en": "obesity",
+    "ar": "بدانة"
+  },
+  {
+    "id": 459,
+    "sv": "beroende (-t) (AV ngt)",
+    "en": "addiction",
+    "ar": "مدمن"
+  },
+  {
+    "id": 460,
+    "sv": "missbruk (-et)",
+    "en": "abuse and addiction",
+    "ar": "سوء المعاملة والإدمان"
+  },
+  {
+    "id": 461,
+    "sv": "överdrift",
+    "en": "exaggeration",
+    "ar": "مبالغة"
+  },
+  {
+    "id": 462,
+    "sv": "överdriver, överdrev, överdrivit",
+    "en": "exaggerate*",
+    "ar": "مبالغة*"
+  },
+  {
+    "id": 463,
+    "sv": "överdriven",
+    "en": "exaggerated",
+    "ar": "مبالغ فيه"
+  },
+  {
+    "id": 464,
+    "sv": "ökad",
+    "en": "increased",
+    "ar": "زيادة"
+  },
+  {
+    "id": 465,
+    "sv": "minskad",
+    "en": "reduced",
+    "ar": "مخفض"
+  },
+  {
+    "id": 466,
+    "sv": "tillverkning (-en)",
+    "en": "manufacturing",
+    "ar": "تصنيع"
+  },
+  {
+    "id": 467,
+    "sv": "biter, bet, bitit",
+    "en": "bite*",
+    "ar": "يعض*"
+  },
+  {
+    "id": 468,
+    "sv": "fastnar",
+    "en": "get stuck, jam, get wedged",
+    "ar": "تتعثر، المربى، الحصول على مثبتة"
+  },
+  {
+    "id": 469,
+    "sv": "stoppar i sig (ngt)",
+    "en": "stuff (cram) oneself with...",
+    "ar": "يحشو (يحشر) نفسه بـ..."
+  },
+  {
+    "id": 470,
+    "sv": "småäter, smååt, småätit",
+    "en": "snack often [between meals]*",
+    "ar": "وجبة خفيفة في كثير من الأحيان [بين الوجبات]*"
+  },
+  {
+    "id": 471,
+    "sv": "smaskar",
+    "en": "slurp, munch",
+    "ar": "رشفة، مونش"
+  },
+  {
+    "id": 472,
+    "sv": "svär, svor, svurit",
+    "en": "swear, curse; vow*",
+    "ar": "أقسم، لعنة؛ نذر*"
+  },
+  {
+    "id": 473,
+    "sv": "sötsaker",
+    "en": "sweets",
+    "ar": "حلويات"
+  },
+  {
+    "id": 474,
+    "sv": "polkagris",
+    "en": "candy cane",
+    "ar": "قصب الحلوى"
+  },
+  {
+    "id": 475,
+    "sv": "plockgodis, lösviktsgodis",
+    "en": "candy one can pick (2 expres- sions)",
+    "ar": "الحلوى التي يمكن للمرء اختيارها (2 تعبيرات)"
+  },
+  {
+    "id": 476,
+    "sv": "ostbågar",
+    "en": "cheese puffs",
+    "ar": "نفث الجبن"
+  },
+  {
+    "id": 477,
+    "sv": "kola",
+    "en": "toffee; caramel",
+    "ar": "حلوى؛ الكراميل"
+  },
+  {
+    "id": 478,
+    "sv": "tablettask",
+    "en": "pastille box",
+    "ar": "علبة باستيل"
+  },
+  {
+    "id": 479,
+    "sv": "sockerbeta",
+    "en": "sugar beet",
+    "ar": "بنجر السكر"
+  },
+  {
+    "id": 480,
+    "sv": "smågodis (-et)",
+    "en": "sweets",
+    "ar": "حلويات"
+  },
+  {
+    "id": 481,
+    "sv": "någon annanstans",
+    "en": "elsewhere",
+    "ar": "في مكان آخر"
+  },
+  {
+    "id": 482,
+    "sv": "någonstans",
+    "en": "somewhere",
+    "ar": "مكان ما"
+  },
+  {
+    "id": 483,
+    "sv": "ingen annanstans",
+    "en": "nowhere else",
+    "ar": "في أي مكان آخر"
+  },
+  {
+    "id": 484,
+    "sv": "ökar",
+    "en": "increase",
+    "ar": "يزيد"
+  },
+  {
+    "id": 485,
+    "sv": "Hur kommer det sig att...?",
+    "en": "Why is it that...?",
+    "ar": "لماذا ذلك...؟"
+  },
+  {
+    "id": 486,
+    "sv": "sådan, sådant, sådana",
+    "en": "such (all three forms)",
+    "ar": "مثل (جميع الأشكال الثلاثة)"
+  },
+  {
+    "id": 487,
+    "sv": "inom några år",
+    "en": "within some years",
+    "ar": "في غضون بعض السنوات"
+  },
+  {
+    "id": 488,
+    "sv": "nuförtiden",
+    "en": "nowadays, these days",
+    "ar": "في هذه الأيام، في هذه الأيام"
+  },
+  {
+    "id": 489,
+    "sv": "i mängder",
+    "en": "in [large] quantities",
+    "ar": "بكميات [كبيرة]."
+  },
+  {
+    "id": 490,
+    "sv": "på senare tid",
+    "en": "in recent times, lately",
+    "ar": "في الآونة الأخيرة، في الآونة الأخيرة"
+  },
+  {
+    "id": 491,
+    "sv": "kedja (-n)",
+    "en": "chain",
+    "ar": "سلسلة"
+  },
+  {
+    "id": 492,
+    "sv": "varuhus (-et)",
+    "en": "[department (departmental)] store",
+    "ar": "[القسم (الإدارات)] المتجر"
+  },
+  {
+    "id": 493,
+    "sv": "oväntad",
+    "en": "unexpected",
+    "ar": "غير متوقع"
+  },
+  {
+    "id": 494,
+    "sv": "förutom",
+    "en": "except for, in addition to",
+    "ar": "باستثناء بالإضافة إلى"
+  },
+  {
+    "id": 495,
+    "sv": "det gamla vanliga (+ngt)",
+    "en": "the same old (smth)",
+    "ar": "نفس القديم (شيء)"
+  },
+  {
+    "id": 496,
+    "sv": "skorpa (-n)",
+    "en": "rusk, crust",
+    "ar": "بقسماط، قشرة"
+  },
+  {
+    "id": 497,
+    "sv": "hot (-et)",
+    "en": "threat",
+    "ar": "تهديد"
+  },
+  {
+    "id": 498,
+    "sv": "geléfiskar",
+    "en": "jelly sweets shaped like fish",
+    "ar": "حلوى جيلي على شكل سمكة"
+  },
+  {
+    "id": 499,
+    "sv": "plockgodis",
+    "en": "candy one can pick",
+    "ar": "الحلوى يمكن للمرء أن يختار"
+  },
+  {
+    "id": 500,
+    "sv": "sega råttor",
+    "en": "chewy rat-shaped sweets",
+    "ar": "حلويات مطاطية على شكل فأر"
+  },
+  {
+    "id": 501,
+    "sv": "seg",
+    "en": "sticky, jelly",
+    "ar": "لزجة، هلام"
+  },
+  {
+    "id": 502,
+    "sv": "stannar till",
+    "en": "stay for a while on your way some- where else",
+    "ar": "البقاء لفترة من الوقت في طريقك إلى مكان آخر"
+  },
+  {
+    "id": 503,
+    "sv": "sprider sig, spred sig, spridit sig",
+    "en": "spread*",
+    "ar": "الانتشار*"
+  },
+  {
+    "id": 504,
+    "sv": "lever kvar",
+    "en": "live on, still exist",
+    "ar": "تعيش، لا تزال موجودة"
+  },
+  {
+    "id": 505,
+    "sv": "fortfarande",
+    "en": "still, even now",
+    "ar": "لا يزال، حتى الآن"
+  },
+  {
+    "id": 506,
+    "sv": "håller (ngt) ren",
+    "en": "keep (smth) clean",
+    "ar": "حافظ على نظافة (شيء ما)."
+  },
+  {
+    "id": 507,
+    "sv": "njuter, njöt, njutit (AV ngt)",
+    "en": "enjoy (smth)*",
+    "ar": "استمتع (شيء)*"
+  },
+  {
+    "id": 508,
+    "sv": "kåda (-n)",
+    "en": "tree resin",
+    "ar": "راتنج الشجرة"
+  },
+  {
+    "id": 509,
+    "sv": "tuggar",
+    "en": "chew",
+    "ar": "مضغ"
+  },
+  {
+    "id": 510,
+    "sv": "det visar sig",
+    "en": "it turns out",
+    "ar": "اتضح"
+  },
+  {
+    "id": 511,
+    "sv": "tillverkar",
+    "en": "manufacture, produce",
+    "ar": "تصنيع وإنتاج"
+  },
+  {
+    "id": 512,
+    "sv": "så småningom",
+    "en": "gradually, eventually",
+    "ar": "تدريجيا، في نهاية المطاف"
+  },
+  {
+    "id": 513,
+    "sv": "framför allt",
+    "en": "above all, especially",
+    "ar": "قبل كل شيء، وخاصة"
+  },
+  {
+    "id": 514,
+    "sv": "på den tiden",
+    "en": "at that time, back then",
+    "ar": "في ذلك الوقت، في ذلك الوقت"
+  },
+  {
+    "id": 515,
+    "sv": "nämligen",
+    "en": "namely, that is",
+    "ar": "وهي أن هذا هو"
+  },
+  {
+    "id": 516,
+    "sv": "godisgris (-en, -ar, -arna)",
+    "en": "sweet tooth",
+    "ar": "أسنان حلوة"
+  },
+  {
+    "id": 517,
+    "sv": "emellertid",
+    "en": "however, though",
+    "ar": "ومع ذلك، على أية حال"
+  },
+  {
+    "id": 518,
+    "sv": "återvänder",
+    "en": "return",
+    "ar": "يعود"
+  },
+  {
+    "id": 519,
+    "sv": "sockerbagare (gammalt ord)",
+    "en": "confectioner",
+    "ar": "حلواني"
+  },
+  {
+    "id": 520,
+    "sv": "adeln",
+    "en": "nobel birth, the nobility",
+    "ar": "الولادة النبيلة، النبلاء"
+  },
+  {
+    "id": 521,
+    "sv": "anställer",
+    "en": "employ",
+    "ar": "توظيف"
+  },
+  {
+    "id": 522,
+    "sv": "till och med",
+    "en": "even (more than that), up to and including",
+    "ar": "حتى (أكثر من ذلك)، حتى بما في ذلك"
+  },
+  {
+    "id": 523,
+    "sv": "minskar",
+    "en": "reduce, decrease",
+    "ar": "تقليل، تقليل"
+  },
+  {
+    "id": 524,
+    "sv": "mot slutet av (1990-talet)",
+    "en": "by the end of ...",
+    "ar": "بحلول نهاية ..."
+  },
+  {
+    "id": 525,
+    "sv": "lyckas (MED ngt)",
+    "en": "succeed in, manage",
+    "ar": "تنجح في، وإدارة"
+  },
+  {
+    "id": 526,
+    "sv": "tack vare",
+    "en": "thanks to, through",
+    "ar": "بفضل، من خلال"
+  },
+  {
+    "id": 527,
+    "sv": "startpunkt (-en, -er)",
+    "en": "starting point",
+    "ar": "نقطة البداية"
+  },
+  {
+    "id": 528,
+    "sv": "tillverkning",
+    "en": "manufacturing",
+    "ar": "تصنيع"
+  },
+  {
+    "id": 529,
+    "sv": "kokar",
+    "en": "boil",
+    "ar": "يغلي"
+  },
+  {
+    "id": 530,
+    "sv": "den ena - den andra",
+    "en": "one of (them) - the other",
+    "ar": "أحدهما (هما) - الآخر"
+  },
+  {
+    "id": 531,
+    "sv": "polkagris (-en, -ar)",
+    "en": "peppermint candy cane",
+    "ar": "قصب حلوى النعناع"
+  },
+  {
+    "id": 532,
+    "sv": "förmögen",
+    "en": "wealthy",
+    "ar": "ثري"
+  },
+  {
+    "id": 533,
+    "sv": "till en början",
+    "en": "initially, to begin with",
+    "ar": "في البداية، لتبدأ"
+  },
+  {
+    "id": 534,
+    "sv": "gatuförsäljare",
+    "en": "street vendor",
+    "ar": "بائع متجول"
+  },
+  {
+    "id": 535,
+    "sv": "gumma (-n)",
+    "en": "old woman, old lady",
+    "ar": "امرأة عجوز، سيدة عجوز"
+  },
+  {
+    "id": 536,
+    "sv": "gubbe (-n, -ar)",
+    "en": "old man",
+    "ar": "رجل عجوز"
+  },
+  {
+    "id": 537,
+    "sv": "strut (-en, -ar)",
+    "en": "cone, cornet",
+    "ar": "مخروط، البوق"
+  },
+  {
+    "id": 538,
+    "sv": "kola",
+    "en": "toffee, caramel",
+    "ar": "توفي، كراميل"
+  },
+  {
+    "id": 539,
+    "sv": "tablettask (-ar)",
+    "en": "pastille box",
+    "ar": "علبة باستيل"
+  },
+  {
+    "id": 540,
+    "sv": "chokladkaka",
+    "en": "a bar of chocolate",
+    "ar": "قطعة من الشوكولاتة"
+  },
+  {
+    "id": 541,
+    "sv": "genombrott (-et)",
+    "en": "breakthrough",
+    "ar": "اختراق"
+  },
+  {
+    "id": 542,
+    "sv": "försäljning (-en)",
+    "en": "sale, sales",
+    "ar": "بيع، مبيعات"
+  },
+  {
+    "id": 543,
+    "sv": "på så sätt",
+    "en": "this way, so",
+    "ar": "بهذه الطريقة، لذلك"
+  },
+  {
+    "id": 544,
+    "sv": "får tag på",
+    "en": "get hold of, find",
+    "ar": "الحصول على عقد، والعثور على"
+  },
+  {
+    "id": 545,
+    "sv": "lanserar",
+    "en": "introduce, put on the market",
+    "ar": "أعرض، طرح في السوق"
+  },
+  {
+    "id": 546,
+    "sv": "storsäljare (-n, -, storsäljarna)",
+    "en": "best-seller",
+    "ar": "الأكثر مبيعًا"
+  },
+  {
+    "id": 547,
+    "sv": "skadlig",
+    "en": "harmful",
+    "ar": "ضار"
+  },
+  {
+    "id": 548,
+    "sv": "(i) dåligt sällskap",
+    "en": "bad company",
+    "ar": "شركة سيئة"
+  },
+  {
+    "id": 549,
+    "sv": "en god vän (TILL ngn)",
+    "en": "a great, close friend (of smn)",
+    "ar": "صديق عظيم ومقرب (من smn)"
+  },
+  {
+    "id": 550,
+    "sv": "bekväm",
+    "en": "comfortable",
+    "ar": "مريح"
+  },
+  {
+    "id": 551,
+    "sv": "utåtriktad",
+    "en": "outgoing, extroverted",
+    "ar": "المنتهية ولايته، منفتح"
+  },
+  {
+    "id": 552,
+    "sv": "händig",
+    "en": "practical, good with one's hands",
+    "ar": "عملي وجيد بيديه"
+  },
+  {
+    "id": 553,
+    "sv": "pratsam",
+    "en": "talkative, chatty",
+    "ar": "ثرثار، ثرثار"
+  },
+  {
+    "id": 554,
+    "sv": "(en) icke-rökare",
+    "en": "(a) non-smoker",
+    "ar": "(أ) غير مدخن"
+  },
+  {
+    "id": 555,
+    "sv": "(en) djurvän",
+    "en": "animal lover",
+    "ar": "محب للحيوانات"
+  },
+  {
+    "id": 556,
+    "sv": "(en) nykterist",
+    "en": "non-drinker, total abstainer",
+    "ar": "غير شارب، ممتنع تماما"
+  },
+  {
+    "id": 557,
+    "sv": "sportig",
+    "en": "athletic, sporty",
+    "ar": "رياضي، رياضي"
+  },
+  {
+    "id": 558,
+    "sv": "ofräsch",
+    "en": "not fresh, dirty",
+    "ar": "ليست جديدة وقذرة"
+  },
+  {
+    "id": 559,
+    "sv": "oartig",
+    "en": "rude, impolite",
+    "ar": "فظ وغير مهذب"
+  },
+  {
+    "id": 560,
+    "sv": "dum",
+    "en": "stupid, silly, dull, nasty (to smn)",
+    "ar": "غبي، سخيف، مملة، سيئة (لSMN)"
+  },
+  {
+    "id": 561,
+    "sv": "hopplös (MED/PÅ ngt)",
+    "en": "hopelessly bad (at smth)",
+    "ar": "سيئة ميؤوس منها (في شيء)"
+  },
+  {
+    "id": 562,
+    "sv": "hemsk",
+    "en": "horrible, terrible, awful",
+    "ar": "فظيع، فظيع، فظيع"
+  },
+  {
+    "id": 563,
+    "sv": "hemlig",
+    "en": "secret",
+    "ar": "سر"
+  },
+  {
+    "id": 564,
+    "sv": "desperat",
+    "en": "desperate",
+    "ar": "متحرّق إلى"
+  },
+  {
+    "id": 565,
+    "sv": "(en) riktig vän",
+    "en": "(a) real friend",
+    "ar": "(أ) الصديق الحقيقي"
+  },
+  {
+    "id": 566,
+    "sv": "usel",
+    "en": "lousy, worthless, very bad",
+    "ar": "رديء، لا قيمة له، سيئ للغاية"
+  },
+  {
+    "id": 567,
+    "sv": "osjyst (också: schyst, just)",
+    "en": "unkind",
+    "ar": "قاس"
+  },
+  {
+    "id": 568,
+    "sv": "sjyst (också: schyst, just)",
+    "en": "decent, super, great, dead good",
+    "ar": "لائق، ممتاز، عظيم، جيد ميت"
+  },
+  {
+    "id": 569,
+    "sv": "taskig",
+    "en": "rotten, nasty, mean",
+    "ar": "الفاسد، سيئة، يعني"
+  },
+  {
+    "id": 570,
+    "sv": "bussig",
+    "en": "nice, helpful",
+    "ar": "لطيفة ومفيدة"
+  },
+  {
+    "id": 571,
+    "sv": "lättlagad",
+    "en": "easy to make (about food)",
+    "ar": "سهل الصنع (عن الطعام)"
+  },
+  {
+    "id": 572,
+    "sv": "hemgjord",
+    "en": "homemade",
+    "ar": "محلية الصنع"
+  },
+  {
+    "id": 573,
+    "sv": "etablerad",
+    "en": "established",
+    "ar": "مقرر"
+  },
+  {
+    "id": 574,
+    "sv": "jämt",
+    "en": "all the time, always",
+    "ar": "في كل وقت، دائما"
+  },
+  {
+    "id": 575,
+    "sv": "sur",
+    "en": "cross (angry)",
+    "ar": "صليب (غاضب)"
+  },
+  {
+    "id": 576,
+    "sv": "tom",
+    "en": "empty",
+    "ar": "فارغ"
+  },
+  {
+    "id": 577,
+    "sv": "beroende (AV ngt)",
+    "en": "be dependent on (addicted to)",
+    "ar": "يعتمد على (مدمن على)"
+  },
+  {
+    "id": 578,
+    "sv": "beroende (PÅ ngt)",
+    "en": "depending on (smth as a circum- stance)",
+    "ar": "اعتمادًا على (شيء ما كظرف)"
+  },
+  {
+    "id": 579,
+    "sv": "sugen (PÅ ngt)",
+    "en": "having a craving",
+    "ar": "وجود حنين"
+  },
+  {
+    "id": 580,
+    "sv": "ren",
+    "en": "clean",
+    "ar": "ينظف"
+  },
+  {
+    "id": 581,
+    "sv": "rik",
+    "en": "rich",
+    "ar": "ثري"
+  },
+  {
+    "id": 582,
+    "sv": "opålitlig",
+    "en": "untrustworthy, shifty",
+    "ar": "غير جدير بالثقة، ماكر"
+  },
+  {
+    "id": 583,
+    "sv": "tystlåten",
+    "en": "silent, quiet, taciturn",
+    "ar": "صامت، هادئ، قليل الكلام"
+  },
+  {
+    "id": 584,
+    "sv": "inåtvänd",
+    "en": "introvert, withdrawn",
+    "ar": "انطوائي، منسحب"
+  },
+  {
+    "id": 585,
+    "sv": "löjlig",
+    "en": "ridiculous, silly",
+    "ar": "سخيف، سخيف"
+  },
+  {
+    "id": 586,
+    "sv": "myser",
+    "en": "is enjoying oneself (infml)",
+    "ar": "يستمتع بنفسه (infml)"
+  },
+  {
+    "id": 587,
+    "sv": "samlas",
+    "en": "congregate, get together",
+    "ar": "اجتمعوا، اجتمعوا"
+  },
+  {
+    "id": 588,
+    "sv": "(den, det, de) enda",
+    "en": "(the) only one",
+    "ar": "(ال) واحد فقط"
+  },
+  {
+    "id": 589,
+    "sv": "lättlagad",
+    "en": "easy to make (food)",
+    "ar": "من السهل صنع (الطعام)"
+  },
+  {
+    "id": 590,
+    "sv": "i alla fall",
+    "en": "anyway, anyhow, at least",
+    "ar": "على أية حال، على أية حال، على الأقل"
+  },
+  {
+    "id": 591,
+    "sv": "kommer med (i + plats)",
+    "en": "(get) drawn in, be included in",
+    "ar": "(يحصل) على، يدرج في"
+  },
+  {
+    "id": 592,
+    "sv": "en sorts, ett slags",
+    "en": "kind of (x2)",
+    "ar": "النوع (x2)"
+  },
+  {
+    "id": 593,
+    "sv": "skapar",
+    "en": "create",
+    "ar": "يخلق"
+  },
+  {
+    "id": 594,
+    "sv": "gemenskap (-en)",
+    "en": "fellowship, community",
+    "ar": "الزمالة والمجتمع"
+  },
+  {
+    "id": 595,
+    "sv": "inom",
+    "en": "within",
+    "ar": "داخل"
+  },
+  {
+    "id": 596,
+    "sv": "bidrar (TILL ngt), bidrog, bidragit",
+    "en": "contribute, make a contribution*",
+    "ar": "ساهم، ساهم*"
+  },
+  {
+    "id": 597,
+    "sv": "övervikt (-en)",
+    "en": "obesity",
+    "ar": "بدانة"
+  },
+  {
+    "id": 598,
+    "sv": "tillverkare",
+    "en": "manufacturer",
+    "ar": "الشركة المصنعة"
+  },
+  {
+    "id": 599,
+    "sv": "mjukiskläder",
+    "en": "soft clothing (sweat top, sweat- pants etc)",
+    "ar": "الملابس الناعمة (قميص العرق، السراويل العرق، الخ)"
+  },
+  {
+    "id": 600,
+    "sv": "morgonrock (-en, -ar)",
+    "en": "dressing gown",
+    "ar": "ثوب خلع الملابس"
+  },
+  {
+    "id": 601,
+    "sv": "politiskt aktiv",
+    "en": "politically active",
+    "ar": "ناشط سياسيا"
+  },
+  {
+    "id": 602,
+    "sv": "sysslar (MED ngt)",
+    "en": "busy oneself (with smth)",
+    "ar": "مشغول بنفسه (بشيء ما)"
+  },
+  {
+    "id": 603,
+    "sv": "röstar (PÅ ngn / I ett val / FÖR eller EMOT ngt)",
+    "en": "vote for someone; vote in an election; vote for or against something",
+    "ar": "التصويت لشخص ما؛ التصويت في الانتخابات؛ التصويت لصالح أو ضد شيء ما"
+  },
+  {
+    "id": 604,
+    "sv": "väljer, valde, valt",
+    "en": "choose*",
+    "ar": "يختار*"
+  },
+  {
+    "id": 605,
+    "sv": "tar makten",
+    "en": "come into power",
+    "ar": "يأتي إلى السلطة"
+  },
+  {
+    "id": 606,
+    "sv": "startar",
+    "en": "start up",
+    "ar": ".بدء"
+  },
+  {
+    "id": 607,
+    "sv": "föreslår, föreslog, föreslagit",
+    "en": "proposes, suggests*",
+    "ar": "يقترح، يقترح*"
+  },
+  {
+    "id": 608,
+    "sv": "beslutar, beslöt, beslutit",
+    "en": "decide*",
+    "ar": "يقرر*"
+  },
+  {
+    "id": 609,
+    "sv": "bestämmer",
+    "en": "determine, decide",
+    "ar": "تحديد، تقرر"
+  },
+  {
+    "id": 610,
+    "sv": "styr",
+    "en": "control, govern",
+    "ar": "تحكم، تحكم"
+  },
+  {
+    "id": 611,
+    "sv": "kampanj (-en, -er)",
+    "en": "campaign, drive",
+    "ar": "حملة، محرك"
+  },
+  {
+    "id": 612,
+    "sv": "löser problem",
+    "en": "solve problems",
+    "ar": "حل المشاكل"
+  },
+  {
+    "id": 613,
+    "sv": "med undantag för",
+    "en": "with the exception of",
+    "ar": "باستثناء"
+  },
+  {
+    "id": 614,
+    "sv": "jämlikhet",
+    "en": "social equality",
+    "ar": "المساواة الاجتماعية"
+  },
+  {
+    "id": 615,
+    "sv": "jämställdhet",
+    "en": "gender equality",
+    "ar": "المساواة بين الجنسين"
+  },
+  {
+    "id": 616,
+    "sv": "klassamhälle (-t)",
+    "en": "class society",
+    "ar": "المجتمع الطبقي"
+  },
+  {
+    "id": 617,
+    "sv": "välfärdsstat (-en, -er)",
+    "en": "welfare state",
+    "ar": "دولة الرفاهية"
+  },
+  {
+    "id": 618,
+    "sv": "frihet (-en)",
+    "en": "freedom",
+    "ar": "حرية"
+  },
+  {
+    "id": 619,
+    "sv": "rättighet (-en)",
+    "en": "right",
+    "ar": "يمين"
+  },
+  {
+    "id": 620,
+    "sv": "rätten till (något)",
+    "en": "the right (to do smth)",
+    "ar": "الحق (لفعل شيء ما)"
+  },
+  {
+    "id": 621,
+    "sv": "skattetryck (-et)",
+    "en": "(-et) tax pressure, high taxes",
+    "ar": "(-و) الضغط الضريبي، والضرائب المرتفعة"
+  },
+  {
+    "id": 622,
+    "sv": "fyraprocentsspärr (-en)",
+    "en": "four-percent electoral threshold",
+    "ar": "العتبة الانتخابية البالغة أربعة بالمئة"
+  },
+  {
+    "id": 623,
+    "sv": "svag",
+    "en": "weak",
+    "ar": "ضعيف"
+  },
+  {
+    "id": 624,
+    "sv": "regering (-en)",
+    "en": "government",
+    "ar": "حكومة"
+  },
+  {
+    "id": 625,
+    "sv": "riksdag (-en)",
+    "en": "Parliament",
+    "ar": "البرلمان"
+  },
+  {
+    "id": 626,
+    "sv": "parti (-et)",
+    "en": "political party",
+    "ar": "حزب سياسي"
+  },
+  {
+    "id": 627,
+    "sv": "koalition",
+    "en": "coalition",
+    "ar": "ائتلاف"
+  },
+  {
+    "id": 628,
+    "sv": "myndighet",
+    "en": "public authority",
+    "ar": "السلطة العامة"
+  },
+  {
+    "id": 629,
+    "sv": "län (-et)",
+    "en": "(administrative province) county",
+    "ar": "(المقاطعة الإدارية) مقاطعة"
+  },
+  {
+    "id": 630,
+    "sv": "region",
+    "en": "county council",
+    "ar": "مجلس المقاطعة"
+  },
+  {
+    "id": 631,
+    "sv": "kommun (-en)",
+    "en": "municipality",
+    "ar": "بلدية"
+  },
+  {
+    "id": 632,
+    "sv": "stat (-en)",
+    "en": "the State",
+    "ar": "الدولة"
+  },
+  {
+    "id": 633,
+    "sv": "tryckfrihet",
+    "en": "freedom of the press",
+    "ar": "حرية الصحافة"
+  },
+  {
+    "id": 634,
+    "sv": "yttrandefrihet",
+    "en": "freedom of speech",
+    "ar": "حرية التعبير"
+  },
+  {
+    "id": 635,
+    "sv": "allmänna val",
+    "en": "general election",
+    "ar": "الانتخابات العامة"
+  },
+  {
+    "id": 636,
+    "sv": "röst (-en)",
+    "en": "a vote",
+    "ar": "تصويت"
+  },
+  {
+    "id": 637,
+    "sv": "valdeltagande",
+    "en": "participation in an election",
+    "ar": "المشاركة في الانتخابات"
+  },
+  {
+    "id": 638,
+    "sv": "lag (-en, -ar)",
+    "en": "law",
+    "ar": "قانون"
+  },
+  {
+    "id": 639,
+    "sv": "offentlig",
+    "en": "public, open",
+    "ar": "عامة، مفتوحة"
+  },
+  {
+    "id": 640,
+    "sv": "mandatperiod (-en, -er, -erna)",
+    "en": "mandate, term of office",
+    "ar": "الولاية، مدة الولاية"
+  },
+  {
+    "id": 641,
+    "sv": "minister (-en, -rar)",
+    "en": "minister",
+    "ar": "وزير"
+  },
+  {
+    "id": 642,
+    "sv": "statsminister",
+    "en": "prime minister",
+    "ar": "رئيس الوزراء"
+  },
+  {
+    "id": 643,
+    "sv": "finansminister",
+    "en": "Minister of Finance",
+    "ar": "وزير المالية"
+  },
+  {
+    "id": 644,
+    "sv": "utrikesminister",
+    "en": "Minister for Foreign Affairs",
+    "ar": "وزير الخارجية"
+  },
+  {
+    "id": 645,
+    "sv": "partiledare",
+    "en": "party leader",
+    "ar": "زعيم الحزب"
+  },
+  {
+    "id": 646,
+    "sv": "ledamot (ledamöter)",
+    "en": "member (of Parliament), fellow",
+    "ar": "عضو (البرلمان) ، زميل"
+  },
+  {
+    "id": 647,
+    "sv": "medborgare (-n)",
+    "en": "citizen",
+    "ar": "مواطن"
+  },
+  {
+    "id": 648,
+    "sv": "väljare (-n)",
+    "en": "voter, elector",
+    "ar": "الناخب، الناخب"
+  },
+  {
+    "id": 649,
+    "sv": "statschef",
+    "en": "head of state",
+    "ar": "رئيس الدولة"
+  },
+  {
+    "id": 650,
+    "sv": "regeringschef",
+    "en": "head of government",
+    "ar": "رئيس الحكومة"
+  },
+  {
+    "id": 651,
+    "sv": "kronprinsessa",
+    "en": "crown princess",
+    "ar": "أميرة التاج"
+  },
+  {
+    "id": 652,
+    "sv": "ersätter, ersatte, ersatt",
+    "en": "replace; compensate (sb)*",
+    "ar": "يستبدل؛ تعويض (بينالي الشارقة)*"
+  },
+  {
+    "id": 653,
+    "sv": "tillkommer",
+    "en": "is added, be an addition to",
+    "ar": "مضاف، يكون إضافة إلى"
+  },
+  {
+    "id": 654,
+    "sv": "ytterligare",
+    "en": "further, additional",
+    "ar": "علاوة على ذلك، إضافية"
+  },
+  {
+    "id": 655,
+    "sv": "borgerlig",
+    "en": "bourgeois, middle class",
+    "ar": "البرجوازية والطبقة الوسطى"
+  },
+  {
+    "id": 656,
+    "sv": "kärnkraft",
+    "en": "nuclear power",
+    "ar": "الطاقة النووية"
+  },
+  {
+    "id": 657,
+    "sv": "styre (-t)",
+    "en": "leadership",
+    "ar": "قيادة"
+  },
+  {
+    "id": 658,
+    "sv": "avbrott (-et)",
+    "en": "interruption, break, paus",
+    "ar": "انقطاع، انقطاع، توقف"
+  },
+  {
+    "id": 659,
+    "sv": "enfrågeparti",
+    "en": "single-issue party",
+    "ar": "حزب القضية الواحدة"
+  },
+  {
+    "id": 660,
+    "sv": "avskaffar",
+    "en": "abolish, get rid of",
+    "ar": "ألغى، تخلص من"
+  },
+  {
+    "id": 661,
+    "sv": "lag (-ar)",
+    "en": "law",
+    "ar": "قانون"
+  },
+  {
+    "id": 662,
+    "sv": "grundlag (-ar)",
+    "en": "fundamental constitutional law",
+    "ar": "القانون الدستوري الأساسي"
+  },
+  {
+    "id": 663,
+    "sv": "skyddar",
+    "en": "protect, defend, shelter",
+    "ar": "حماية، الدفاع، المأوى"
+  },
+  {
+    "id": 664,
+    "sv": "regel (-ler)",
+    "en": "rule",
+    "ar": "قاعدة"
+  },
+  {
+    "id": 665,
+    "sv": "rättigheter och skyldigheter",
+    "en": "rights and duties",
+    "ar": "الحقوق والواجبات"
+  },
+  {
+    "id": 666,
+    "sv": "Hur går det till?",
+    "en": "How is it being done? How does it happen?",
+    "ar": "كيف يتم ذلك؟ كيف يحدث ذلك؟"
+  },
+  {
+    "id": 667,
+    "sv": "stiftar lagar",
+    "en": "legislate",
+    "ar": "التشريع"
+  },
+  {
+    "id": 668,
+    "sv": "riksdagen",
+    "en": "Parliament",
+    "ar": "البرلمان"
+  },
+  {
+    "id": 669,
+    "sv": "fattar beslut",
+    "en": "come to (make, arrive at) a deci- sion",
+    "ar": "التوصل إلى (اتخاذ، التوصل إلى) قرار"
+  },
+  {
+    "id": 670,
+    "sv": "granskar",
+    "en": "observe...closely, inspect",
+    "ar": "راقب... عن كثب، افحص"
+  },
+  {
+    "id": 671,
+    "sv": "folkomröstning",
+    "en": "referendum",
+    "ar": "استفتاء"
+  },
+  {
+    "id": 672,
+    "sv": "medborgare",
+    "en": "citizen",
+    "ar": "مواطن"
+  },
+  {
+    "id": 673,
+    "sv": "(några år, veckor, dagar) i rad",
+    "en": "in a row, after each other",
+    "ar": "على التوالي، بعد بعضها البعض"
+  },
+  {
+    "id": 674,
+    "sv": "rösträtt",
+    "en": "the right to vote",
+    "ar": "الحق في التصويت"
+  },
+  {
+    "id": 675,
+    "sv": "bildar regering",
+    "en": "form a Government",
+    "ar": "تشكيل الحكومة"
+  },
+  {
+    "id": 676,
+    "sv": "regering",
+    "en": "government",
+    "ar": "حكومة"
+  },
+  {
+    "id": 677,
+    "sv": "försvarsminister",
+    "en": "Minister of Defence",
+    "ar": "وزير الدفاع"
+  },
+  {
+    "id": 678,
+    "sv": "socialminister",
+    "en": "Minister for Health and Social Af- fairs",
+    "ar": "وزير الصحة والشؤون الاجتماعية"
+  },
+  {
+    "id": 679,
+    "sv": "lägger fram",
+    "en": "present, put forward",
+    "ar": "حاضر، طرح"
+  },
+  {
+    "id": 680,
+    "sv": "ser till (att ngt händer)",
+    "en": "see to it, make sure (that smth happens or is being done)",
+    "ar": "تأكد من ذلك، تأكد (أن شيئًا ما يحدث أو يحدث)"
+  },
+  {
+    "id": 681,
+    "sv": "förbjudet",
+    "en": "forbidden, prohibited",
+    "ar": "ممنوع، محظور"
+  },
+  {
+    "id": 682,
+    "sv": "tillåtet",
+    "en": "allowed",
+    "ar": "مسموح"
+  },
+  {
+    "id": 683,
+    "sv": "lägger sig i (i ngt)",
+    "en": "interfere with..., poke one's nose into",
+    "ar": "تتداخل مع...، كزة أنفه في"
+  },
+  {
+    "id": 684,
+    "sv": "har hand om",
+    "en": "be in charge of, be responsible for, handle",
+    "ar": "يكون مسؤولا عن، يكون مسؤولا عن، التعامل مع"
+  },
+  {
+    "id": 685,
+    "sv": "motsvarar (ngt)",
+    "en": "correspond (to smth)",
+    "ar": "يتوافق (لشيء ما)"
+  },
+  {
+    "id": 686,
+    "sv": "1700-talet",
+    "en": "18th century",
+    "ar": "القرن الثامن عشر"
+  },
+  {
+    "id": 687,
+    "sv": "århundrade (-t), sekel (-let)",
+    "en": "century (2 words)",
+    "ar": "القرن (2 كلمه)"
+  },
+  {
+    "id": 688,
+    "sv": "årtionde (-et), decennium (decenniet, decennier)",
+    "en": "decade (2 words)",
+    "ar": "العقد (2 كلمه)"
+  },
+  {
+    "id": 689,
+    "sv": "före Kristus (f.Kr.)",
+    "en": "before Christ (BC)",
+    "ar": "قبل المسيح (قبل الميلاد)"
+  },
+  {
+    "id": 690,
+    "sv": "efter Kristus (e.Kr.)",
+    "en": "Anno Domini (AD)",
+    "ar": "أنو دوميني (م)"
+  },
+  {
+    "id": 691,
+    "sv": "framtidstro",
+    "en": "belief in the future",
+    "ar": "الإيمان بالمستقبل"
+  },
+  {
+    "id": 692,
+    "sv": "allt bättre",
+    "en": "better and better",
+    "ar": "أفضل وأفضل"
+  },
+  {
+    "id": 693,
+    "sv": "allt fler",
+    "en": "more and more",
+    "ar": "المزيد والمزيد"
+  },
+  {
+    "id": 694,
+    "sv": "allt snabbare",
+    "en": "faster and faster",
+    "ar": "أسرع وأسرع"
+  },
+  {
+    "id": 695,
+    "sv": "går över (TILL ngt annat)",
+    "en": "change to",
+    "ar": "تغيير ل"
+  },
+  {
+    "id": 696,
+    "sv": "P-piller",
+    "en": "birth control pill",
+    "ar": "حبوب منع الحمل"
+  },
+  {
+    "id": 697,
+    "sv": "godkänd",
+    "en": "approved",
+    "ar": "موافقة"
+  },
+  {
+    "id": 698,
+    "sv": "godkänner (ngt)",
+    "en": "approve",
+    "ar": "يعتمد"
+  },
+  {
+    "id": 699,
+    "sv": "behåller, behöll, behållit",
+    "en": "keep, retain*",
+    "ar": "احتفظ، احتفظ*"
+  },
+  {
+    "id": 700,
+    "sv": "myndig",
+    "en": "of lawful age",
+    "ar": "من السن القانونية"
+  },
+  {
+    "id": 701,
+    "sv": "äger rum",
+    "en": "take place",
+    "ar": "تحدث"
+  },
+  {
+    "id": 702,
+    "sv": "avrättar",
+    "en": "execute, put...to death",
+    "ar": "إعدام، إعدام.. إعدام"
+  },
+  {
+    "id": 703,
+    "sv": "sexuell läggning",
+    "en": "sexual orientation",
+    "ar": "التوجه الجنسي"
+  },
+  {
+    "id": 704,
+    "sv": "rörelse (-n)",
+    "en": "movement",
+    "ar": "حركة"
+  },
+  {
+    "id": 705,
+    "sv": "slår igenom, slog igenom, slagit igenom                                          cess*",
+    "en": "have a breakthrough, be a suc-",
+    "ar": "حقق اختراقًا، كن ناجحًا"
+  },
+  {
+    "id": 706,
+    "sv": "tar fart",
+    "en": "speed up, increase (put on) speed, accelerate",
+    "ar": "تسريع، زيادة (ارتداء) السرعة، تسريع"
+  },
+  {
+    "id": 707,
+    "sv": "samkönad",
+    "en": "same-sex",
+    "ar": "نفس الجنس"
+  },
+  {
+    "id": 708,
+    "sv": "hets mot folkgrupp",
+    "en": "incitement to hatred",
+    "ar": "التحريض على الكراهية"
+  },
+  {
+    "id": 709,
+    "sv": "trendig",
+    "en": "trendy",
+    "ar": "عصري"
+  },
+  {
+    "id": 710,
+    "sv": "oerhört",
+    "en": "extremely, tremendously",
+    "ar": "للغاية، بشكل هائل"
+  },
+  {
+    "id": 711,
+    "sv": "högkonjunktur",
+    "en": "economic boom",
+    "ar": "الازدهار الاقتصادي"
+  },
+  {
+    "id": 712,
+    "sv": "lågkonjunktur",
+    "en": "recession",
+    "ar": "ركود"
+  },
+  {
+    "id": 713,
+    "sv": "försvar (-et)",
+    "en": "defence",
+    "ar": "دفاع"
+  },
+  {
+    "id": 714,
+    "sv": "inträffar",
+    "en": "happen, occur",
+    "ar": "يحدث، يحدث"
+  },
+  {
+    "id": 715,
+    "sv": "uppmanar",
+    "en": "urge, exhort",
+    "ar": "حث، حث"
+  },
+  {
+    "id": 716,
+    "sv": "allvarlig",
+    "en": "severe, serious",
+    "ar": "خطيرة وخطيرة"
+  },
+  {
+    "id": 717,
+    "sv": "skjuter ihjäl, sköt ihjäl, skjutit ihjäl",
+    "en": "shoot (smb) dead*",
+    "ar": "إطلاق النار على (شخص ما) ميت*"
+  },
+  {
+    "id": 718,
+    "sv": "preventivmedel",
+    "en": "contraceptives",
+    "ar": "وسائل منع الحمل"
+  },
+  {
+    "id": 719,
+    "sv": "brist (PÅ ngt)",
+    "en": "lack, scarcity, shortage",
+    "ar": "نقص، ندرة، نقص"
+  },
+  {
+    "id": 720,
+    "sv": "förbund (-et)",
+    "en": "alliance, union, league, associa- tion",
+    "ar": "تحالف، اتحاد، عصبة، رابطة"
+  },
+  {
+    "id": 721,
+    "sv": "sprit (-en)",
+    "en": "liquor, alcohol",
+    "ar": "الخمور والكحول"
+  },
+  {
+    "id": 722,
+    "sv": "gör entré",
+    "en": "make one's appearance",
+    "ar": "جعل مظهر المرء"
+  },
+  {
+    "id": 723,
+    "sv": "ägnar (dagar, år, sitt lv) åt (ngt)",
+    "en": "devote, give (one's time) to (smth)",
+    "ar": "كرس، امنح (وقتك) لـ (شيء ما)"
+  },
+  {
+    "id": 724,
+    "sv": "regent (-er)",
+    "en": "regent; sovereign",
+    "ar": "الوصي. سيادة"
+  },
+  {
+    "id": 725,
+    "sv": "regerande",
+    "en": "reigning",
+    "ar": "الحكم"
+  },
+  {
+    "id": 726,
+    "sv": "regerar",
+    "en": "rule, govern",
+    "ar": "يحكم، يحكم"
+  },
+  {
+    "id": 727,
+    "sv": "makt (-en)",
+    "en": "power, authority",
+    "ar": "القوة والسلطة"
+  },
+  {
+    "id": 728,
+    "sv": "uppfostrar (ngn)",
+    "en": "bring up, raise and educate",
+    "ar": "تربية وتربية وتعليم"
+  },
+  {
+    "id": 729,
+    "sv": "illa omtyckt",
+    "en": "unpopular",
+    "ar": "لا تحظى بشعبية"
+  },
+  {
+    "id": 730,
+    "sv": "drabbar",
+    "en": "affect, happen to; hit, strike, fall upon",
+    "ar": "يؤثر، يحدث؛ ضرب، ضرب، وقع"
+  },
+  {
+    "id": 731,
+    "sv": "våld (-et)",
+    "en": "violence",
+    "ar": "عنف"
+  },
+  {
+    "id": 732,
+    "sv": "olycka (-n)",
+    "en": "misfortune, unhappiness, trouble, misery",
+    "ar": "سوء الحظ والتعاسة والمتاعب والبؤس"
+  },
+  {
+    "id": 733,
+    "sv": "besviken",
+    "en": "disappointed",
+    "ar": "خائب الأمل"
+  },
+  {
+    "id": 734,
+    "sv": "uppfostran",
+    "en": "upbringing",
+    "ar": "تنشئة"
+  },
+  {
+    "id": 735,
+    "sv": "förbjuden (-t,-na)",
+    "en": "forbidden, prohibited",
+    "ar": "ممنوع، محظور"
+  },
+  {
+    "id": 736,
+    "sv": "gömmer",
+    "en": "hide",
+    "ar": "يخفي"
+  },
+  {
+    "id": 737,
+    "sv": "går över (till ...)",
+    "en": "pass on to, change to",
+    "ar": "انتقل إلى، انتقل إلى"
+  },
+  {
+    "id": 738,
+    "sv": "mottagande (-t)",
+    "en": "reception",
+    "ar": "استقبال"
+  },
+  {
+    "id": 739,
+    "sv": "får ett vänligt mottagande",
+    "en": "be kindly (favourably) received",
+    "ar": "كن لطيفًا (بشكل إيجابي)."
+  },
+  {
+    "id": 740,
+    "sv": "hjälte (-ar)",
+    "en": "hero",
+    "ar": "بطل"
+  },
+  {
+    "id": 741,
+    "sv": "sorg (-en, -er)",
+    "en": "sorrow",
+    "ar": "حزن"
+  },
+  {
+    "id": 742,
+    "sv": "arv (-et)",
+    "en": "inheritance; heritage",
+    "ar": "الميراث. إرث"
+  },
+  {
+    "id": 743,
+    "sv": "tar ifrån (ngn ngt)",
+    "en": "take (sth) away from (sb); deprive (rob) (sb of sth)",
+    "ar": "خذ (sth) بعيدًا عن (sb) ؛ يحرم (يسرق) (بينالي الشارقة من sth)"
+  },
+  {
+    "id": 744,
+    "sv": "välgörenhet",
+    "en": "charity",
+    "ar": "صدقة"
+  },
+  {
+    "id": 745,
+    "sv": "handikapp",
+    "en": "disability",
+    "ar": "الإعاقة"
+  },
+  {
+    "id": 746,
+    "sv": "funktionshinder",
+    "en": "functional disorder",
+    "ar": "اضطراب وظيفي"
+  },
+  {
+    "id": 747,
+    "sv": "Det sägs att ...",
+    "en": "it's said that",
+    "ar": "يقال ذلك"
+  },
+  {
+    "id": 748,
+    "sv": "husdjur",
+    "en": "pet",
+    "ar": "حيوان أليف"
+  },
+  {
+    "id": 749,
+    "sv": "vilda djur",
+    "en": "wild animals",
+    "ar": "الحيوانات البرية"
+  },
+  {
+    "id": 750,
+    "sv": "oxe (-ar)",
+    "en": "ox",
+    "ar": "ثور"
+  },
+  {
+    "id": 751,
+    "sv": "uggla",
+    "en": "owl",
+    "ar": "بُومَة"
+  },
+  {
+    "id": 752,
+    "sv": "gås (gäss)",
+    "en": "goose",
+    "ar": "أوزة"
+  },
+  {
+    "id": 753,
+    "sv": "svan (-ar)",
+    "en": "swan",
+    "ar": "بجعة"
+  },
+  {
+    "id": 754,
+    "sv": "björn (-ar)",
+    "en": "bear",
+    "ar": "دُبٌّ"
+  },
+  {
+    "id": 755,
+    "sv": "kanin (-er)",
+    "en": "rabbit",
+    "ar": "أرنب"
+  },
+  {
+    "id": 756,
+    "sv": "lodjur (-et)",
+    "en": "lynx",
+    "ar": "الوشق"
+  },
+  {
+    "id": 757,
+    "sv": "åsna",
+    "en": "donkey",
+    "ar": "حمار"
+  },
+  {
+    "id": 758,
+    "sv": "myra",
+    "en": "ant",
+    "ar": "نملة"
+  },
+  {
+    "id": 759,
+    "sv": "älg (-ar)",
+    "en": "moose, elk",
+    "ar": "موس، إلك"
+  },
+  {
+    "id": 760,
+    "sv": "varg (-ar)",
+    "en": "wolf",
+    "ar": "ذئب"
+  },
+  {
+    "id": 761,
+    "sv": "vessla",
+    "en": "weasel",
+    "ar": "ابن عرس"
+  },
+  {
+    "id": 762,
+    "sv": "geting",
+    "en": "wasp",
+    "ar": "دبور"
+  },
+  {
+    "id": 763,
+    "sv": "humla",
+    "en": "bumblebee",
+    "ar": "طنانة"
+  },
+  {
+    "id": 764,
+    "sv": "mask (-ar)",
+    "en": "worm",
+    "ar": "دُودَة"
+  },
+  {
+    "id": 765,
+    "sv": "orm (-ar)",
+    "en": "snake",
+    "ar": "ثعبان"
+  },
+  {
+    "id": 766,
+    "sv": "fästing",
+    "en": "tick",
+    "ar": "علامة"
+  },
+  {
+    "id": 767,
+    "sv": "bi (-et; -n)",
+    "en": "bee",
+    "ar": "نحلة"
+  },
+  {
+    "id": 768,
+    "sv": "sticker, stack, stuckit",
+    "en": "prick, sting; be off, leave*",
+    "ar": "وخز، لدغة. غادر، غادر*"
+  },
+  {
+    "id": 769,
+    "sv": "skrämmer",
+    "en": "terrify, scare, frighten",
+    "ar": "رعب، تخويف، تخويف"
+  },
+  {
+    "id": 770,
+    "sv": "anfaller, anföll, anfallit",
+    "en": "attack*",
+    "ar": "هجوم*"
+  },
+  {
+    "id": 771,
+    "sv": "suger, sög, sugit",
+    "en": "suck*",
+    "ar": "مص*"
+  },
+  {
+    "id": 772,
+    "sv": "orsakar",
+    "en": "cause (verb)",
+    "ar": "سبب (فعل)"
+  },
+  {
+    "id": 773,
+    "sv": "giftig",
+    "en": "poisonous, venomous",
+    "ar": "سامة، سامة"
+  },
+  {
+    "id": 774,
+    "sv": "överför",
+    "en": "transfer, transmit",
+    "ar": "نقل، نقل"
+  },
+  {
+    "id": 775,
+    "sv": "lidande",
+    "en": "suffering",
+    "ar": "معاناة"
+  },
+  {
+    "id": 776,
+    "sv": "smitta",
+    "en": "infection",
+    "ar": "عدوى"
+  },
+  {
+    "id": 777,
+    "sv": "smittar",
+    "en": "infect",
+    "ar": "تصيب"
+  },
+  {
+    "id": 778,
+    "sv": "tröstar",
+    "en": "comfort, console",
+    "ar": "الراحة، وحدة التحكم"
+  },
+  {
+    "id": 779,
+    "sv": "sinne (-t) (luktsinne, syn, känsel, hörsel)                                         sense of feeling, auditory sense)",
+    "en": "sense (sense of smell, sight,",
+    "ar": "حاسة ( حاسة الشم، البصر،"
+  },
+  {
+    "id": 780,
+    "sv": "föredrar, föredrog, föredragit",
+    "en": "prefer*",
+    "ar": "يفضل*"
+  },
+  {
+    "id": 781,
+    "sv": "trofast",
+    "en": "faithful, loyal",
+    "ar": "مخلص، مخلص"
+  },
+  {
+    "id": 782,
+    "sv": "lydig",
+    "en": "obedient",
+    "ar": "مطيع"
+  },
+  {
+    "id": 783,
+    "sv": "graciös",
+    "en": "graceful",
+    "ar": "رشيقة"
+  },
+  {
+    "id": 784,
+    "sv": "busig",
+    "en": "mischievous, noisy",
+    "ar": "مؤذ، صاخبة"
+  },
+  {
+    "id": 785,
+    "sv": "lekfull",
+    "en": "playful",
+    "ar": "مرحة"
+  },
+  {
+    "id": 786,
+    "sv": "tyst",
+    "en": "quiet",
+    "ar": "هادئ"
+  },
+  {
+    "id": 787,
+    "sv": "envis",
+    "en": "stubborn",
+    "ar": "عنيد"
+  },
+  {
+    "id": 788,
+    "sv": "listig",
+    "en": "cunning; clever",
+    "ar": "الماكرة. ماهر"
+  },
+  {
+    "id": 789,
+    "sv": "hal",
+    "en": "slippery",
+    "ar": "زلق"
+  },
+  {
+    "id": 790,
+    "sv": "flitig",
+    "en": "hard-working, diligent",
+    "ar": "مجتهد ومجتهد"
+  },
+  {
+    "id": 791,
+    "sv": "hostar",
+    "en": "cough (verb)",
+    "ar": "السعال (فعل)"
+  },
+  {
+    "id": 792,
+    "sv": "harklar sig",
+    "en": "hawk, clear one's throat",
+    "ar": "الصقور، امسح حلقك"
+  },
+  {
+    "id": 793,
+    "sv": "vänder sig om",
+    "en": "turn around",
+    "ar": "التف حوله"
+  },
+  {
+    "id": 794,
+    "sv": "viftar (MED ngt)",
+    "en": "wave",
+    "ar": "موجة"
+  },
+  {
+    "id": 795,
+    "sv": "klättrar",
+    "en": "climb",
+    "ar": "تسلق"
+  },
+  {
+    "id": 796,
+    "sv": "sparkar",
+    "en": "kick",
+    "ar": "ركلة"
+  },
+  {
+    "id": 797,
+    "sv": "tjatar",
+    "en": "nag; continually (persistently) ask somebody for something",
+    "ar": "تذمر؛ باستمرار (باستمرار) اسأل شخص ما عن شيء ما"
+  },
+  {
+    "id": 798,
+    "sv": "stirrar",
+    "en": "stare",
+    "ar": "التحديق"
+  },
+  {
+    "id": 799,
+    "sv": "ramlar",
+    "en": "fall",
+    "ar": "يسقط"
+  },
+  {
+    "id": 800,
+    "sv": "lockar",
+    "en": "attract, lure, appeal to, tempt",
+    "ar": "جذب، إغراء، مناشدة، إغراء"
+  },
+  {
+    "id": 801,
+    "sv": "matar",
+    "en": "feed",
+    "ar": "يٌطعم"
+  },
+  {
+    "id": 802,
+    "sv": "Var rädd om dig!",
+    "en": "Take care (of yourself)!",
+    "ar": "اعتنِ بنفسك)!"
+  },
+  {
+    "id": 803,
+    "sv": "Jag är rädd för dig",
+    "en": "I'm afraid of you. (you scare me)",
+    "ar": "أنا خائف منك. (أنت تخيفني)"
+  },
+  {
+    "id": 804,
+    "sv": "räddar",
+    "en": "save, rescue",
+    "ar": "حفظ، إنقاذ"
+  },
+  {
+    "id": 805,
+    "sv": "avlivar",
+    "en": "put away (down) (animals)",
+    "ar": "يقتل الحيوان قتلاً رحيماً"
+  }
+]

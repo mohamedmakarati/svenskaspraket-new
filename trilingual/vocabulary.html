@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Träna 805 svenska ord och uttryck på B1-B2-nivå med engelsk och arabisk översättning. Interaktiva flashcards, sökbar ordlista och quiz."
+    />
+    <title>805 svenska ord B1-B2 med flashcards | SvenskaSpråket</title>
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1" /><meta name="theme-color" content="#075db8" /><link rel="canonical" href="https://svenskaspraket.com/vocabulary.html" /><link rel="icon" href="/favicon.svg" type="image/svg+xml" /><link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:type" content="article" /><meta property="og:locale" content="sv_SE" /><meta property="og:site_name" content="SvenskaSpråket" /><meta property="og:title" content="805 svenska ord B1-B2 med flashcards" /><meta property="og:description" content="Svensk-engelsk-arabisk ordlista med 805 ord, flashcards, sökning och quiz." /><meta property="og:url" content="https://svenskaspraket.com/vocabulary.html" /><meta property="og:image" content="https://svenskaspraket.com/og-image.png" /><meta property="og:image:alt" content="805 svenska ord och uttryck på SvenskaSpråket" /><meta name="twitter:card" content="summary_large_image" /><meta name="twitter:image" content="https://svenskaspraket.com/og-image.png" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"LearningResource","url":"https://svenskaspraket.com/vocabulary.html","name":"805 svenska ord B1-B2 med flashcards","description":"Sökbar svensk-engelsk-arabisk ordlista med flashcards och quiz.","educationalLevel":"B1-B2","learningResourceType":["flashcard","quiz","reference"],"inLanguage":["sv","en","ar"],"isAccessibleForFree":true,"provider":{"@type":"Organization","name":"SvenskaSpråket","url":"https://svenskaspraket.com/"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Hem","item":"https://svenskaspraket.com/"},{"@type":"ListItem","position":2,"name":"Ordförråd B1-B2","item":"https://svenskaspraket.com/vocabulary.html"}]}]}</script>
+    <link rel="stylesheet" href="vocabulary.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="index.html">Svenska<span>Språket</span></a>
+      <nav>
+        <a href="index.html">Hem</a><a href="verbs.html">A1-verb</a
+        ><a href="lessons-a1.html">Grammatik A1</a
+        ><a href="lessons.html">Grammatik B1–B2</a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div>
+          <span class="tag">B1-B2 · ORDFÖRRÅD</span>
+          <h1>805 svenska ord och uttryck</h1>
+          <p>Svenska · English · العربية</p>
+          <p>
+            Sammanställt av studenter för dig som studerar eller vill förbereda
+            dig för <em>Svenska som främmande språk</em> vid Lunds universitet.
+          </p>
+        </div>
+        <div class="stat">
+          <strong id="total">805</strong><span>ord att träna</span>
+        </div>
+      </section>
+
+      <section class="study" aria-label="Interaktiva övningar">
+        <div class="tabs">
+          <button class="active" data-mode="cards">Flashcards</button
+          ><button data-mode="quiz">Quiz</button
+          ><button data-mode="list">Ordlista</button>
+        </div>
+        <div id="cardsPanel" class="panel">
+          <div class="progress">
+            <span id="position">1 / 805</span
+            ><button id="shuffle">Blanda ↻</button>
+          </div>
+          <button id="flashcard" class="flashcard" aria-label="Vänd kortet">
+            <span class="hint">SVENSKA · klicka för att vända</span
+            ><strong id="cardSv">Laddar…</strong>
+            <span id="cardBack" class="back"
+              ><b id="cardEn"></b><b id="cardAr" dir="rtl"></b
+            ></span>
+          </button>
+          <div class="controls">
+            <button id="previous">← Föregående</button
+            ><button id="next">Nästa →</button>
+          </div>
+        </div>
+        <div id="quizPanel" class="panel hidden">
+          <div class="quizbox">
+            <span class="hint">VÄLJ RÄTT ENGELSK BETYDELSE</span>
+            <h2 id="quizWord">Laddar…</h2>
+            <div id="answers" class="answers"></div>
+            <p id="feedback" aria-live="polite"></p>
+            <button id="newQuestion">Nästa fråga →</button>
+          </div>
+        </div>
+        <div id="listPanel" class="panel hidden">
+          <div class="searchrow">
+            <input
+              id="search"
+              type="search"
+              placeholder="Sök på svenska, engelska eller arabiska…"
+            /><span id="resultCount"></span>
+          </div>
+          <div class="tablewrap">
+            <table>
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Svenska</th>
+                  <th>English</th>
+                  <th>العربية</th>
+                </tr>
+              </thead>
+              <tbody id="wordRows"></tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="vocabulary.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "SvenskaSpråket",
+  "short_name": "SvenskaSpråket",
+  "description": "Gratis svensk grammatik, verbträning och ordförråd med stöd på engelska och arabiska.",
+  "lang": "sv",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#075db8",
+  "icons": [{"src":"/favicon.svg","sizes":"any","type":"image/svg+xml","purpose":"any maskable"}]
+}
