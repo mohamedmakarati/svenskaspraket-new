@@ -15,6 +15,7 @@ const C1Page = lazy(() => import('@/pages/C1Page'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
 
 const AdminLoginPage = lazy(() => import('@/pages/admin/AdminLoginPage'));
+const AdminAuthCallbackPage = lazy(() => import('@/pages/admin/AdminAuthCallbackPage'));
 const AdminForgotPasswordPage = lazy(() => import('@/pages/admin/AdminForgotPasswordPage'));
 const AdminResetPasswordPage = lazy(() => import('@/pages/admin/AdminResetPasswordPage'));
 const AdminDashboardPage = lazy(() => import('@/pages/admin/AdminDashboardPage'));
@@ -68,6 +69,7 @@ export default function App() {
             <Route path="/ar/" element={<LegacyRedirect to="/ar" />} />
 
             <Route path="/admin/login" element={<AdminLoginPage />} />
+            <Route path="/admin/auth/callback" element={<AdminAuthCallbackPage />} />
             <Route path="/admin/forgot-password" element={<AdminForgotPasswordPage />} />
             <Route path="/admin/reset-password" element={<AdminResetPasswordPage />} />
             <Route

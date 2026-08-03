@@ -438,6 +438,17 @@ export const PAGE_SEO = {
     changefreq: 'never',
     structuredData: null,
   },
+  adminAuthCallback: {
+    path: '/admin/auth/callback',
+    lang: 'sv',
+    title: 'Google-inloggning | Admin | SvenskaSpråket',
+    description: 'OAuth-callback för administratörsinloggning.',
+    noindex: true,
+    hreflang: false,
+    priority: 0,
+    changefreq: 'never',
+    structuredData: null,
+  },
 };
 
 export function getPageSeo(key, opts = {}) {

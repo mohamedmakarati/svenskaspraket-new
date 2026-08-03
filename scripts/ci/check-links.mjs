@@ -24,6 +24,7 @@ const REQUIRED_SPA_ROUTES = [
   '/c1',
   '/admin',
   '/admin/login',
+  '/admin/auth/callback',
   '/admin/verbs',
   '/admin/vocabulary',
   '/admin/lessons',

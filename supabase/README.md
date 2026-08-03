@@ -133,6 +133,48 @@ UPDATE public.profiles SET role = 'editor' WHERE id = 'USER_UUID_HERE';
 
 ---
 
+## Google sign-in (admin)
+
+The admin login page supports **Sign in with Google** via Supabase OAuth.
+
+### 1. Google Cloud Console
+
+1. Open [Google Cloud Console](https://console.cloud.google.com/) → **APIs & Services** → **Credentials**
+2. Create **OAuth client ID** → type **Web application**
+3. **Authorized JavaScript origins:**
+   - `http://localhost:5173` (local dev)
+   - `https://svenskaspraket.com` (production)
+4. **Authorized redirect URIs** (Supabase callback — not your app URL):
+   - `https://mketbivszbnipzyafabs.supabase.co/auth/v1/callback`
+5. Copy **Client ID** and **Client secret**
+
+### 2. Supabase dashboard
+
+1. **Resume** the project if paused
+2. **Authentication** → **Providers** → **Google** → Enable
+3. Paste Google Client ID and Client secret → Save
+4. **Authentication** → **URL Configuration** → add redirect URLs:
+   - `http://localhost:5173/admin/auth/callback`
+   - `https://svenskaspraket.com/admin/auth/callback`
+
+### 3. Promote your Google account
+
+First Google login creates a profile with role `viewer`. Promote yourself:
+
+```sql
+UPDATE public.profiles
+SET role = 'admin'
+WHERE id = (
+  SELECT id FROM auth.users
+  WHERE email = 'mohamed@makarati.dev'
+  LIMIT 1
+);
+```
+
+Then sign in at `/admin/login` → **Sign in with Google**.
+
+---
+
 ## Environment variables
 
 Copy `.env.example` → `.env`:

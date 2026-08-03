@@ -1,6 +1,7 @@
 import { createContext, useContext, useEffect, useState, useCallback } from 'react';
 import { supabase, isSupabaseConfigured } from '@/lib/supabase';
 import { toAdminError } from '@/lib/adminErrors';
+import { safeAdminRedirect } from '@/lib/redirect';
 
 const AuthContext = createContext(null);
 
@@ -67,6 +68,37 @@ export function AuthProvider({ children }) {
     return data;
   }
 
+  async function signUp({ email, password, displayName }) {
+    const { data, error } = await supabase.auth.signUp({
+      email,
+      password,
+      options: {
+        data: {
+          display_name: displayName,
+          preferred_language: 'sv',
+        },
+        emailRedirectTo: `${window.location.origin}/admin/login`,
+      },
+    });
+    if (error) throw new Error(toAdminError(error));
+    return data;
+  }
+
+  async function signInWithGoogle(redirectPath = '/admin') {
+    const redirectTo = `${window.location.origin}/admin/auth/callback?next=${encodeURIComponent(safeAdminRedirect(redirectPath))}`;
+    const { error } = await supabase.auth.signInWithOAuth({
+      provider: 'google',
+      options: {
+        redirectTo,
+        queryParams: {
+          access_type: 'offline',
+          prompt: 'consent',
+        },
+      },
+    });
+    if (error) throw new Error(toAdminError(error));
+  }
+
   async function signOut() {
     await supabase.auth.signOut();
     setUser(null);
@@ -103,6 +135,8 @@ export function AuthProvider({ children }) {
         isEditor: role === 'editor',
         canAccessAdmin: role === 'admin' || role === 'editor',
         signIn,
+        signUp,
+        signInWithGoogle,
         signOut,
         resetPasswordForEmail,
         updatePassword,

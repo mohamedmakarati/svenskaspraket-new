@@ -10,10 +10,11 @@ import { PageSeo } from '@/components/SeoHead';
 
 export default function AdminLoginPage() {
   const { t } = useTranslation();
-  const { signIn, isConfigured, canAccessAdmin, user, loading } = useAuth();
+  const { signIn, signInWithGoogle, isConfigured, canAccessAdmin, user, loading } = useAuth();
   const navigate = useNavigate();
   const location = useLocation();
   const [error, setError] = useState('');
+  const [googleLoading, setGoogleLoading] = useState(false);
   const from = safeAdminRedirect(location.state?.from);
 
   const {
@@ -38,13 +39,42 @@ export default function AdminLoginPage() {
     }
   }
 
+  async function onGoogleSignIn() {
+    setError('');
+    setGoogleLoading(true);
+    try {
+      await signInWithGoogle(from);
+    } catch (e) {
+      setError(e.message || t('common.error'));
+      setGoogleLoading(false);
+    }
+  }
+
   return (
     <>
       <PageSeo pageKey="adminLogin" />
       <main className="admin-login-page">
         <h1>{t('admin.login')}</h1>
         {location.state?.expired && <div className="notice">{t('admin.sessionExpired')}</div>}
+        {location.state?.googlePending && (
+          <div className="notice">{t('admin.googlePendingAccess', { email: location.state.email ?? '' })}</div>
+        )}
         {!isConfigured && <div className="notice">{t('admin.noSupabase')}</div>}
+
+        <button
+          type="button"
+          className="btn btn-google"
+          disabled={!isConfigured || googleLoading || isSubmitting}
+          onClick={onGoogleSignIn}
+        >
+          <span className="btn-google__icon" aria-hidden="true">
+            G
+          </span>
+          {googleLoading ? t('common.loading') : t('admin.signInWithGoogle')}
+        </button>
+
+        <p className="admin-auth-divider">{t('admin.orContinueWithEmail')}</p>
+
         <form onSubmit={handleSubmit(onSubmit)} noValidate>
           <label className="admin-field">
             <span className="admin-field__label">Email</span>
@@ -57,7 +87,7 @@ export default function AdminLoginPage() {
             {errors.password && <span className="admin-field__error">{errors.password.message}</span>}
           </label>
           {error && <p className="admin-field__error">{error}</p>}
-          <button type="submit" className="btn" disabled={isSubmitting || !isConfigured}>
+          <button type="submit" className="btn" disabled={isSubmitting || googleLoading || !isConfigured}>
             {t('admin.login')}
           </button>
         </form>
