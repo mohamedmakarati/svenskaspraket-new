@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
-import { SITE_URL } from '@/lib/supabase';
+import { SEO, getPageSeo } from '@/lib/seo';
+import { canonicalUrl } from '@/lib/seoUrls';
 
 function setMeta(name, content, property = false) {
   if (!content) return;
@@ -11,6 +12,22 @@ function setMeta(name, content, property = false) {
     document.head.appendChild(el);
   }
   el.setAttribute('content', content);
+}
+
+function removeMeta(name, property = false) {
+  const attr = property ? 'property' : 'name';
+  document.querySelector(`meta[${attr}="${name}"]`)?.remove();
+}
+
+function setMultiMeta(name, values, property = false) {
+  const attr = property ? 'property' : 'name';
+  document.querySelectorAll(`meta[${attr}="${name}"]`).forEach((el) => el.remove());
+  values.forEach((content) => {
+    const el = document.createElement('meta');
+    el.setAttribute(attr, name);
+    el.setAttribute('content', content);
+    document.head.appendChild(el);
+  });
 }
 
 function setLink(rel, href, extra = {}) {
@@ -27,60 +44,93 @@ function setLink(rel, href, extra = {}) {
   if (extra.hreflang) el.setAttribute('hreflang', extra.hreflang);
 }
 
+function clearHreflang() {
+  document.querySelectorAll('link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+}
+
 export default function SeoHead({
   title,
   description,
+  keywords,
   canonical,
   lang = 'sv',
-  hreflang = true,
+  hreflang = false,
   noindex = false,
   ogType = 'website',
-  ogImage = `${SITE_URL}/og-image.png`,
+  ogImage = SEO.ogImage,
+  ogImageAlt = SEO.ogImageAlt,
   structuredData,
 }) {
-  const fullTitle = title?.includes('SvenskaSpråket') ? title : `${title} | SvenskaSpråket`;
-  const canonicalUrl = canonical?.startsWith('http') ? canonical : `${SITE_URL}${canonical || '/'}`;
+  const fullTitle =
+    title?.includes('Svenska Språket') || title?.includes('SvenskaSpråket')
+      ? title
+      : `${title} | SvenskaSpråket`;
+  const canonicalHref = canonical?.startsWith('http') ? canonical : canonicalUrl(canonical || '/');
 
   useEffect(() => {
     document.documentElement.lang = lang;
     document.title = fullTitle;
 
     setMeta('description', description);
-    setLink('canonical', canonicalUrl);
-    setMeta('robots', noindex ? 'noindex,nofollow' : 'index,follow,max-image-preview:large,max-snippet:-1');
+    setMeta('author', SEO.author);
+    setMeta('theme-color', '#075db8');
+    if (keywords) setMeta('keywords', keywords);
+    else removeMeta('keywords');
+
+    setLink('canonical', canonicalHref);
+    setMeta(
+      'robots',
+      noindex
+        ? 'noindex,nofollow'
+        : 'index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1',
+    );
 
     setMeta('og:type', ogType, true);
-    setMeta('og:locale', lang === 'ar' ? 'ar_AR' : lang === 'en' ? 'en_US' : 'sv_SE', true);
-    setMeta('og:site_name', 'SvenskaSpråket', true);
+    setMeta('og:locale', SEO.locale[lang] ?? SEO.locale.sv, true);
+    setMeta('og:site_name', SEO.siteName, true);
     setMeta('og:title', fullTitle, true);
     setMeta('og:description', description, true);
-    setMeta('og:url', canonicalUrl, true);
+    setMeta('og:url', canonicalHref, true);
     setMeta('og:image', ogImage, true);
+    setMeta('og:image:width', String(SEO.ogImageWidth), true);
+    setMeta('og:image:height', String(SEO.ogImageHeight), true);
+    setMeta('og:image:alt', ogImageAlt, true);
+
+    if (hreflang) {
+      setMultiMeta('og:locale:alternate', [SEO.locale.en, SEO.locale.ar], true);
+    } else {
+      document.querySelectorAll('meta[property="og:locale:alternate"]').forEach((el) => el.remove());
+    }
+
     setMeta('twitter:card', 'summary_large_image');
     setMeta('twitter:title', fullTitle);
     setMeta('twitter:description', description);
     setMeta('twitter:image', ogImage);
 
+    clearHreflang();
     if (hreflang) {
-      setLink('alternate', `${SITE_URL}/`, { hreflang: 'sv' });
-      setLink('alternate', `${SITE_URL}/en`, { hreflang: 'en' });
-      setLink('alternate', `${SITE_URL}/ar`, { hreflang: 'ar' });
-      setLink('alternate', `${SITE_URL}/`, { hreflang: 'x-default' });
+      setLink('alternate', `${SEO.siteUrl}/`, { hreflang: 'sv' });
+      setLink('alternate', `${SEO.siteUrl}/en`, { hreflang: 'en' });
+      setLink('alternate', `${SEO.siteUrl}/ar`, { hreflang: 'ar' });
+      setLink('alternate', `${SEO.siteUrl}/`, { hreflang: 'x-default' });
     }
 
-    let scriptEl = document.getElementById('structured-data');
+    document.querySelectorAll('script[data-seo-jsonld]').forEach((el) => el.remove());
     if (structuredData) {
-      if (!scriptEl) {
-        scriptEl = document.createElement('script');
-        scriptEl.id = 'structured-data';
-        scriptEl.type = 'application/ld+json';
-        document.head.appendChild(scriptEl);
-      }
+      const scriptEl = document.createElement('script');
+      scriptEl.type = 'application/ld+json';
+      scriptEl.setAttribute('data-seo-jsonld', 'true');
       scriptEl.textContent = JSON.stringify(structuredData);
-    } else if (scriptEl) {
-      scriptEl.remove();
+      document.head.appendChild(scriptEl);
     }
-  }, [fullTitle, description, canonicalUrl, lang, hreflang, noindex, ogType, ogImage, structuredData]);
+  }, [fullTitle, description, keywords, canonicalHref, lang, hreflang, noindex, ogType, ogImage, ogImageAlt, structuredData]);
 
   return null;
+}
+
+export function PageSeo({ pageKey, overrides = {} }) {
+  const base = getPageSeo(pageKey);
+  if (!base) return null;
+  const seo = { ...base, ...overrides };
+  return <SeoHead {...seo} />;
 }

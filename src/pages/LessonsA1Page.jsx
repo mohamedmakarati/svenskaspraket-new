@@ -1,36 +1,22 @@
 import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import SeoHead from '@/components/SeoHead';
+import { PageSeo } from '@/components/SeoHead';
 import { SiteFooter } from '@/components/Layout';
-import { LanguageToggle, GrammarQuiz, SupportBlock, ExampleCard } from '@/components/GrammarQuiz';
-import { lessonsA1, lessonsA1Meta } from '@/data/lessons-a1';
-import { SITE_URL } from '@/lib/supabase';
+import { useLessons } from '@/hooks/usePublicData';
+import LessonRenderer, { LanguageToggle } from '@/components/LessonRenderer';
+import { OfflineNotice, QueryError, LessonSkeleton, EmptyState } from '@/components/PublicUi';
+import { lessonsA1Meta } from '@/data/lessons-a1';
 
 export default function LessonsA1Page() {
   const [searchParams] = useSearchParams();
   const [supportLang, setSupportLang] = useState(searchParams.get('lang') === 'ar' ? 'ar' : 'en');
-  const lesson = lessonsA1[0];
+  const { data, isLoading, isError, error, refetch } = useLessons('A1');
+  const lessons = data?.items ?? [];
+  const source = data?.source ?? 'static';
 
   return (
     <>
-      <SeoHead
-        title={lessonsA1Meta.title}
-        description={lessonsA1Meta.description}
-        canonical={lessonsA1Meta.canonical}
-        hreflang={false}
-        structuredData={{
-          '@context': 'https://schema.org',
-          '@graph': [
-            {
-              '@type': 'LearningResource',
-              url: `${SITE_URL}${lessonsA1Meta.canonical}`,
-              name: 'Svenska personliga pronomen A1',
-              educationalLevel: 'A1',
-              inLanguage: ['sv', 'en', 'ar'],
-            },
-          ],
-        }}
-      />
+      <PageSeo pageKey="lessonsA1" />
       <header className="public-nav wrap">
         <Link to="/" className="brand">
           🇸🇪 Svenska<b>Språket</b>
@@ -42,95 +28,27 @@ export default function LessonsA1Page() {
         </nav>
       </header>
       <main className="wrap section">
+        <OfflineNotice source={source} />
         <div className="tag">GRAMMATIK · A1</div>
-        <h1>Personliga pronomen</h1>
+        <h1>{lessonsA1Meta.title.replace(' | SvenskaSpråket', '').split(':')[0] ?? 'Personliga pronomen'}</h1>
         <p>Lär dig subjekt- och objektpronomen på svenska – grunden för att bygga enkla meningar.</p>
         <div style={{ margin: '22px 0' }}>
           <strong>Språkstöd: </strong>
           <LanguageToggle supportLang={supportLang} onChange={setSupportLang} />
         </div>
 
-        <article className="lesson-block">
-          <div className="lesson-head">
-            <span className="tag">LEKTION {lesson.number}</span>
-            <h2>{lesson.title_sv}</h2>
-            <p>{lesson.subtitle_sv}</p>
-          </div>
-          <div className="lesson-body">
-            <SupportBlock lang={supportLang} en={lesson.support_en} ar={lesson.support_ar} />
-
-            {lesson.rules.map((rule) => (
-              <div key={rule.title} className="rule-block">
-                <h3>{rule.title}</h3>
-                <strong>Huvudregel:</strong> {rule.sv}
-                <br />
-                <em>{rule.example}</em>
-              </div>
-            ))}
-
-            {lesson.subjectTable && (
-              <>
-                <h3>Subjektspronomen</h3>
-                <table className="lesson-table">
-                  <thead>
-                    <tr>
-                      <th>Svenska</th>
-                      <th>{supportLang === 'ar' ? 'العربية' : 'English'}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {lesson.subjectTable.map((row) => (
-                      <tr key={row.sv}>
-                        <td>
-                          <strong>{row.sv}</strong>
-                        </td>
-                        <td className={supportLang === 'ar' ? 'arabic' : ''} dir={supportLang === 'ar' ? 'rtl' : undefined}>
-                          {supportLang === 'ar' ? row.ar : row.en}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </>
-            )}
-
-            {lesson.objectTable && (
-              <>
-                <h3>Objektspronomen</h3>
-                <table className="lesson-table">
-                  <thead>
-                    <tr>
-                      <th>Subjekt</th>
-                      <th>Objekt</th>
-                      <th>{supportLang === 'ar' ? 'العربية' : 'English'}</th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {lesson.objectTable.map((row) => (
-                      <tr key={row.obj}>
-                        <td>{row.subj}</td>
-                        <td>
-                          <strong>{row.obj}</strong>
-                        </td>
-                        <td className={supportLang === 'ar' ? 'arabic' : ''} dir={supportLang === 'ar' ? 'rtl' : undefined}>
-                          {supportLang === 'ar' ? row.ar : row.en}
-                        </td>
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
-              </>
-            )}
-
-            <div className="grid-2">
-              {lesson.examples.map((ex) => (
-                <ExampleCard key={ex.sv} ex={ex} supportLang={supportLang} />
-              ))}
-            </div>
-
-            <GrammarQuiz questions={lesson.quiz} />
-          </div>
-        </article>
+        {isError && (
+          <QueryError message={error?.message ?? 'Kunde inte ladda lektioner.'} onRetry={() => refetch()} />
+        )}
+        {isLoading && <LessonSkeleton />}
+        {!isLoading && !isError && lessons.length === 0 && (
+          <EmptyState title="Inga lektioner tillgängliga" description="Kom tillbaka senare." />
+        )}
+        {!isLoading &&
+          !isError &&
+          lessons.map((lesson) => (
+            <LessonRenderer key={lesson.slug ?? lesson.number} lesson={lesson} supportLang={supportLang} />
+          ))}
       </main>
       <SiteFooter />
     </>

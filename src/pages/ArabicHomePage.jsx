@@ -1,24 +1,11 @@
 import { Link } from 'react-router-dom';
-import SeoHead from '@/components/SeoHead';
+import { PageSeo } from '@/components/SeoHead';
 import RtlLayout from '@/hooks/useRtl';
-import { SITE_URL } from '@/lib/supabase';
 
 export default function ArabicHomePage() {
   return (
     <RtlLayout lang="ar">
-      <SeoHead
-        title="تعلم اللغة السويدية مجاناً A1–B2 | شرح بالعربية"
-        description="تعلم اللغة السويدية مجاناً من A1 إلى B2 مع شرح بالعربية: 465 فعلاً سويدياً، 805 كلمات، قواعد، بطاقات مصورة واختبارات تفاعلية."
-        canonical="/ar"
-        lang="ar"
-        structuredData={{
-          '@context': 'https://schema.org',
-          '@type': 'WebPage',
-          url: `${SITE_URL}/ar`,
-          name: 'تعلم اللغة السويدية مجاناً A1–B2',
-          inLanguage: 'ar',
-        }}
-      />
+      <PageSeo pageKey="ar" />
       <header className="public-nav wrap">
         <Link to="/" className="brand">
           🇸🇪 Svenska<b>Språket</b>
@@ -39,14 +26,10 @@ export default function ArabicHomePage() {
         <section className="lang-hero">
           <div className="wrap">
             <div className="tag">السويدية خطوة بخطوة</div>
-            <h1>
-              تعلم اللغة السويدية.
-              <br />
-              <em>مع شرح بالعربية.</em>
-            </h1>
+            <h1>تعلم اللغة السويدية مجاناً – من A1 إلى C1</h1>
             <p className="lead">
-              مصدر مجاني أنشأه الطلاب لتعلم السويدية من مستوى A1 إلى B2. وسّع مفرداتك، وتعلم تصريف الأفعال، وتدرّب على
-              القواعد مع ترجمة عربية واضحة.
+              تعلم اللغة السويدية مجاناً من A1 إلى C1. تدرب على الأفعال والمفردات والقواعد والبطاقات والاختبارات مع
+              شرح باللغة العربية.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 30 }}>
               <Link className="btn" to="/verbs?lang=ar">
@@ -78,6 +61,9 @@ export default function ArabicHomePage() {
                   </Link>
                   <Link className="btn secondary" to="/verbs-b1b2?lang=ar">
                     B1–B2
+                  </Link>
+                  <Link className="btn secondary" to="/c1">
+                    C1
                   </Link>
                 </div>
               </article>

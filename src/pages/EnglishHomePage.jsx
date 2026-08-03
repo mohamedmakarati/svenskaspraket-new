@@ -1,24 +1,11 @@
 import { Link } from 'react-router-dom';
-import SeoHead from '@/components/SeoHead';
+import { PageSeo } from '@/components/SeoHead';
 import RtlLayout from '@/hooks/useRtl';
-import { SITE_URL } from '@/lib/supabase';
 
 export default function EnglishHomePage() {
   return (
     <RtlLayout lang="en">
-      <SeoHead
-        title="Learn Swedish A1–B2 Free | English Support"
-        description="Learn Swedish free from A1 to B2 with English support. Study 465 Swedish verbs, 805 vocabulary items, grammar, visual flashcards and interactive quizzes."
-        canonical="/en"
-        lang="en"
-        structuredData={{
-          '@context': 'https://schema.org',
-          '@type': 'WebPage',
-          url: `${SITE_URL}/en`,
-          name: 'Learn Swedish A1–B2 Free',
-          inLanguage: 'en',
-        }}
-      />
+      <PageSeo pageKey="en" />
       <header className="public-nav wrap">
         <Link to="/" className="brand">
           🇸🇪 Svenska<b>Språket</b>
@@ -37,14 +24,10 @@ export default function EnglishHomePage() {
         <section className="lang-hero">
           <div className="wrap">
             <div className="tag">Swedish, step by step</div>
-            <h1>
-              Learn Swedish.
-              <br />
-              <em>With English support.</em>
-            </h1>
+            <h1>Learn Swedish free – from A1 to C1</h1>
             <p className="lead">
-              A free, student-driven learning resource for Swedish from A1 to B2. Build vocabulary, master verb forms
-              and practise grammar with clear English translations.
+              Learn Swedish free from A1 to C1. Study Swedish verbs, vocabulary and grammar with interactive
+              flashcards, quizzes and English support.
             </p>
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 30 }}>
               <Link className="btn" to="/verbs?lang=en">
@@ -76,6 +59,9 @@ export default function EnglishHomePage() {
                   </Link>
                   <Link className="btn secondary" to="/verbs-b1b2?lang=en">
                     B1–B2
+                  </Link>
+                  <Link className="btn secondary" to="/c1">
+                    C1
                   </Link>
                 </div>
               </article>

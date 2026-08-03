@@ -1,120 +1,138 @@
 # SvenskaSpråket — React + Vite + Supabase
 
-A multilingual Swedish learning platform (A1–B2) with a public website and admin panel.
+A multilingual Swedish learning platform (A1–C1) with a public website and secure admin panel.
 
 ## Features
 
 ### Public website
-- Swedish homepage at `/`
-- English homepage at `/en`
-- Arabic homepage at `/ar` (RTL layout)
-- Verb pages: `/verbs` (A1), `/verbs-a2`, `/verbs-b1b2`
-- Vocabulary with flashcards and quiz: `/vocabulary`
+- Swedish `/`, English `/en`, Arabic `/ar` (RTL)
+- Verbs by CEFR level: `/verbs`, `/verbs-a2`, `/verbs-b1b2`
+- Vocabulary with search, filters, pagination: `/vocabulary`
 - Grammar lessons: `/lessons-a1`, `/lessons`
-- Legacy `.html` URLs redirect automatically
+- Supabase-first data with static JSON fallback (site stays usable offline)
 - SEO: canonical URLs, hreflang, JSON-LD, sitemap
 
 ### Admin panel (`/admin`)
-- Supabase email/password authentication
-- Protected routes (admin role required)
+- Supabase Auth (email/password)
+- Roles: admin, editor, viewer
+- CRUD for verbs, vocabulary, lessons, quizzes, media
 - SV / EN / AR interface with RTL for Arabic
-- CRUD for verbs, vocabulary, lessons, quiz questions
-- Media upload (SVG, PNG, JPEG, WebP — max 2 MB)
-- Draft / published states, preview, export JSON/CSV
-
-### Educational content (preserved)
-| Content | Count |
-|---------|-------|
-| A1 verbs | 131 |
-| A2 verbs | 199 |
-| B1–B2 verbs | 135 |
-| Vocabulary | 805 |
-| Verb images | 465 SVGs |
-| Grammar lessons | A1 + 4 B1–B2 |
+- `noindex` on all admin routes
 
 ## Tech stack
 
-- React 19 + Vite 7
-- React Router 7 (lazy-loaded routes)
-- Supabase (PostgreSQL + Auth + Storage)
-- react-i18next, React Hook Form, Zod
-- Custom SEO head manager (canonical, hreflang, JSON-LD)
+- **React 19** + **Vite 7** + **Node.js 22**
+- **React Router 7** (lazy-loaded routes)
+- **Supabase** (PostgreSQL, Auth, Storage, RLS)
+- **TanStack Query**, React Hook Form, Zod, i18next
 
-## Quick start
+## Local development
+
+**Requirements:** Node.js 22, npm 10+
 
 ```bash
-npm install
+git clone https://github.com/mohamedmakarati/svenskaspraket-new.git
+cd svenskaspraket-new
+npm ci
 cp .env.example .env
-# Edit .env with your Supabase credentials
+# Edit .env — VITE_* keys only for frontend dev
 npm run dev
 ```
 
 Open [http://localhost:5173](http://localhost:5173)
 
+The public site works without Supabase (static JSON fallback). Admin requires valid `VITE_SUPABASE_*` keys.
+
 ## Environment variables
 
-| Variable | Required | Description |
-|----------|----------|-------------|
-| `VITE_SUPABASE_URL` | Admin only | Supabase project URL |
-| `VITE_SUPABASE_ANON_KEY` | Admin only | Public anon key (safe for frontend) |
-| `SUPABASE_SERVICE_ROLE_KEY` | Seed script only | **Never expose in frontend** |
-| `VITE_SITE_URL` | Optional | Canonical base URL (default: svenskaspraket.com) |
+Copy `.env.example` → `.env` (never commit `.env`).
 
-> **Note:** The public site works without Supabase — it falls back to static JSON files in `public/`.
+| Variable | Where | Description |
+|----------|-------|-------------|
+| `VITE_SUPABASE_URL` | Frontend build | Supabase project URL |
+| `VITE_SUPABASE_ANON_KEY` | Frontend build | Public anon key (safe in browser) |
+| `VITE_SITE_URL` | Frontend build | Canonical URL (default: svenskaspraket.com) |
+| `SUPABASE_SERVICE_ROLE_KEY` | Local scripts only | **Never** in Hostinger or GitHub build vars |
 
-## Database setup
+## Scripts
 
-1. Create a Supabase project at [supabase.com](https://supabase.com)
-2. Run `supabase/migrations/001_initial_schema.sql` in the SQL Editor
-3. Create a Storage bucket named `media` (public read)
-4. Create an admin user via Authentication → Users
-5. Set admin role:
-   ```sql
-   UPDATE profiles SET role = 'admin' WHERE email = 'your@email.com';
-   ```
-6. Seed existing content:
-   ```bash
-   npm run seed
-   ```
+| Command | Purpose |
+|---------|---------|
+| `npm run dev` | Development server |
+| `npm run build` | Production build → `dist/` |
+| `npm run preview` | Preview production build |
+| `npm test` | Unit tests (Vitest) |
+| `npm run lint` | Route, i18n, SEO checks |
+| `npm run lint:secrets` | Scan for committed secrets |
+| `npm run ci` | Full CI suite locally |
+| `npm run import:validate` | Validate content import (no DB) |
 
-## Build & deploy
+## Deployment (Hostinger)
 
-```bash
-npm run build    # outputs to dist/
-npm run preview  # preview production build
-```
+Hostinger auto-deploys from the **`main`** branch. Do **not** push to `main` until CI passes.
 
-Upload `dist/` contents to your web host. The included `public/.htaccess` handles SPA routing and HTTPS redirect.
+| Setting | Value |
+|---------|-------|
+| Node.js | **22** |
+| Install | `npm ci` |
+| Build | `npm run build` |
+| Output | `dist` |
+
+Set build environment variables in Hostinger (see `.env.example`). See **[DEPLOYMENT.md](DEPLOYMENT.md)** for the full checklist.
+
+### SPA routing
+
+`public/.htaccess` is copied to `dist/` and handles:
+- HTTPS redirect
+- SPA fallback for client routes (`/en`, `/admin/verbs`, etc.)
+- Direct serving of `sitemap.xml`, `robots.txt`, images, JSON
+- Security headers compatible with Supabase (CSP allows `*.supabase.co`)
+
+**Test after deploy:** refresh `/admin/verbs`, `/en`, `/vocabulary` directly in the browser.
+
+## CI / GitHub Actions
+
+On every push and pull request to `main`, CI runs:
+
+1. `npm ci`
+2. Secret scan
+3. Route & link validation
+4. i18n key sync (sv/en/ar)
+5. SEO metadata & JSON-LD validation
+6. Unit tests
+7. Production build
+
+Workflow: [`.github/workflows/ci.yml`](.github/workflows/ci.yml) — validates only; Hostinger handles deploy.
+
+Run locally: `npm run ci`
+
+## Database & content
+
+1. Apply migrations `001`–`006` in Supabase (see [supabase/README.md](supabase/README.md))
+2. Create first admin in Supabase Auth, then set role in `profiles`
+3. Import content: [scripts/import/README.md](scripts/import/README.md)
 
 ## Project structure
 
 ```
-svenskaspraket-new/
-├── src/
-│   ├── pages/          # Public + admin pages
-│   ├── components/     # Shared UI
-│   ├── layouts/        # Admin layout
-│   ├── hooks/          # Auth, RTL
-│   ├── lib/            # Supabase, data layer, utils
-│   ├── schemas/        # Zod validation
-│   ├── data/           # Preserved static lesson content
-│   ├── i18n/           # Translations (sv, en, ar)
-│   └── styles/         # Global CSS
-├── public/             # Static assets (JSON, images, sitemap)
-├── supabase/migrations/
-├── scripts/seed-database.mjs
-└── index.html
+├── src/pages/           Public + admin pages
+├── src/lib/publicQueries.js   Supabase + fallback data layer
+├── src/components/      Shared UI, SEO, admin components
+├── public/              Static assets, .htaccess, JSON fallbacks
+├── scripts/ci/          Automated checks
+├── scripts/import/      Idempotent content import
+├── supabase/migrations/ Versioned SQL
+├── .github/workflows/   CI pipeline
+└── DEPLOYMENT.md        Pre-deploy checklist
 ```
 
 ## Security
 
-- Row Level Security on all tables
-- Public users: read published content only
-- Admins: full CRUD via authenticated RLS policies
-- Service role key used only in seed script (server-side)
-- Form validation with Zod
-- HTML sanitization with DOMPurify
-- Upload validation by MIME type and size
+- Row Level Security on all tables; anon reads published content only
+- Service role key never in frontend or Hostinger build
+- Admin routes: `noindex,nofollow` + `robots.txt` disallow
+- Production builds: source maps disabled
+- CSP allows Supabase API/Storage; blocks inline scripts
 
 ## License
 

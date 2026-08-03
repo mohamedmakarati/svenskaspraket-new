@@ -1,7 +1,7 @@
 {
   "name": "SvenskaSpråket",
   "short_name": "SvenskaSpråket",
-  "description": "Gratis svensk grammatik, verbträning och ordförråd med stöd på engelska och arabiska.",
+  "description": "Gratis svensk språkträning från A1 till C1 med grammatik, verb, ordförråd och stöd på engelska och arabiska.",
   "lang": "sv",
   "start_url": "/",
   "display": "standalone",

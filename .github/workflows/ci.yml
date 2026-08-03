@@ -1,0 +1,67 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+      - 'feature/**'
+  pull_request:
+    branches:
+      - main
+
+# Hostinger deploys from main automatically — this workflow validates only.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    name: Validate build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js 22
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+
+      - name: Clean install
+        run: npm ci
+
+      - name: Secret scan
+        run: node scripts/ci/check-secrets.mjs
+
+      - name: Link and route check
+        run: node scripts/ci/check-links.mjs
+
+      - name: i18n key sync
+        run: node scripts/ci/check-i18n.mjs
+
+      - name: SEO metadata
+        run: node scripts/ci/check-seo.mjs
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Production build
+        run: npm run build
+        env:
+          VITE_SUPABASE_URL: https://placeholder.supabase.co
+          VITE_SUPABASE_ANON_KEY: placeholder-anon-key-for-ci-build
+          VITE_SITE_URL: https://svenskaspraket.com
+
+      - name: Verify prerendered HTML
+        run: node scripts/ci/check-prerender.mjs
+
+      - name: Verify dist output
+        run: |
+          test -f dist/index.html
+          test -f dist/en/index.html
+          test -f dist/verbs/index.html
+          test -f dist/sitemap.xml
+          test -f dist/.htaccess
+          echo "dist/ prerender + sitemap ready for Hostinger"

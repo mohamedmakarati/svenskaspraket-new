@@ -11,14 +11,23 @@ const VerbsPage = lazy(() => import('@/pages/VerbsPage'));
 const VocabularyPage = lazy(() => import('@/pages/VocabularyPage'));
 const LessonsA1Page = lazy(() => import('@/pages/LessonsA1Page'));
 const LessonsB1Page = lazy(() => import('@/pages/LessonsB1Page'));
+const C1Page = lazy(() => import('@/pages/C1Page'));
 const NotFoundPage = lazy(() => import('@/pages/NotFoundPage'));
+
 const AdminLoginPage = lazy(() => import('@/pages/admin/AdminLoginPage'));
+const AdminForgotPasswordPage = lazy(() => import('@/pages/admin/AdminForgotPasswordPage'));
+const AdminResetPasswordPage = lazy(() => import('@/pages/admin/AdminResetPasswordPage'));
 const AdminDashboardPage = lazy(() => import('@/pages/admin/AdminDashboardPage'));
-const AdminVerbsPage = lazy(() => import('@/pages/admin/AdminVerbsPage'));
-const AdminVocabularyPage = lazy(() => import('@/pages/admin/AdminVocabularyPage'));
-const AdminLessonsPage = lazy(() => import('@/pages/admin/AdminLessonsPage'));
-const AdminQuizPage = lazy(() => import('@/pages/admin/AdminQuizPage'));
+const AdminVerbsListPage = lazy(() => import('@/pages/admin/AdminVerbsListPage'));
+const AdminVerbFormPage = lazy(() => import('@/pages/admin/AdminVerbFormPage'));
+const AdminVocabularyListPage = lazy(() => import('@/pages/admin/AdminVocabularyListPage'));
+const AdminVocabularyFormPage = lazy(() => import('@/pages/admin/AdminVocabularyFormPage'));
+const AdminLessonsListPage = lazy(() => import('@/pages/admin/AdminLessonsListPage'));
+const AdminLessonFormPage = lazy(() => import('@/pages/admin/AdminLessonFormPage'));
+const AdminQuizzesPage = lazy(() => import('@/pages/admin/AdminQuizzesPage'));
 const AdminMediaPage = lazy(() => import('@/pages/admin/AdminMediaPage'));
+const AdminSettingsPage = lazy(() => import('@/pages/admin/AdminSettingsPage'));
+const AdminUsersPage = lazy(() => import('@/pages/admin/AdminUsersPage'));
 
 function Loading() {
   return (
@@ -28,7 +37,6 @@ function Loading() {
   );
 }
 
-/** Legacy .html URL redirects */
 function LegacyRedirect({ to }) {
   return <Navigate to={to} replace />;
 }
@@ -37,51 +45,74 @@ export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
-          <Suspense fallback={<Loading />}>
-            <Routes>
-              {/* Public routes */}
-              <Route path="/" element={<HomePage />} />
-              <Route path="/en" element={<EnglishHomePage />} />
-              <Route path="/ar" element={<ArabicHomePage />} />
-              <Route path="/verbs" element={<VerbsPage level="A1" />} />
-              <Route path="/verbs-a2" element={<VerbsPage level="A2" />} />
-              <Route path="/verbs-b1b2" element={<VerbsPage level="B1-B2" />} />
-              <Route path="/vocabulary" element={<VocabularyPage />} />
-              <Route path="/lessons-a1" element={<LessonsA1Page />} />
-              <Route path="/lessons" element={<LessonsB1Page />} />
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/en" element={<EnglishHomePage />} />
+            <Route path="/ar" element={<ArabicHomePage />} />
+            <Route path="/verbs" element={<VerbsPage level="A1" />} />
+            <Route path="/verbs-a2" element={<VerbsPage level="A2" />} />
+            <Route path="/verbs-b1b2" element={<VerbsPage level="B1-B2" />} />
+            <Route path="/vocabulary" element={<VocabularyPage />} />
+            <Route path="/lessons-a1" element={<LessonsA1Page />} />
+            <Route path="/lessons" element={<LessonsB1Page />} />
+            <Route path="/c1" element={<C1Page />} />
 
-              {/* Legacy .html redirects */}
-              <Route path="/verbs.html" element={<LegacyRedirect to="/verbs" />} />
-              <Route path="/verbs-a2.html" element={<LegacyRedirect to="/verbs-a2" />} />
-              <Route path="/verbs-b1b2.html" element={<LegacyRedirect to="/verbs-b1b2" />} />
-              <Route path="/vocabulary.html" element={<LegacyRedirect to="/vocabulary" />} />
-              <Route path="/lessons-a1.html" element={<LegacyRedirect to="/lessons-a1" />} />
-              <Route path="/lessons.html" element={<LegacyRedirect to="/lessons" />} />
-              <Route path="/en/" element={<LegacyRedirect to="/en" />} />
-              <Route path="/ar/" element={<LegacyRedirect to="/ar" />} />
+            <Route path="/verbs.html" element={<LegacyRedirect to="/verbs" />} />
+            <Route path="/verbs-a2.html" element={<LegacyRedirect to="/verbs-a2" />} />
+            <Route path="/verbs-b1b2.html" element={<LegacyRedirect to="/verbs-b1b2" />} />
+            <Route path="/vocabulary.html" element={<LegacyRedirect to="/vocabulary" />} />
+            <Route path="/lessons-a1.html" element={<LegacyRedirect to="/lessons-a1" />} />
+            <Route path="/lessons.html" element={<LegacyRedirect to="/lessons" />} />
+            <Route path="/en/" element={<LegacyRedirect to="/en" />} />
+            <Route path="/ar/" element={<LegacyRedirect to="/ar" />} />
 
-              {/* Admin */}
-              <Route path="/admin/login" element={<AdminLoginPage />} />
+            <Route path="/admin/login" element={<AdminLoginPage />} />
+            <Route path="/admin/forgot-password" element={<AdminForgotPasswordPage />} />
+            <Route path="/admin/reset-password" element={<AdminResetPasswordPage />} />
+            <Route
+              path="/admin"
+              element={
+                <ProtectedRoute>
+                  <AdminLayout />
+                </ProtectedRoute>
+              }
+            >
+              <Route index element={<AdminDashboardPage />} />
+              <Route path="verbs" element={<AdminVerbsListPage />} />
+              <Route path="verbs/new" element={<AdminVerbFormPage />} />
+              <Route path="verbs/:id/edit" element={<AdminVerbFormPage />} />
+              <Route path="vocabulary" element={<AdminVocabularyListPage />} />
+              <Route path="vocabulary/new" element={<AdminVocabularyFormPage />} />
+              <Route path="vocabulary/:id/edit" element={<AdminVocabularyFormPage />} />
+              <Route path="lessons" element={<AdminLessonsListPage />} />
+              <Route path="lessons/new" element={<AdminLessonFormPage />} />
+              <Route path="lessons/:id/edit" element={<AdminLessonFormPage />} />
+              <Route path="quizzes" element={<AdminQuizzesPage />} />
+              <Route path="media" element={<AdminMediaPage />} />
               <Route
-                path="/admin"
+                path="settings"
                 element={
-                  <ProtectedRoute>
-                    <AdminLayout />
+                  <ProtectedRoute requireAdmin>
+                    <AdminSettingsPage />
                   </ProtectedRoute>
                 }
-              >
-                <Route index element={<AdminDashboardPage />} />
-                <Route path="verbs" element={<AdminVerbsPage />} />
-                <Route path="vocabulary" element={<AdminVocabularyPage />} />
-                <Route path="lessons" element={<AdminLessonsPage />} />
-                <Route path="quiz" element={<AdminQuizPage />} />
-                <Route path="media" element={<AdminMediaPage />} />
-              </Route>
+              />
+              <Route
+                path="users"
+                element={
+                  <ProtectedRoute requireAdmin>
+                    <AdminUsersPage />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="quiz" element={<LegacyRedirect to="/admin/quizzes" />} />
+            </Route>
 
-              <Route path="*" element={<NotFoundPage />} />
-            </Routes>
-          </Suspense>
-        </BrowserRouter>
+            <Route path="*" element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
+      </BrowserRouter>
     </AuthProvider>
   );
 }

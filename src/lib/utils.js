@@ -29,7 +29,7 @@ export function shuffle(items) {
 }
 
 export const ALLOWED_IMAGE_TYPES = ['image/svg+xml', 'image/png', 'image/jpeg', 'image/webp'];
-export const MAX_UPLOAD_BYTES = 2 * 1024 * 1024; // 2 MB
+export const MAX_UPLOAD_BYTES = 5 * 1024 * 1024; // 5 MB — matches Supabase storage bucket limit
 
 export function validateUpload(file) {
   if (!file) return 'Ingen fil vald.';
@@ -37,7 +37,7 @@ export function validateUpload(file) {
     return 'Otillåten filtyp. Använd SVG, PNG, JPEG eller WebP.';
   }
   if (file.size > MAX_UPLOAD_BYTES) {
-    return 'Filen är för stor. Max 2 MB.';
+    return 'Filen är för stor. Max 5 MB.';
   }
   return null;
 }

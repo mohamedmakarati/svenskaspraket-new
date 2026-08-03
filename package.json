@@ -3,15 +3,30 @@
   "private": true,
   "version": "2.0.0",
   "type": "module",
+  "engines": {
+    "node": ">=22.0.0 <23",
+    "npm": ">=10.0.0"
+  },
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "node scripts/generate-og-image.mjs && vite build && node scripts/prerender.mjs && node scripts/generate-sitemap.mjs",
     "preview": "vite preview",
-    "seed": "node scripts/seed-database.mjs"
+    "seed": "node scripts/seed-database.mjs",
+    "sitemap": "node scripts/generate-sitemap.mjs",
+    "og-image": "node scripts/generate-og-image.mjs",
+    "db:types": "supabase gen types typescript --linked > src/types/database.types.ts",
+    "import:validate": "node scripts/import-content.mjs validate",
+    "import:dry-run": "node scripts/import-content.mjs dry-run",
+    "import:content": "node scripts/import-content.mjs import",
+    "test": "vitest run",
+    "lint": "node scripts/ci/check-links.mjs && node scripts/ci/check-i18n.mjs && node scripts/ci/check-seo.mjs",
+    "lint:secrets": "node scripts/ci/check-secrets.mjs",
+    "ci": "node scripts/ci/run-all.mjs"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.0.1",
     "@supabase/supabase-js": "^2.49.8",
+    "@tanstack/react-query": "^5.101.4",
     "dompurify": "^3.2.5",
     "i18next": "^25.2.1",
     "react": "^19.1.0",
@@ -23,6 +38,8 @@
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
-    "vite": "^7.1.2"
+    "sharp": "^0.35.3",
+    "vite": "^7.1.2",
+    "vitest": "^4.1.10"
   }
 }

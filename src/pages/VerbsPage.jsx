@@ -1,47 +1,35 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import SeoHead from '@/components/SeoHead';
+import { PageSeo } from '@/components/SeoHead';
 import { SiteFooter } from '@/components/Layout';
-import { fetchVerbs, fetchAuxiliaries } from '@/lib/data';
+import { useVerbs, useAuxiliaries } from '@/hooks/usePublicData';
+import {
+  OfflineNotice,
+  QueryError,
+  EmptyState,
+  TableSkeleton,
+  VerbImage,
+} from '@/components/PublicUi';
 import { normalizeSearch, shuffle } from '@/lib/utils';
-import { SITE_URL } from '@/lib/supabase';
+
+const LEVEL_SEO_KEY = { A1: 'verbsA1', A2: 'verbsA2', 'B1-B2': 'verbsB1B2' };
 
 const LEVEL_CONFIG = {
-  A1: {
-    path: '/verbs',
-    title: '131 svenska A1-verb med böjning | SvenskaSpråket',
-    description: 'Träna 131 vanliga svenska A1-verb med full böjning, minnesbilder och betydelser på engelska och arabiska.',
-    canonical: '/verbs',
-    count: 131,
-    groups: ['all', '1', '2A', '2B', '2C', '3', '4-5'],
-    showAux: true,
-  },
-  A2: {
-    path: '/verbs-a2',
-    title: '199 svenska A2-verb med böjning | SvenskaSpråket',
-    description: 'Träna 199 svenska A2-verb med böjning, minnesbilder och översättningar.',
-    canonical: '/verbs-a2',
-    count: 199,
-    groups: null,
-    showAux: false,
-  },
-  'B1-B2': {
-    path: '/verbs-b1b2',
-    title: '135 oregelbundna verb B1-B2 | SvenskaSpråket',
-    description: 'Träna 135 oregelbundna svenska verb på B1-B2-nivå.',
-    canonical: '/verbs-b1b2',
-    count: 135,
-    groups: null,
-    showAux: false,
-  },
+  A1: { path: '/verbs', count: 131, groups: ['all', '1', '2A', '2B', '2C', '3', '4-5'], showAux: true },
+  A2: { path: '/verbs-a2', count: 199, groups: null, showAux: false },
+  'B1-B2': { path: '/verbs-b1b2', count: 135, groups: null, showAux: false },
 };
 
 export default function VerbsPage({ level = 'A1' }) {
   const config = LEVEL_CONFIG[level];
   const [searchParams] = useSearchParams();
-  const [verbs, setVerbs] = useState([]);
-  const [auxiliaries, setAuxiliaries] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const { data, isLoading, isError, error, refetch } = useVerbs(level);
+  const auxQuery = useAuxiliaries(config.showAux);
+
+  const verbs = data?.items ?? [];
+  const source = data?.source ?? 'static';
+  const auxiliaries = auxQuery.data?.items ?? [];
+
   const [query, setQuery] = useState('');
   const [group, setGroup] = useState('all');
   const [lang, setLang] = useState(searchParams.get('lang') === 'ar' ? 'ar' : 'en');
@@ -50,18 +38,9 @@ export default function VerbsPage({ level = 'A1' }) {
   const [score, setScore] = useState(0);
   const [locked, setLocked] = useState(false);
 
-  useEffect(() => {
-    Promise.all([fetchVerbs(level), config.showAux ? fetchAuxiliaries() : Promise.resolve([])])
-      .then(([v, a]) => {
-        setVerbs(v);
-        setAuxiliaries(a);
-      })
-      .finally(() => setLoading(false));
-  }, [level, config.showAux]);
-
+  const verbCount = verbs.length || config.count;
   const groups =
-    config.groups ??
-    [...new Set(verbs.map((v) => v.verb_group).filter(Boolean))].sort();
+    config.groups ?? [...new Set(verbs.map((v) => v.verb_group).filter(Boolean))].sort();
 
   const filtered = verbs.filter((v) => {
     const gm = group === 'all' || v.verb_group === group;
@@ -103,24 +82,7 @@ export default function VerbsPage({ level = 'A1' }) {
 
   return (
     <>
-      <SeoHead
-        title={config.title}
-        description={config.description}
-        canonical={config.canonical}
-        hreflang={false}
-        structuredData={{
-          '@context': 'https://schema.org',
-          '@graph': [
-            {
-              '@type': 'LearningResource',
-              url: `${SITE_URL}${config.canonical}`,
-              name: config.title,
-              educationalLevel: level,
-              inLanguage: ['sv', 'en', 'ar'],
-            },
-          ],
-        }}
-      />
+      <PageSeo pageKey={LEVEL_SEO_KEY[level]} />
       <header className="public-nav wrap">
         <Link to="/" className="brand">
           🇸🇪 Svenska<b>Språket</b>
@@ -129,13 +91,15 @@ export default function VerbsPage({ level = 'A1' }) {
           <Link to="/verbs">A1</Link>
           <Link to="/verbs-a2">A2</Link>
           <Link to="/verbs-b1b2">B1-B2</Link>
+          <Link to="/c1">C1</Link>
           <Link to="/lessons-a1">Grammatik</Link>
           <Link to="/">Hem</Link>
         </nav>
       </header>
       <main className="wrap verbs-page section">
+        <OfflineNotice source={source} />
         <div className="tag">{level} · SVENSKA VERB</div>
-        <h1>{config.count} svenska {level}-verb</h1>
+        <h1>{verbCount} svenska {level}-verb</h1>
         <p>Sök, filtrera och träna verbformerna. Välj engelska eller arabiska översättningar.</p>
 
         <div className="controls">
@@ -168,9 +132,20 @@ export default function VerbsPage({ level = 'A1' }) {
           Visar <strong>{filtered.length}</strong> verb
         </p>
 
-        {loading ? (
-          <p>Laddar verb…</p>
-        ) : (
+        {isError && (
+          <QueryError message={error?.message ?? 'Kunde inte ladda verb.'} onRetry={() => refetch()} />
+        )}
+
+        {isLoading && <TableSkeleton rows={10} cols={9} />}
+
+        {!isLoading && !isError && filtered.length === 0 && (
+          <EmptyState
+            title="Inga verb hittades"
+            description="Prova att ändra sökord eller filter."
+          />
+        )}
+
+        {!isLoading && !isError && filtered.length > 0 && (
           <div className="verbs-table-wrap">
             <table className="verbs-table">
               <thead>
@@ -191,16 +166,7 @@ export default function VerbsPage({ level = 'A1' }) {
                   <tr key={v.id ?? v.legacy_id}>
                     <td>{v.legacy_id ?? v.id}</td>
                     <td>
-                      {v.image_path && (
-                        <img
-                          className="verb-image"
-                          loading="lazy"
-                          src={v.image_path}
-                          alt={`Minnesbild för ${v.infinitive}`}
-                          width={120}
-                          height={80}
-                        />
-                      )}
+                      <VerbImage verb={v} lang={lang} />
                     </td>
                     <td>{v.verb_group}</td>
                     <td>{v.imperative ?? '—'}</td>
@@ -225,7 +191,7 @@ export default function VerbsPage({ level = 'A1' }) {
             <h2>Hjälpverb</h2>
             <div className="grid-3">
               {auxiliaries.map((a, i) => (
-                <div key={i} className="card">
+                <div key={a.id ?? i} className="card">
                   <strong>{a.swedish ?? a.content_sv}</strong>
                   <div className={lang === 'ar' ? 'arabic' : ''} dir={lang === 'ar' ? 'rtl' : undefined}>
                     {lang === 'ar' ? (a.arabic ?? a.content_ar) : (a.english ?? a.content_en)}
@@ -236,35 +202,37 @@ export default function VerbsPage({ level = 'A1' }) {
           </section>
         )}
 
-        <section className="quiz-area">
-          <h2>Snabbtest — preteritum</h2>
-          <button type="button" className="btn" onClick={startQuiz}>
-            {quiz ? 'Starta om' : 'Starta quiz'}
-          </button>
-          {quiz && quizIndex >= quiz.length && (
-            <p style={{ fontWeight: 700, marginTop: 16 }}>
-              Klart! Du fick {score} av {quiz.length} rätt.
-            </p>
-          )}
-          {currentVerb && quizIndex < quiz.length && (
-            <>
-              <p style={{ marginTop: 16 }}>
-                {quizIndex + 1}/10: Vad är preteritum av &ldquo;{currentVerb.infinitive}&rdquo;?
+        {!isLoading && verbs.length > 0 && (
+          <section className="quiz-area">
+            <h2>Snabbtest — preteritum</h2>
+            <button type="button" className="btn" onClick={startQuiz}>
+              {quiz ? 'Starta om' : 'Starta quiz'}
+            </button>
+            {quiz && quizIndex >= quiz.length && (
+              <p style={{ fontWeight: 700, marginTop: 16 }}>
+                Klart! Du fick {score} av {quiz.length} rätt.
               </p>
-              <div className="quiz-choices">
-                {shuffle([
-                  currentVerb.preterite,
-                  ...shuffle(verbs.filter((x) => x.id !== currentVerb.id).map((x) => x.preterite)).slice(0, 2),
-                ]).map((c) => (
-                  <button key={c} type="button" onClick={() => answerQuiz(c)} disabled={locked}>
-                    {c}
-                  </button>
-                ))}
-              </div>
-              <p>Poäng: {score}</p>
-            </>
-          )}
-        </section>
+            )}
+            {currentVerb && quizIndex < quiz.length && (
+              <>
+                <p style={{ marginTop: 16 }}>
+                  {quizIndex + 1}/10: Vad är preteritum av &ldquo;{currentVerb.infinitive}&rdquo;?
+                </p>
+                <div className="quiz-choices">
+                  {shuffle([
+                    currentVerb.preterite,
+                    ...shuffle(verbs.filter((x) => x.id !== currentVerb.id).map((x) => x.preterite)).slice(0, 2),
+                  ]).map((c) => (
+                    <button key={c} type="button" onClick={() => answerQuiz(c)} disabled={locked}>
+                      {c}
+                    </button>
+                  ))}
+                </div>
+                <p>Poäng: {score}</p>
+              </>
+            )}
+          </section>
+        )}
       </main>
       <SiteFooter />
     </>

@@ -1,26 +1,45 @@
 Options -Indexes
+
+# Custom 404 → SPA shell (React Router handles client-side 404)
 ErrorDocument 404 /index.html
 
 <IfModule mod_rewrite.c>
   RewriteEngine On
-  RewriteCond %{HTTPS} !=on
-  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
-  # SPA fallback — serve index.html for client routes
-  RewriteCond %{REQUEST_FILENAME} !-f
-  RewriteCond %{REQUEST_FILENAME} !-d
+  # Force HTTPS
+  RewriteCond %{HTTPS} !=on
+  RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,L,R=301]
+
+  # Serve real files and directories as-is (sitemap, robots, images, JSON, assets)
+  RewriteCond %{REQUEST_FILENAME} -f [OR]
+  RewriteCond %{REQUEST_FILENAME} -d
+  RewriteRule ^ - [L]
+
+  # SPA fallback — client routes (/en, /admin/verbs, /vocabulary, etc.)
   RewriteRule ^ index.html [L]
 </IfModule>
 
 <IfModule mod_headers.c>
   Header always set X-Content-Type-Options "nosniff"
+  Header always set X-Frame-Options "SAMEORIGIN"
   Header always set Referrer-Policy "strict-origin-when-cross-origin"
-  <FilesMatch "\.(css|js|svg|png|webp|woff2)$">
+  Header always set Permissions-Policy "camera=(), microphone=(), geolocation=(), payment=()"
+  Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains" env=HTTPS
+
+  # CSP — allows Supabase Auth, REST API and Storage; blocks inline scripts
+  Header always set Content-Security-Policy "default-src 'self'; base-uri 'self'; object-src 'none'; frame-ancestors 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https://*.supabase.co; font-src 'self'; connect-src 'self' https://*.supabase.co wss://*.supabase.co; media-src 'self' https://*.supabase.co; form-action 'self'"
+
+  <FilesMatch "\.(css|js|svg|png|webp|woff2|ico)$">
     Header set Cache-Control "public, max-age=31536000, immutable"
   </FilesMatch>
-  <FilesMatch "\.(html|xml|json)$">
+  <FilesMatch "\.(html|xml|json|txt)$">
     Header set Cache-Control "public, max-age=3600, must-revalidate"
   </FilesMatch>
+</IfModule>
+
+<IfModule mod_mime.c>
+  AddType application/json .json
+  AddType image/svg+xml .svg
 </IfModule>
 
 <IfModule mod_deflate.c>

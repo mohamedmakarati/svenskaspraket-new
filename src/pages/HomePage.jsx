@@ -1,8 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import SeoHead from '@/components/SeoHead';
+import { PageSeo } from '@/components/SeoHead';
 import PublicNav, { SiteFooter, FabLinks } from '@/components/Layout';
-import { SITE_URL } from '@/lib/supabase';
 
 const WORDS = [
   ['lagom', 'بالقدر المناسب', 'Kaffet är lagom varmt.'],
@@ -26,35 +25,9 @@ export default function HomePage() {
     }
   }
 
-  const structuredData = {
-    '@context': 'https://schema.org',
-    '@graph': [
-      {
-        '@type': 'WebSite',
-        '@id': `${SITE_URL}/#website`,
-        url: `${SITE_URL}/`,
-        name: 'SvenskaSpråket',
-        description: 'Gratis svensk språkträning från A1 till B2 med stöd på engelska och arabiska.',
-        inLanguage: ['sv', 'en', 'ar'],
-      },
-      {
-        '@type': 'WebPage',
-        '@id': `${SITE_URL}/#webpage`,
-        url: `${SITE_URL}/`,
-        name: 'Lär dig svenska A1-B2 gratis',
-        inLanguage: 'sv',
-      },
-    ],
-  };
-
   return (
     <>
-      <SeoHead
-        title="Lär dig svenska A1-B2 gratis | SvenskaSpråket"
-        description="Lär dig svenska gratis från A1 till B2. Träna 465 verb, 805 ord, svensk grammatik, flashcards och quiz med stöd på engelska och arabiska."
-        canonical="/"
-        structuredData={structuredData}
-      />
+      <PageSeo pageKey="home" />
       <a href="#main" className="skip-link">
         Hoppa till innehåll
       </a>
@@ -63,13 +36,9 @@ export default function HomePage() {
         <section className="hero-home wrap">
           <div>
             <div className="tag">✦ SVENSKA, STEG FÖR STEG</div>
-            <h1>
-              Lär dig svenska.
-              <br />
-              <em>På riktigt.</em>
-            </h1>
+            <h1>Lär dig svenska gratis – från A1 till C1</h1>
             <p className="lead">
-              En modern och enkel väg till bättre svenska. Träna grammatik, ord, uttal och skrivande – med stöd på
+              Lär dig svenska gratis från A1 till C1. Träna grammatik, ord, uttal och skrivande – med stöd på
               arabiska och engelska.
             </p>
             <p>
@@ -143,6 +112,7 @@ export default function HomePage() {
                 ['A2 Grundläggande', '/verbs-a2'],
                 ['B1 Medel', '/verbs-b1b2'],
                 ['B2 Avancerad', '/verbs-b1b2'],
+                ['C1 Expertnivå', '/c1'],
               ].map(([label, href]) => (
                 <Link
                   key={label}

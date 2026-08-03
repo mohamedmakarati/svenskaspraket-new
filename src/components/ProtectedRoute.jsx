@@ -1,9 +1,11 @@
 import { Navigate, useLocation } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import { useAuth } from '@/hooks/useAuth';
 
-export default function ProtectedRoute({ children }) {
+export default function ProtectedRoute({ children, requireAdmin = false }) {
   const auth = useAuth();
   const location = useLocation();
+  const { t } = useTranslation();
 
   if (!auth.isConfigured) {
     return <Navigate to="/admin/login" replace state={{ error: 'no_supabase' }} />;
@@ -12,20 +14,33 @@ export default function ProtectedRoute({ children }) {
   if (auth.loading) {
     return (
       <div className="wrap section" style={{ textAlign: 'center' }}>
-        <p>Laddar…</p>
+        <p>{t('common.loading')}</p>
       </div>
     );
+  }
+
+  if (auth.sessionExpired) {
+    return <Navigate to="/admin/login" replace state={{ expired: true }} />;
   }
 
   if (!auth.user) {
     return <Navigate to="/admin/login" replace state={{ from: location.pathname }} />;
   }
 
-  if (!auth.isAdmin) {
+  if (!auth.canAccessAdmin) {
     return (
-      <div className="wrap section">
-        <h1>Åtkomst nekad</h1>
-        <p>Ditt konto har inte administratörsbehörighet.</p>
+      <div className="admin-access-denied wrap section">
+        <h1>{t('admin.accessDenied')}</h1>
+        <p>{t('admin.accessDeniedHint')}</p>
+      </div>
+    );
+  }
+
+  if (requireAdmin && !auth.isAdmin) {
+    return (
+      <div className="admin-access-denied wrap section">
+        <h1>{t('admin.accessDenied')}</h1>
+        <p>{t('admin.adminOnly')}</p>
       </div>
     );
   }

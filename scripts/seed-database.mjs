@@ -1,7 +1,12 @@
 /**
- * Seed Supabase from static JSON files.
- * Requires SUPABASE_SERVICE_ROLE_KEY and VITE_SUPABASE_URL in .env
+ * @deprecated Use `npm run import:content` instead — see scripts/import/README.md
  *
+ * Legacy seed script (old schema). Prefer the idempotent import pipeline:
+ *   npm run import:validate
+ *   npm run import:dry-run
+ *   npm run import:content
+ *
+ * Requires SUPABASE_SERVICE_ROLE_KEY and VITE_SUPABASE_URL in .env
  * Usage: npm run seed
  */
 import { createClient } from '@supabase/supabase-js';
