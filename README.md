@@ -43,7 +43,6 @@ A multilingual Swedish learning platform (A1–B2) with a public website and adm
 ## Quick start
 
 ```bash
-cd trilingual
 npm install
 cp .env.example .env
 # Edit .env with your Supabase credentials
@@ -90,7 +89,7 @@ Upload `dist/` contents to your web host. The included `public/.htaccess` handle
 ## Project structure
 
 ```
-trilingual/
+svenskaspraket-new/
 ├── src/
 │   ├── pages/          # Public + admin pages
 │   ├── components/     # Shared UI
