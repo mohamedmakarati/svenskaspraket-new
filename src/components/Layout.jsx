@@ -11,9 +11,8 @@ export default function PublicNav({ lang = 'sv' }) {
       </Link>
       {isHome && (
         <nav className="links" aria-label="Sidnavigering">
-          <a href="#lar">Lär dig</a>
-          <a href="#ovningar">Övningar</a>
-          <a href="#niva">Nivåer</a>
+          <a href="#materials">Verb & Quizlet</a>
+          <a href="#lund-niva">Lund-nivåer</a>
         </nav>
       )}
       <nav className="lang-switch" aria-label="Välj språk">
