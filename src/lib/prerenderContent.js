@@ -88,7 +88,7 @@ export const PRERENDER_CONTENT = {
     dir: 'ltr',
     h1: 'Ord och verb från kapitel 1–3',
     intro:
-      'Studera 162 poster från Rivstart B2/C1 Quizlet-uppsättningar av AnnaRansheim — flashcards, quiz och sökbar ordlista.',
+      'Studera 202 poster från Rivstart B2/C1 Quizlet-uppsättningar av AnnaRansheim — flashcards, quiz och sökbar ordlista.',
   },
   lessonA2B1Grammar: {
     lang: 'en',

@@ -1003,6 +1003,253 @@ export const B2C1_LESSON = {
           ""
         ]
       ]
+    },
+    {
+      "id": "lek",
+      "title": "Lek!",
+      "sourceUrl": "https://quizlet.com/_8ml0cb",
+      "entries": [
+        [
+          1,
+          "fnittrar",
+          "giggles",
+          ""
+        ],
+        [
+          2,
+          "hejdlös",
+          "irrepressible",
+          ""
+        ],
+        [
+          3,
+          "fattas",
+          "is lacking",
+          ""
+        ],
+        [
+          4,
+          "strunt(a) i det",
+          "disregard",
+          ""
+        ],
+        [
+          5,
+          "pågår",
+          "is going on",
+          ""
+        ],
+        [
+          6,
+          "yrkesliv-et",
+          "working life",
+          ""
+        ],
+        [
+          7,
+          "går till",
+          "comes about",
+          ""
+        ],
+        [
+          8,
+          "nyss",
+          "only a moment ago",
+          ""
+        ],
+        [
+          9,
+          "visst",
+          "certainly",
+          ""
+        ],
+        [
+          10,
+          "undersöker",
+          "examines",
+          ""
+        ],
+        [
+          11,
+          "byter ut",
+          "changes",
+          ""
+        ],
+        [
+          12,
+          "noggrann, noggrant",
+          "careful",
+          ""
+        ],
+        [
+          13,
+          "får syn på",
+          "catches sight of",
+          ""
+        ],
+        [
+          14,
+          "samspel-et",
+          "interaction",
+          ""
+        ],
+        [
+          15,
+          "flink",
+          "deft",
+          ""
+        ],
+        [
+          16,
+          "begriplig",
+          "understandable",
+          ""
+        ],
+        [
+          17,
+          "stiger in i",
+          "enters",
+          ""
+        ],
+        [
+          18,
+          "stöd-et",
+          "support",
+          ""
+        ],
+        [
+          19,
+          "knyter",
+          "establishes",
+          ""
+        ],
+        [
+          20,
+          "tar till sig",
+          "takes in",
+          ""
+        ],
+        [
+          21,
+          "anammar",
+          "adopt",
+          ""
+        ],
+        [
+          22,
+          "knäcker",
+          "(kod-en) breaks",
+          ""
+        ],
+        [
+          23,
+          "nöjer sig (med ngt)",
+          "is satisfied with",
+          ""
+        ],
+        [
+          24,
+          "lyckas",
+          "succeed",
+          ""
+        ],
+        [
+          25,
+          "stelnar",
+          "gets stiff",
+          ""
+        ],
+        [
+          26,
+          "tålamod-et",
+          "patience",
+          ""
+        ],
+        [
+          27,
+          "ägnar sig åt",
+          "is engaged in",
+          ""
+        ],
+        [
+          28,
+          "spädbarn-et",
+          "baby",
+          ""
+        ],
+        [
+          29,
+          "omgivning-en",
+          "environment",
+          "المحيط؛ الأشخاص من حولك"
+        ],
+        [
+          30,
+          "består av",
+          "is composed of",
+          ""
+        ],
+        [
+          31,
+          "gynnsam",
+          "favourable",
+          ""
+        ],
+        [
+          32,
+          "samvaro-n",
+          "being together",
+          ""
+        ],
+        [
+          33,
+          "lekfull",
+          "playful",
+          ""
+        ],
+        [
+          34,
+          "helt enkelt",
+          "simply",
+          ""
+        ],
+        [
+          35,
+          "oavsett",
+          "no matter, whether",
+          ""
+        ],
+        [
+          36,
+          "ytterligare",
+          "further",
+          "إضافي؛ مزيد من"
+        ],
+        [
+          37,
+          "tidskrävande",
+          "time-consuming",
+          ""
+        ],
+        [
+          38,
+          "njutning-en",
+          "pleasure",
+          ""
+        ],
+        [
+          39,
+          "hyfsad",
+          "reasonable",
+          ""
+        ],
+        [
+          40,
+          "föreställning-en",
+          "idea, conception",
+          "فكرة؛ تصور"
+        ]
+      ]
     }
   ]
 };
